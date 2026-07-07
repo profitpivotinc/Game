@@ -1,0 +1,22 @@
+{
+  "$comment": "Seed registry (Phase 0) — completed in Phase 4. Every narrative flag must be registered here before any map trigger or scene references it (CANON D-FLAG-01). Types: boolean | enum | counter. status: seed (canonical, incomplete refs) | test (tooling only) | final.",
+  "flags": [
+    {
+      "id": "route",
+      "type": "enum",
+      "values": ["kingsman", "outlaw"],
+      "description": "The Chapter 1 macro-split (C-ROUTE-02). Set once at the Burning of Ulfheim; irreversible.",
+      "set_by": ["map:ch1-08-burn-ulfheim"],
+      "read_by": ["docs/story/04a-ch2-kingsman.md", "docs/story/04b-ch2-outlaw.md", "docs/story/08-branch-map.md"],
+      "status": "seed"
+    },
+    {
+      "id": "ex_selftest_horn_blown",
+      "type": "boolean",
+      "description": "Phase 0 validator self-test flag; referenced only by the example map. Retire together with data/maps/example/.",
+      "set_by": ["map:ex0-01-selftest-strand"],
+      "read_by": [],
+      "status": "test"
+    }
+  ]
+}

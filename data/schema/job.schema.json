@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vargdropi/job.schema.json",
+  "title": "VARGDROPI job",
+  "description": "One job (class) definition. FFT-proportioned JP economy; numbers marked tunable:true are TUNABLE per CANON status legend. Full design rationale lives in docs/design/spec-jobs.md.",
+  "type": "object",
+  "required": ["id", "name", "etymology", "analog", "role", "custodian_clan", "prerequisites", "growths", "abilities"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_-]*$",
+      "description": "Machine id, e.g. 'huscarl', 'norn-touched'. Referenced by map enemies[].job and clan custodian lists."
+    },
+    "name": { "type": "string", "minLength": 1, "description": "Display name — a placeholder until CANON's Rename Table clears it." },
+    "etymology": { "type": "string", "minLength": 1, "description": "Old Norse derivation / cultural note." },
+    "analog": { "type": "string", "minLength": 1, "description": "FFT design analog, e.g. 'knight', 'time mage', 'calculator'." },
+    "role": {
+      "type": "string",
+      "enum": ["frontline", "skirmisher", "ranged", "support", "caster", "hybrid", "special"]
+    },
+    "custodian_clan": {
+      "type": ["string", "null"],
+      "description": "Clan id that is custodian of this job line (null = base tree, no custodian). Cross-checked against data/clans/."
+    },
+    "clan_exclusive": { "type": "boolean", "description": "True if unavailable outside the custodian clan's faith path (e.g. riddari)." },
+    "prerequisites": {
+      "type": "array",
+      "description": "Empty for the base job (drengr). Job-level requirements, FFT-style.",
+      "items": {
+        "type": "object",
+        "required": ["job", "job_level"],
+        "additionalProperties": false,
+        "properties": {
+          "job": { "type": "string", "pattern": "^[a-z][a-z0-9_-]*$" },
+          "job_level": { "type": "integer", "minimum": 1, "maximum": 8 }
+        }
+      }
+    },
+    "growths": {
+      "type": "object",
+      "description": "Relative growth/multiplier profile, 1–20 scale (spec-jobs.md defines the mapping). All tunable.",
+      "required": ["hp", "mp", "speed", "attack", "magic"],
+      "additionalProperties": false,
+      "properties": {
+        "hp": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "mp": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "speed": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "attack": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "magic": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "move": { "type": "integer", "minimum": 2, "maximum": 8 },
+        "jump": { "type": "integer", "minimum": 1, "maximum": 6 }
+      }
+    },
+    "equipment": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Allowed equipment categories, e.g. 'axe', 'seax', 'round_shield', 'mail'."
+    },
+    "abilities": {
+      "type": "object",
+      "required": ["action"],
+      "additionalProperties": false,
+      "properties": {
+        "command_name": { "type": "string", "description": "Name of the action command set, e.g. 'Rune-Craft', 'Lodge Arts'." },
+        "action": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/ability" } },
+        "reaction": { "type": "array", "items": { "$ref": "#/$defs/ability" } },
+        "support": { "type": "array", "items": { "$ref": "#/$defs/ability" } },
+        "movement": { "type": "array", "items": { "$ref": "#/$defs/ability" } }
+      }
+    },
+    "diminished_variant": {
+      "type": "object",
+      "description": "Fire-path loot version (C-CLAN-01): which abilities survive when the custodian clan is burned, plus stigma texture. Only for custodian jobs.",
+      "required": ["kept_abilities", "stigma_tag"],
+      "additionalProperties": false,
+      "properties": {
+        "kept_abilities": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "stigma_tag": { "type": "string", "minLength": 1, "description": "Dialogue-texture tag, e.g. 'grave-robbed arts'." }
+      }
+    },
+    "stigma_notes": { "type": "string", "description": "Cultural stigma texture, e.g. ergi for male seiðmaðr (CANON glossary)." },
+    "designer_notes": { "type": "string" }
+  },
+  "$defs": {
+    "ability": {
+      "type": "object",
+      "required": ["id", "name", "jp_cost", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "jp_cost": { "type": "integer", "minimum": 0, "maximum": 3000 },
+        "description": { "type": "string", "minLength": 1 },
+        "ct_speed": { "type": "integer", "minimum": 1, "maximum": 100, "description": "Charge speed for carved/chanted abilities (C-CT-01). Omit for instant." },
+        "mp_cost": { "type": "integer", "minimum": 0 },
+        "range": { "type": "integer", "minimum": 0, "maximum": 12 },
+        "aoe": { "type": "integer", "minimum": 0, "maximum": 5 },
+        "vertical": { "type": "integer", "minimum": 0, "maximum": 9, "description": "Vertical tolerance in height units." },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

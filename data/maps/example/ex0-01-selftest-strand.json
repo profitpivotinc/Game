@@ -1,0 +1,66 @@
+{
+  "id": "ex0-01-selftest-strand",
+  "name": "Self-Test Strand (Phase 0 example)",
+  "chapter": 0,
+  "order": 1,
+  "route_tags": ["shared"],
+  "grid": { "cols": 10, "rows": 8 },
+  "terrain": [
+    ["water_deep", "water_shallow", "shingle", "grass", "grass", "grass", "dirt", "rock", "rock", "rock"],
+    ["water_deep", "water_shallow", "shingle", "grass", "grass", "grass", "dirt", "rock", "rock", "rock"],
+    ["water_deep", "water_shallow", "shingle", "grass", "grass", "ice", "dirt", "rock", "rock", "rock"],
+    ["water_deep", "water_shallow", "shingle", "grass", "wood_floor", "wood_floor", "dirt", "rock", "rock", "rock"],
+    ["water_deep", "water_shallow", "shingle", "grass", "wood_floor", "wood_floor", "dirt", "rock", "rock", "rock"],
+    ["water_deep", "water_shallow", "shingle", "grass", "grass", "grass", "road", "road", "road", "road"],
+    ["water_deep", "water_shallow", "shingle", "shingle", "grass", "grass", "dirt", "rock", "rock", "rock"],
+    ["water_deep", "water_deep", "shingle", "shingle", "grass", "grass", "dirt", "rock", "rock", "rock"]
+  ],
+  "elevation": [
+    [0, 0, 0, 1, 1, 1, 2, 3, 4, 4],
+    [0, 0, 0, 1, 1, 1, 2, 3, 4, 4],
+    [0, 0, 0, 1, 1, 1, 2, 3, 3, 4],
+    [0, 0, 0, 1, 1, 1, 2, 2, 3, 4],
+    [0, 0, 0, 1, 1, 1, 2, 2, 3, 4],
+    [0, 0, 0, 0, 1, 1, 1, 2, 2, 3],
+    [0, 0, 0, 0, 1, 1, 2, 3, 3, 4],
+    [0, 0, 0, 0, 1, 1, 2, 3, 4, 4]
+  ],
+  "overlays": [
+    { "pos": [4, 3], "type": "flammable", "note": "fisher's hut, west wall" },
+    { "pos": [5, 3], "type": "flammable", "note": "fisher's hut, east wall" },
+    { "pos": [4, 4], "type": "flammable" },
+    { "pos": [5, 4], "type": "flammable" },
+    { "pos": [5, 2], "type": "ice", "note": "frozen runoff — slip tile" }
+  ],
+  "weather": "snow",
+  "deployment": {
+    "player_zones": [[2, 1], [2, 2], [2, 3], [2, 4], [2, 5]],
+    "max_units": 4
+  },
+  "enemies": [
+    { "id": "e1", "job": "huscarl", "level": 3, "facing": "W", "pos": [6, 3], "ai": "guard", "grid_notes": "holds the hut yard at the terrace lip" },
+    { "id": "e2", "job": "veidimadr", "level": 3, "facing": "W", "pos": [8, 1], "ai": "guard", "grid_notes": "bow on the cliff shelf — the elevation lesson" },
+    { "id": "e3", "job": "drengr", "level": 2, "facing": "W", "pos": [6, 5], "ai": "aggressive", "grid_notes": "blocks the road pass mouth" },
+    { "id": "e4", "job": "raider", "level": 4, "facing": "S", "pos": [9, 5], "ai": "leader", "named": true, "grid_notes": "named leader watching the pass from its high end" }
+  ],
+  "neutrals": [
+    { "id": "w1", "type": "witness", "pos": [4, 5], "ai": "flee", "escape_edge": "E", "grid_notes": "thrall shepherd; bolts up the road pass when blades come out" }
+  ],
+  "objectives": {
+    "primary": "Fell the named raider (e4).",
+    "secondary": ["Reach the cliff shelf (col 8+, elevation 3+) before turn 6."],
+    "defeat": "Grím falls."
+  },
+  "escape_edges": ["E"],
+  "witness_rule": "sung_if_any_witness_or_router_escapes",
+  "triggers": [
+    { "when": "turn>=4", "event": "reinforce_e5_north_road", "once": true, "note": "one drengr enters at the north end of the road" },
+    { "when": "unit_downed:any_player", "event": "valkyrie_vfx_cue" },
+    { "when": "hp_below:e4:50", "event": "horn_of_the_pass", "set_flag": "ex_selftest_horn_blown", "once": true, "note": "self-test of set_flag cross-reference" }
+  ],
+  "designer_notes": {
+    "height_gimmick": "The only cheap ascent is the road pass along the southern rows (elevation 0→3 in single steps); the cliff face jumps 2–4 levels per tile and is unclimbable for Jump 2 units, so the shelf archer out-ranges anyone who refuses the long way around. Exists to exercise every elevation-related validator check.",
+    "witness_setup": "One thrall shepherd grazing by the road pass; ai flee toward the east escape edge. The player can hold the pass mouth (the e3 tile) to cut the flight line and keep the battle Unsung — or let the shepherd run and be Sung. Exists to exercise witness/escape-edge validation.",
+    "intent": "Phase 0 validator self-test. Touches every schema section: overlays, neutrals, named enemy, triggers with set_flag and flag registry cross-ref, escape edges, secondary objectives. Not a shipping battle; retire with data/maps/example/ once ch1 maps land."
+  }
+}

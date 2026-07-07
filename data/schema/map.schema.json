@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vargdropi/map.schema.json",
+  "title": "VARGDROPI battle map",
+  "description": "Engine-agnostic battle map. Conventions per CANON.md §5: pos = [col,row], 0-indexed, col 0 = west, row 0 = north; terrain/elevation are row-major (rows north→south). Dimension and bounds checks beyond schema expressiveness are enforced by tools/validate.mjs.",
+  "type": "object",
+  "required": [
+    "id", "name", "chapter", "order", "route_tags", "grid",
+    "terrain", "elevation", "weather", "deployment", "enemies",
+    "objectives", "witness_rule", "designer_notes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)+$",
+      "description": "Kebab-case battle id, e.g. ch1-08-burn-ulfheim. Must match the manifest row and filename."
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "chapter": { "type": "integer", "minimum": 0, "maximum": 5, "description": "0 = examples/tests, 1–4 = chapters, 5 = ending content." },
+    "order": { "type": "integer", "minimum": 0 },
+    "route_tags": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+      "description": "Each value must exist in the canonical route list (docs/story/08-branch-map.md; fallback CANON.md C-ROUTE-03). Cross-checked by validate.mjs."
+    },
+    "grid": {
+      "type": "object",
+      "required": ["cols", "rows"],
+      "additionalProperties": false,
+      "properties": {
+        "cols": { "type": "integer", "minimum": 4, "maximum": 40 },
+        "rows": { "type": "integer", "minimum": 4, "maximum": 40 }
+      }
+    },
+    "terrain": {
+      "type": "array",
+      "minItems": 4,
+      "description": "rows × cols, row-major. Must be exactly grid.rows arrays of grid.cols entries (validate.mjs).",
+      "items": {
+        "type": "array",
+        "minItems": 4,
+        "items": {
+          "type": "string",
+          "enum": ["grass", "dirt", "rock", "sand", "shingle", "snow", "ice", "water_shallow", "water_deep", "marsh", "road", "plank", "wood_floor", "stone_floor", "root"]
+        }
+      }
+    },
+    "elevation": {
+      "type": "array",
+      "minItems": 4,
+      "description": "rows × cols, row-major, integer heights 0–9.",
+      "items": {
+        "type": "array",
+        "minItems": 4,
+        "items": { "type": "integer", "minimum": 0, "maximum": 9 }
+      }
+    },
+    "overlays": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pos", "type"],
+        "additionalProperties": false,
+        "properties": {
+          "pos": { "$ref": "#/$defs/pos" },
+          "type": {
+            "type": "string",
+            "enum": ["flammable", "fire", "ice", "rubble", "law_circle", "corpse_road", "rockslide_zone", "drown_edge", "hallowed", "grave_goods"]
+          },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "weather": {
+      "type": "string",
+      "enum": ["clear", "snow", "rain", "fog", "night", "night_snow"]
+    },
+    "deployment": {
+      "type": "object",
+      "required": ["player_zones", "max_units"],
+      "additionalProperties": false,
+      "properties": {
+        "player_zones": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/pos" } },
+        "max_units": { "type": "integer", "minimum": 1, "maximum": 8 }
+      }
+    },
+    "enemies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "job", "level", "facing", "pos", "ai"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+          "job": { "type": "string", "pattern": "^[a-z][a-z0-9_-]*$", "description": "Job id; cross-checked against data/jobs/ once populated." },
+          "level": { "type": "integer", "minimum": 1, "maximum": 99 },
+          "facing": { "type": "string", "enum": ["N", "S", "E", "W"] },
+          "pos": { "$ref": "#/$defs/pos" },
+          "ai": { "type": "string", "enum": ["guard", "aggressive", "flee", "support", "leader", "script"] },
+          "named": { "type": "boolean", "description": "Named enemy: felling grants a Wyrd Point (C-WYRD-01)." },
+          "einherjar": { "type": "boolean", "description": "Returned fallen player unit (C-DEATH-02). Chapter 3+ only." },
+          "grid_notes": { "type": "string" }
+        }
+      }
+    },
+    "neutrals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "pos", "ai"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$" },
+          "type": { "type": "string", "enum": ["witness", "civilian", "escort", "livestock"] },
+          "pos": { "$ref": "#/$defs/pos" },
+          "ai": { "type": "string", "enum": ["guard", "aggressive", "flee", "support", "leader", "script"] },
+          "escape_edge": { "type": "string", "enum": ["N", "S", "E", "W"] },
+          "grid_notes": { "type": "string" }
+        }
+      }
+    },
+    "objectives": {
+      "type": "object",
+      "required": ["primary", "defeat"],
+      "additionalProperties": false,
+      "properties": {
+        "primary": { "type": "string", "minLength": 1 },
+        "secondary": { "type": "array", "items": { "type": "string" } },
+        "defeat": { "type": "string", "minLength": 1 },
+        "route_variants": {
+          "type": "object",
+          "description": "For split battles (e.g. ch1-08): per-route objective overrides keyed by route tag.",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["primary"],
+            "additionalProperties": false,
+            "properties": {
+              "primary": { "type": "string", "minLength": 1 },
+              "secondary": { "type": "array", "items": { "type": "string" } },
+              "defeat": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "escape_edges": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["N", "S", "E", "W"] }
+    },
+    "witness_rule": {
+      "type": "string",
+      "enum": ["sung_if_any_witness_or_router_escapes", "always_sung", "always_unsung"],
+      "description": "always_sung / always_unsung are for scripted story battles; default is the standard C-ALIGN-04 rule."
+    },
+    "triggers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["when", "event"],
+        "additionalProperties": false,
+        "properties": {
+          "when": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Condition DSL: 'turn>=N', 'unit_downed:<id|any_player|any_enemy>', 'unit_at:<id>:[col,row]', 'flag:<flag_id>', 'hp_below:<id>:<pct>'. Flag refs cross-checked by validate.mjs."
+          },
+          "event": { "type": "string", "minLength": 1 },
+          "set_flag": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$", "description": "Flag id set when the trigger fires. Must exist in data/flags/story-flags.json." },
+          "once": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "designer_notes": {
+      "type": "object",
+      "required": ["height_gimmick", "witness_setup", "intent"],
+      "additionalProperties": false,
+      "properties": {
+        "height_gimmick": { "type": "string", "minLength": 20, "description": "HARD RULE (D-MAP-01): what does elevation do HERE that it does nowhere else?" },
+        "witness_setup": { "type": "string", "minLength": 20, "description": "HARD RULE (D-MAP-01): who can witness, and can the player prevent it?" },
+        "intent": { "type": "string", "minLength": 1 }
+      }
+    }
+  },
+  "$defs": {
+    "pos": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "type": "integer", "minimum": 0, "maximum": 39 },
+      "description": "[col, row], 0-indexed; col 0 = west, row 0 = north (D-COORD-01)."
+    }
+  }
+}
