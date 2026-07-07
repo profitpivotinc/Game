@@ -17,6 +17,7 @@ Status legend: **[P]** placeholder (subject to Rename Table) · **[T]** TUNABLE 
 - **C-FRAME-01.** The entire game is a saga recited by a skald ~300 years after the events, in a hall that is not what it seems.
 - **C-FRAME-02.** The skald's recitation and the played events diverge in small, deliberate ways ("the saga remembers it differently"). Every divergence is tracked in the Saga Discrepancies table in `docs/story/00-frame.md`.
 - **C-FRAME-03.** Each of the four endings recontextualizes the frame. The hidden fourth reveals the recitation is happening on the last night of the world.
+- **C-FRAME-04.** The frame-skald is deliberately never named. Naming the reciter is withheld so the Successor reveal lands clean — that the hall lies under the World-Tree's roots, that it is the last night, and that the "skald" is the harvest given a mouth.
 
 ### 1.2 World & Setting
 
@@ -25,15 +26,24 @@ Status legend: **[P]** placeholder (subject to Rename Table) · **[T]** TUNABLE 
 - **C-WORLD-03.** The High King **[P — unnamed, to be named Phase 1]** recently converted to the new faith and banned raiding, outlawing a generation of landless young warriors.
 - **C-WORLD-04.** The new faith is an invented Christianity-analog, called the faith of the "White God" **[P]**. It is never named as real-world Christianity.
 - **C-WORLD-05.** The old priesthood answers the ban with escalating blóts. A conversion civil war is igniting at game start.
+- **C-KING-01.** The High King is **Ragnvald [P]** — a convert-king torn between two altars. His reign is built of erasures: he commissioned the níð that unmade Queen Aldís (Y−20), sanctioned the Blót of Yrsa (Y−6), and banned raiding on his conversion (Y−2). Never cartoon-evil: he believes each erasure bought a real peace, and the ban did stop real bloodshed — right about the wound, monstrous in the cure, a mirror of the new faith itself.
+- **C-KING-02.** Ragnvald was Aldís's husband-king; Grím is his legally-disowned son. Biological paternity stays **unconfirmed** (Ragnvald, or Loki) per C-GRIM-04, so the ch1-08 test is the father unknowingly ordering the son to burn the mother's kin. *(Working decision — flag for human lead.)*
+- **C-LANDLESS-01.** The outlawed-raider host (Wiegraf-analog) is led by **Brandr [P]** ("firebrand"), introduced at ch1-04 "The Landless." Distinct from but allied to Clan Ulfheim; his righteous cause — a generation outlawed for being poor and young — curdles into martyr-zealotry the hunger exploits, and he may return as an einherji to be unhooked (C-DEATH-02).
 
 ### 1.3 Religion & the Harvest Lie
 
 - **C-LIE-01.** Official old-faith doctrine: valkyries carry the glorious dead to Valhalla.
 - **C-LIE-02.** Truth: the harvest of the dead goes *down*, to the Corpse-Eater **[P]** gnawing at the roots of the World-Tree **[P]**. The old priesthood serves it without fully understanding. "Valhalla" is the sales pitch of a slaughterhouse.
+- **C-LIE-02a.** The old priesthood serves the Corpse-Eater without fully understanding — **except an inner rite** that half-knows the harvest goes down and euphemizes it as **"seeding the roots"** (glossary §3). Half-knowledge, not complicity: enough to keep the rite going, not enough to name the maw. Refines, does not contradict, C-LIE-02.
 - **C-LIE-03.** By Chapter 3 the player learns the hunger has re-homed inside the *new* church, cocooned in a martyred saint's relics — a faith that venerates dying for god is a better harvest engine.
 - **C-LIE-04.** The new faith genuinely frees thralls and is genuinely right that the old ways are rotten — right about the rot, wrong about the cure. It is never cartoon-evil.
 - **C-LIE-05.** The old faith is never noble-savage'd: it hanged Yrsa. Both altars have blood on them; only people earn loyalty.
+- **C-LIE-05a.** The old faith also holds a **genuine good the conversion destroys**: it binds free kindreds into a web of kin, ancestor-honor, and communal law (the **Thing itself is old-faith-entangled**) — a real belonging that the new faith's individualism and market-faith (cf. Hvalfjorð's contract-faith) dissolve. Both altars must be **mournable-in-loss**, not only the new one **celebrable-in-gift** — this is the institutional counterweight that keeps C-LIE-04/05 from making the old faith one-dimensional. Where the new faith wins an argument, the old faith must have a real one to lose.
 - **C-LIE-06.** Hel operates through dreams, corpse-roads, and one recurring emissary **[P — unnamed, Phase 1]**. She wants the harvest returned to its lawful course: her halls are starving.
+- **C-EMISSARY-01.** Hel's emissary is **Salgerð "the Grey-Guest" [P]**, a dead völva who walks Grím's dreams and the corpse-roads, pleading that the harvest be returned to Hel's lawful course. She cannot lie but can withhold; a petitioner for a broken order, never a tempter to evil. She gates the True ledger and the Benevolent God / Successor content (C-ALIGN-02).
+- **C-CLERIC-01.** **Bótólfr [P]** is the representative sincere White-God priest who genuinely manumits thralls (C-LIE-04) and tends Ingunn's shrine unaware the harvest nests within — the new faith's honest human face and the cocoon's camouflage.
+- **C-SAINT-01.** The martyred saint is **Ingunn "the Unburnt" [P]** — a freed thrall-girl martyred at the high grove ~Y−25, the blót-fire "would not take her." Her incorrupt relics founded the new church and, by Ch3, cocoon the re-homed hunger (C-LIE-03). "Unburnt" reads twice: holy miracle, and un-consumed vessel.
+- **C-SAINT-02.** Ingunn (new-faith martyr) and Yrsa (old-faith blót-victim) are canonical mirror-figures: two thrall-born girls consumed by the two altars — the "both altars have blood" pillar rendered as paired characters (supports C-LIE-05). Optional escalation *(story-writer's call, flag for human lead)*: the church's hagiography absorbed Yrsa's details and the two are the same erased woman relabeled — the ultimate word-fame horror.
 
 ### 1.4 Grím (protagonist)
 
@@ -41,9 +51,11 @@ Status legend: **[P]** placeholder (subject to Rename Table) · **[T]** TUNABLE 
 - **C-GRIM-02.** Wears a half-mask; he says it hides burn scars. ("Or so he says" — the claim is his, not the narrator's.)
 - **C-GRIM-03.** He is *vargdropi*: child of Queen Aldís **[P]**, whose line was legally unmade ~20 years ago by commissioned níð-verse alleging an affair with Loki. Her kin scattered into outlawry (became the Ulfheim remnant). He is barred by law from his own blood. His family was destroyed by a poem.
 - **C-GRIM-04.** Grím's paternity is deliberately ambiguous and never confirmed in canon. If the níð was true, Hel — Loki's daughter, keeper of the un-glorious dead — is his kinswoman.
-- **C-GRIM-05.** Grím is the **Wyrdless**: the one thread the Norns cannot fix — the in-fiction reason the game branches at all. His Wyrd powers first manifest involuntarily.
+- **C-GRIM-05.** Grím is the **Wyrdless**: the one thread the Norns cannot fix — the in-fiction reason the game branches at all. His Wyrd powers first manifest involuntarily and are witnessed only as **uncanny skill or luck** — deniable in Chapter 1 (C-WORLD-02); the saga names it *Wyrd* only in hindsight — yet that witnessed uncanniness is what draws every faction's eye to him and reopens the question the crown paid to close (C-KING-02).
 - **C-GRIM-06.** **[F]** Grím's godlike skill is meta, not stats: Wyrd Points manipulate the CT system itself. He must never be an Orlandeau-style stat monster.
 - **C-GRIM-07.** His arc: discovering what he is, then choosing what it *means* — by law (King of Men), by blood (Benevolent God), by terror (Merciless Ruler), or by hunger (The Successor).
+- **C-NID-EVIDENCE-01.** The original níð-stave carved against Aldís survives in Hrafnmark's keeping, together with the commission-tally that names the throne (Ragnvald) as its payer. High Hrafnmark trust yields it as legal proof that she was **framed** (that the verse was *bought*) — the King of Men lever; the fire-path burns the **raven-wood** (Hrafnmark's seat, distinct from the old-faith **high grove** — see Rename Table) and destroys the proof forever. *(Note: proving the níð was commissioned proves Aldís was framed, not that its content was false — see C-GRIM-04; the distinction is load-bearing.)*
+- **C-THING-01.** **Skapti the Lawspeaker [P]** spoke the law that ratified Aldís's unmaking at the Thing. Only the Thing can lift *vargdropi* status, so the King of Men trial arc forces him to correct his own past ruling — law used once as a murder weapon, asked now to be a remedy.
 
 ### 1.5 Dag (foil)
 
@@ -63,6 +75,9 @@ Status legend: **[P]** placeholder (subject to Rename Table) · **[T]** TUNABLE 
 
 - **C-CLAN-01.** Each clan is custodian of a job line. **Faith path** (trust) grants the full line; **fire path** (conquest) loots a diminished variant — fewer abilities, stigma tags in dialogue.
 - **C-CLAN-02.** Clan trust is a per-clan scalar −100…+100 **[T]**. Trust exercises unlock at 25/50/75 **[T]**; betrayal events can fire below −25 **[T]**.
+- **C-CLAN-03. [F]** Taking Hjortdal by fire (riding down the lawspeakers) forecloses the **King of Men** ending permanently, since only law can unmake *vargdropi* status (ties C-CLAN-01 to the §1.9 King of Men gate).
+- **C-CLAN-04.** Fire-path **stigma-tag registry** (the dialogue tags C-CLAN-01 anticipates; mechanical effects on cross-clan trust live in `spec-clans-trust.md`): **KINSLAYER** (Ulfheim — "he burned his own blood"), **LOREBURNER** (Hrafnmark — burned the raven-wood, destroyed the níð-proof), **OATHBREAKER** (Bjarnholt — "he broke the **guest-cup**," the deepest Norse stigma; see glossary), **MARKET-BURNER** (Hvalfjorð — robbed his own creditors; no port will deal), **LAW-BREAKER / Thing-slayer** (Hjortdal — outlaw forever, and forecloses King of Men per C-CLAN-03). Tags are cumulative, permanent, and poison starting trust elsewhere.
+- **C-CLAN-LEAD-01.** Clan leaders **[all P]**: Ulfheim — **Gunnhild "the Wolf-Widow"** (Aldís's sister, Grím's maternal aunt; wants a banner, not a kinsman); Hrafnmark — **Rúnolfr "the Rune-Heir"** (male seiðmaðr, ergi-stigmatized, níð-heir); Bjarnholt — **Bǫðvarr "Bear-Sark"** (oath-bound lodge-master); Hvalfjorð — **Auðr "the Deep-Counseled"** (prime-signed merchant, sells to both altars); Hjortdal — **Skapti "the Lawspeaker"** (Lawspeaker of the Thing).
 
 ### 1.7 Alignment, Witnesses, Ledgers
 
@@ -101,6 +116,28 @@ Status legend: **[P]** placeholder (subject to Rename Table) · **[T]** TUNABLE 
 - **C-TONE-03.** Frame voice: skald in present tense, addressing the hall. Played scenes in standard script format (KICKOFF §5.2).
 - **C-TONE-04.** Rating: dark but not gratuitous. Violence has weight and witnesses. No sexual violence on-page. Thralldom depicted honestly as the class engine it was.
 
+### 1.11 Cast Ages (at Y0)
+
+- **C-AGE-01.** Canonical ages, so scene files (03–07) do not drift. All **[T]** and consistent with the §4 Timeline (e.g. Skapti ~58 → ~38 at the Y−20 Unmaking; Ragnvald ~55 → ~35 at the níð; Þorgeir ~60 → ~54 at the Blót of Yrsa).
+
+| Character | Age at Y0 | Note |
+|---|---|---|
+| Grím | ~19 | living (C-GRIM-01) |
+| Dag | ~24 | living (C-DAG-01) |
+| Aldís | would be ~40s | erased Y−20 (never appears living) |
+| Yrsa | a young woman | hanged Y−6 |
+| Ingunn | died young | martyred ~Y−25 |
+| Gunnhild | ~44 | Aldís's younger sister |
+| Rúnolfr | ~50 | — |
+| Bǫðvarr | ~38 | — |
+| Auðr | ~46 | — |
+| Skapti | ~58 | — |
+| Ragnvald | ~55 | — |
+| Þorgeir | ~60 | — |
+| Bótólfr | ~35 | — |
+| Salgerð | dead; ageless | a dead völva |
+| Brandr | ~28 | — |
+
 ---
 
 ## 2. Rename Table
@@ -122,6 +159,8 @@ Status legend: **[P]** placeholder (subject to Rename Table) · **[T]** TUNABLE 
 | Hjortdal | clan (Stag) | *hjǫrtr* + *dalr* — "hart-dale" | — |
 | the Northlands | setting region | generic; placeholder by intent | — |
 | Thingvellir plain | law-plain | real Icelandic toponym Þingvellir — "assembly plains"; rename likely | — |
+| the high grove | old-faith altar in the high fells | where Yrsa was hanged and Ingunn martyred; goðar blót-site. **Distinct** from the raven-wood | — |
+| the raven-wood | Hrafnmark's seat (rune-grove of seiðr-halls) | a wooded inland march; the fire-path "burns the raven-wood" (C-NID-EVIDENCE-01). Kept distinct from the high grove to prevent map/scene conflation | — |
 | the White God | new-faith epithet | historically attested Norse epithet for Christ (*Hvítakristr*); kept as in-world epithet for the invented faith | — |
 | the Corpse-Eater | the hunger at the roots | Níðhöggr-analog; canon deliberately does not use the real name | — |
 | the World-Tree | cosmic tree | Yggdrasill-analog; canon uses only the common noun | — |
@@ -129,17 +168,24 @@ Status legend: **[P]** placeholder (subject to Rename Table) · **[T]** TUNABLE 
 | Loki | god named in the níð | real-myth | — |
 | the Norns | fate-weavers | real-myth | — |
 | Valhalla | the doctrine's destination | real-myth; the sales pitch of the Lie | — |
-| High King | (TBD — name in Phase 1) | the converted king; Grím's tester at ch1-08 | — |
-| Hel's emissary | (TBD — name in Phase 1) | recurring; dreams and corpse-roads | — |
-| Wiegraf-analog | (TBD — name in Phase 1) | leader of the outlawed-raider host; introduced ch1-04 | — |
-| Ulfheim leader | (TBD — name in Phase 1) | wants a banner, not a kinsman | — |
-| Hrafnmark leader | (TBD — name in Phase 1) | heir to the níð commission | — |
-| Bjarnholt leader | (TBD — name in Phase 1) | oath-bound lodge-master | — |
-| Hvalfjorð leader | (TBD — name in Phase 1) | prime-signed merchant prince | — |
-| Hjortdal leader | (TBD — name in Phase 1) | lawspeaker of the Thing | — |
-| martyred saint | (TBD — name in Phase 1) | relics cocoon the re-homed hunger (C-LIE-03) | — |
+| Ragnvald | converted High King; Grím's tester at ch1-08; commissioner of Aldís's níð | ON *Rǫgnvaldr* — *rǫgn* "ruling powers, gods" + *valdr* "ruler": "rules by the gods' power" (ironic — he forswore them for the White God). Opt. by-name "the White-Signed" | — |
+| Salgerð ("the Grey-Guest") | Hel's recurring emissary; dreams and corpse-roads; a dead völva | ON *salr* "hall" + *-gerðr* "keeper" — "hall-keeper" of Hel's starving halls; by-name *grár* "grey" + *gestr* "guest," the uninvited guest of the corpse-roads | — |
+| Brandr | leader of the outlawed-raider host; introduced ch1-04 | ON *brandr* "firebrand; sword-blade" — the bright blade that burns to ash; the idealist-zealot's fate-name | — |
+| Gunnhild ("the Wolf-Widow") | Ulfheim leader; wants a banner, not a kinsman; Aldís's sister, Grím's aunt | ON *gunnr* + *hildr*, doubled "battle-battle" (a historical queen's name); by-name ties her widowhood to the Wolf totem | — |
+| Rúnolfr ("the Rune-Heir") | Hrafnmark leader; níð-heir; male seiðmaðr (ergi-stigmatized) | ON *Rúnólfr* — *rún* "rune, secret" + *ulfr* "wolf": "rune-wolf," the house whose carved poems kill; by-name marks him heir to Aldís's níð | — |
+| Bǫðvarr ("Bear-Sark") | Bjarnholt leader; oath-bound lodge-master | ON *bǫð* "battle" + *-varr/herr* "warrior," echoing legendary Bǫðvarr Bjarki the bear-champion; by-name *berserkr* "bear-shirt," the lodge's rite | — |
+| Auðr ("the Deep-Counseled") | Hvalfjorð leader; prime-signed merchant; sells to both altars | ON *auðr* "wealth" (cf. Auðr the Deep-Minded, a real wealthy Christian-leaning ship-owner); by-name *djúp* "deep" + *-úðigr* "minded," shrewd | — |
+| Skapti ("the Lawspeaker") | Hjortdal leader; Lawspeaker of the Thing | ON *skap* "shape, fate"; *skapa* "to shape/ordain fate" (a documented lawspeaker's name) — law as fate-carving, the man who can re-shape Grím's *vargdropi* fate | — |
+| Ingunn ("the Unburnt") | martyred saint; relics cocoon the re-homed hunger (C-LIE-03) | ON *Ing* (Yngvi-Freyr, harvest-god) + *unn* "love": "beloved of Ing" — a harvest-name on the harvest's vessel; epithet *úbrunninn* "unburnt" (blót-fire "would not take her": holy miracle vs. un-consumed cocoon) | — |
 
 **Rule:** grep for any proper noun not in this table during every phase gate; unregistered nouns fail the Phase 5 gate.
+
+### 2.1 Out-of-world design & historical references (grep-exempt)
+
+These are **not in-world names** — they are design/lineage references and real historical/philological cognates used in commentary and etymology notes. They are **exempt from the Phase-5 proper-noun grep gate** (they must never appear in player-facing story/verse text, only in asides, notes, and etymologies):
+
+- **Design lineage:** Final Fantasy Tactics (FFT), Tactics Ogre, Delita, Wiegraf, Orlandeau, Balmamusa.
+- **Real historical / philological:** Hákon the Good, Auðr djúpúðga ("the Deep-Minded"), Hávamál, fornyrðislag, primsigning, Hvítakristr, Níðhöggr, Yggdrasill (the last two used only as "-analog" glosses; canon prose uses the common nouns Corpse-Eater / World-Tree).
 
 ---
 
@@ -165,6 +211,8 @@ Standardized spellings for prose. Story files may gloss on first use; specs use 
 | **vættir** | land-spirits. |
 | **fylgja** | a person's attendant fate-spirit, often in animal form. |
 | **wyrd** | fate. Anglo-Saxon cognate used for readability; ON purist alternative *urðr* recorded here. Standardize on "wyrd." |
+| **seeding the roots** | the old priesthood's inner-rite euphemism for the true downward harvest — half-knowledge that the dead go *down*, not up (C-LIE-02a). Used only by the inner circle (e.g. Þorgeir's rite), never in public doctrine. |
+| **guest-cup** | the hospitality-oath cup; breaking it is the deepest Norse stigma (the OATHBREAKER fire-tag, C-CLAN-04). |
 
 **Job-name gloss** (full definitions in `docs/design/spec-jobs.md`): Drengr "worthy young warrior" (base); Huscarl "house-man" (knight); Veiðimaðr "hunter" (archer); Berserker (monk); Læknir "healer" (chemist); Völva "staff-bearer, seeress" (white mage); Seiðmaðr "seiðr-man" (black mage); Norn-touched (time mage); Goði (summoner); Raider (thief); Skald (orator/bard fused); Runespeaker (oracle); Vættir-speaker (geomancer); Wyrmslayer (dragoon); Skógarmaðr (ninja); Varangian (samurai); Rune-reckoner (calculator); Riddari "rider" (mounted knight, Hjortdal-exclusive); **Wyrdless** (Grím-unique command, not a job).
 
@@ -176,11 +224,12 @@ Year offsets are relative to **Y0 = game start**. All offsets **[T]** placeholde
 
 | When | Event |
 |---|---|
-| Y−20 | **The Unmaking.** Hrafnmark rune-lawyers, on commission, publish the níð accusing Queen Aldís of an affair with Loki. Her line is legally unmade at the Thing; her kin are outlawed and scatter (origin of the Ulfheim remnant). |
+| Y−25 | **Martyrdom of the Unburnt.** Ingunn "the Unburnt" [P], a freed thrall-girl, is martyred at the high grove (the blót-fire "would not take her"); her incorrupt relics are later enshrined as the founding cult of the new church — predating and enabling Ragnvald's conversion. |
+| Y−20 | **The Unmaking.** Hrafnmark rune-lawyers — Rúnolfr's forebears — on commission from King **Ragnvald [P]**, publish the níð accusing Queen Aldís of an affair with Loki. Her line is legally unmade at the Thing, ratified by lawspeaker **Skapti [P]**; her kin are outlawed and scatter (origin of the Ulfheim remnant). |
 | Y−20…Y−19 | Grím born within the unmaking's shadow; the níð's accusation covers his conception window (C-GRIM-04). Fostered to a smith in a coastal hold. |
-| Y−6 | **The Blót of Yrsa** — the last *great* (openly royal-sanctioned) blót at the high grove. Yrsa, thrall-born, is hanged; Dag (~18) converts to the new faith. |
-| Y−2 | **The Conversion & the Ban.** The High King takes the White God's faith and bans raiding; a generation of landless young warriors is outlawed overnight. Old priesthood answers with escalating (now unsanctioned) blóts. |
-| Y0 | **Game start.** Chapter 1 spans one winter, ending at the Burning of Ulfheim. |
+| Y−6 | **The Blót of Yrsa** — the last *great* (openly royal-sanctioned) blót at the high grove, sanctioned by King **Ragnvald** and presided by **Goði Þorgeir**. Yrsa, thrall-born, is hanged (a jarl's daughter would not do); Dag (~18) converts to the new faith. |
+| Y−2 | **The Conversion & the Ban.** King **Ragnvald** takes the White God's faith and bans raiding; a generation of landless young warriors is outlawed overnight — the host **Brandr [P]** will lead. Old priesthood answers with escalating (now unsanctioned) blóts. |
+| Y0 | **Game start.** Clans led by Gunnhild (Ulfheim), Rúnolfr (Hrafnmark), Bǫðvarr (Bjarnholt), Auðr (Hvalfjorð), Skapti (Hjortdal). Chapter 1 spans one winter, ending at the Burning of Ulfheim. |
 | Y+1 | Chapter 2 (spring–autumn, route-split). Chapter 3 begins (winter — the blood wakes). |
 | Y+2 | Chapter 4 (spring — convergence on the Thing-plain and the roots). Endings. |
 | ~Y+300 | **The frame.** The skald recites in the hall that is not what it seems. |
@@ -206,11 +255,11 @@ Ordering per KICKOFF §5.1 is fixed: Unmaking → Blót of Yrsa → Raiding Ban 
 
 | # | Question | Proposed resolution (pending human lead) |
 |---|---|---|
-| OQ-1 | KICKOFF §4 says "~16 job files" but §7 enumerates **18** jobs (Drengr through Riddari, excluding the Wyrdless command). | Treat "~16" as approximate; plan 18 job JSON files + Wyrdless documented in spec-wyrd/spec-jobs as a command set, not a job file. |
-| OQ-2 | §3 gives Hjortdal the custodian "Lawspeaker-Skald (orator-analog)" while §7 lists a single fused "Skald (orator/bard)". Same job or two? | One job, `skald`, custodian Hjortdal; "Lawspeaker" is its trust-75 advanced title/ability tier. Revisit in Phase 2 (spec-jobs). |
-| OQ-3 | Benevolent God gate says "mercy ≥ +40" without naming a ledger (King of Men explicitly uses Sung; Merciless Ruler mixes True and Sung). | Use the **True** ledger — Hel judges what actually happened, not what is sung. Mark TUNABLE in spec-alignment and 08-branch-map. |
-| OQ-4 | Wyrd Point pool: is 3 a hard cap, or can fate-defiance gains exceed 3 in a battle? | Pool starts at 3, gains can exceed it up to a soft cap of 5 **[T]**; decide in Phase 2 (spec-wyrd). |
-| OQ-5 | "Last great blót" (Yrsa, pre-ban) vs. "escalating blóts" after the ban (§3 World). | Resolved editorially in Timeline §4: "great" = royally sanctioned; post-ban blóts are illegal and escalating. Confirm in Phase 1. |
+| OQ-1 | KICKOFF §4 says "~16 job files" but §7 enumerates **18** jobs (Drengr through Riddari, excluding the Wyrdless command). | Treat "~16" as approximate; plan 18 job JSON files + Wyrdless documented in spec-wyrd/spec-jobs as a command set, not a job file. **DECISION (working):** adopt — lock 18 job files (Drengr, Huscarl, Veiðimaðr, Berserker, Læknir, Völva, Seiðmaðr, Norn-touched, Goði, Raider, Skald, Runespeaker, Vættir-speaker, Wyrmslayer, Skógarmaðr, Varangian, Rune-reckoner, Riddari); Wyrdless = Grím-only command, no job file. |
+| OQ-2 | §3 gives Hjortdal the custodian "Lawspeaker-Skald (orator-analog)" while §7 lists a single fused "Skald (orator/bard)". Same job or two? | One job, `skald`, custodian Hjortdal; "Lawspeaker" is its trust-75 advanced title/ability tier. Revisit in Phase 2 (spec-jobs). **DECISION (working):** adopt — single `skald` job (Hjortdal custodian); "Lawspeaker" = its trust-75 title/ability tier, embodied in-fiction by Skapti the Lawspeaker. |
+| OQ-3 | Benevolent God gate says "mercy ≥ +40" without naming a ledger (King of Men explicitly uses Sung; Merciless Ruler mixes True and Sung). | Use the **True** ledger — Hel judges what actually happened, not what is sung. Mark TUNABLE in spec-alignment and 08-branch-map. **DECISION (working):** adopt — Benevolent God gate reads the **True** ledger (mercy ≥ +40 True); Hel and the straw-dead judge reality, not the song. **[T]** |
+| OQ-4 | Wyrd Point pool: is 3 a hard cap, or can fate-defiance gains exceed 3 in a battle? | Pool starts at 3, gains can exceed it up to a soft cap of 5 **[T]**; decide in Phase 2 (spec-wyrd). **DECISION (working):** adopt — pool starts 3/battle; fate-defiance may raise it to a soft cap of 5; excess gains are lost, nothing banked between battles. **[T]** |
+| OQ-5 | "Last great blót" (Yrsa, pre-ban) vs. "escalating blóts" after the ban (§3 World). | Resolved editorially in Timeline §4: "great" = royally sanctioned; post-ban blóts are illegal and escalating. Confirm in Phase 1. **DECISION (confirmed, Phase 1):** "great" = royally sanctioned (last: Blót of Yrsa, Y−6); post-ban blóts are illegal and escalating. Timeline §4 stands; no contradiction with C-WORLD-05. |
 
 ---
 
