@@ -1,0 +1,204 @@
+{
+  "id": "ch1-04-the-landless",
+  "name": "The Landless",
+  "chapter": 1,
+  "order": 4,
+  "route_tags": ["shared"],
+  "grid": { "cols": 14, "rows": 12 },
+  "terrain": [
+    ["snow", "road", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "rock", "snow", "snow", "snow", "snow"],
+    ["snow", "road", "road", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "rock", "snow", "snow"],
+    ["snow", "snow", "road", "road", "snow", "snow", "snow", "grass", "grass", "grass", "grass", "grass", "grass", "snow"],
+    ["snow", "snow", "snow", "road", "road", "snow", "snow", "grass", "grass", "grass", "rock", "grass", "grass", "snow"],
+    ["snow", "rock", "rock", "wood_floor", "road", "snow", "snow", "grass", "grass", "grass", "grass", "grass", "grass", "snow"],
+    ["snow", "rock", "wood_floor", "wood_floor", "road", "road", "snow", "grass", "grass", "grass", "grass", "grass", "grass", "snow"],
+    ["snow", "wood_floor", "wood_floor", "wood_floor", "snow", "road", "road", "grass", "grass", "grass", "grass", "rock", "grass", "snow"],
+    ["snow", "rock", "wood_floor", "rock", "snow", "snow", "road", "road", "grass", "grass", "grass", "grass", "grass", "snow"],
+    ["snow", "snow", "snow", "snow", "snow", "snow", "snow", "road", "road", "road", "snow", "snow", "snow", "snow"],
+    ["snow", "snow", "snow", "snow", "ice", "ice", "snow", "snow", "snow", "road", "road", "rock", "snow", "snow"],
+    ["snow", "snow", "snow", "snow", "ice", "ice", "snow", "snow", "snow", "snow", "road", "road", "road", "snow"],
+    ["snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "road", "road"]
+  ],
+  "elevation": [
+    [0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 1, 1, 0, 0],
+    [0, 0, 0, 0, 1, 2, 2, 2, 1, 1, 1, 2, 1, 0],
+    [0, 0, 0, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 1],
+    [0, 1, 1, 0, 0, 1, 1, 2, 3, 3, 3, 3, 2, 1],
+    [0, 2, 2, 1, 1, 1, 1, 2, 3, 4, 4, 3, 2, 1],
+    [0, 2, 1, 1, 1, 1, 1, 2, 3, 4, 4, 3, 2, 1],
+    [0, 1, 1, 1, 1, 1, 1, 2, 3, 3, 3, 3, 2, 1],
+    [0, 2, 1, 2, 1, 1, 1, 1, 2, 2, 2, 2, 2, 1],
+    [0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+    [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+  ],
+  "overlays": [
+    { "pos": [3, 4], "type": "rubble", "note": "burned croft — collapsed north gable" },
+    { "pos": [2, 5], "type": "rubble", "note": "burned croft floor; cover, +1 move cost" },
+    { "pos": [3, 5], "type": "rubble" },
+    { "pos": [1, 6], "type": "rubble", "note": "cellar corner under the fallen west wall" },
+    { "pos": [2, 6], "type": "rubble" },
+    { "pos": [3, 6], "type": "rubble" },
+    { "pos": [2, 7], "type": "rubble", "note": "south door choked with char" },
+    { "pos": [9, 4], "type": "hallowed", "note": "barrow crest — somebody's grave; the old-faith levy men mutter (C-LIE-05a texture)" },
+    { "pos": [10, 4], "type": "hallowed", "note": "Brandr's raven-banner is stabbed into this tile — a quiet sacrilege" },
+    { "pos": [9, 5], "type": "hallowed" },
+    { "pos": [10, 5], "type": "hallowed" },
+    { "pos": [10, 4], "type": "grave_goods", "note": "the barrow-dead's arm-ring, turned up by the banner-butt" },
+    { "pos": [9, 5], "type": "grave_goods" },
+    { "pos": [4, 9], "type": "ice", "note": "frozen tarn — slip tile" },
+    { "pos": [5, 9], "type": "ice", "note": "frozen tarn — slip tile" },
+    { "pos": [4, 10], "type": "ice", "note": "frozen tarn — slip tile" },
+    { "pos": [5, 10], "type": "ice", "note": "frozen tarn — slip tile" }
+  ],
+  "weather": "snow",
+  "deployment": {
+    "player_zones": [[1, 0], [2, 0], [3, 0], [1, 1], [2, 1], [3, 1], [2, 2], [3, 2]],
+    "max_units": 5
+  },
+  "enemies": [
+    {
+      "id": "e1",
+      "job": "raider",
+      "level": 5,
+      "facing": "W",
+      "pos": [9, 4],
+      "ai": "leader",
+      "named": true,
+      "grid_notes": "BRANDR (C-LANDLESS-01, Rename Table). Fights from the crest (elev 4) beside the banner at [10,4], rousing verse each round (fornyrdislag barks, C-TONE-01). Scripted withdrawal at 50% HP — the Wiegraf arc needs him breathing. Felling him is deliberately impossible; wounding him to the trigger is the fate-defiance payout instead."
+    },
+    {
+      "id": "e2",
+      "job": "berserker",
+      "level": 4,
+      "facing": "W",
+      "pos": [12, 5],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "Lodge-exile who joined the Landless; leads the downhill charge from the east slope (first ring, elev 2). His rout-immunity while the banner stands is the gimmick's demo case."
+    },
+    {
+      "id": "e3",
+      "job": "drengr",
+      "level": 3,
+      "facing": "W",
+      "pos": [8, 8],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "Landless younger son; standard line infantry on the track south of the barrow (elev 1)."
+    },
+    {
+      "id": "e4",
+      "job": "drengr",
+      "level": 3,
+      "facing": "N",
+      "pos": [6, 9],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "Flanker in the snow field between tarn and track (elev 0); crosses the tarn ice as a shortcut if pressed — slip risk he accepts."
+    },
+    {
+      "id": "e5",
+      "job": "raider",
+      "level": 3,
+      "facing": "W",
+      "pos": [6, 1],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "Skirmisher screen on the north snow ridge (elev 2), guarding the crest approach."
+    },
+    {
+      "id": "e6",
+      "job": "raider",
+      "level": 3,
+      "facing": "W",
+      "pos": [2, 5],
+      "ai": "guard",
+      "named": false,
+      "grid_notes": "Holds the croft ruin inside the wall-stubs (elev 1); rubble cover makes him cheap to hold, dear to dig out."
+    },
+    {
+      "id": "e7",
+      "job": "veidimadr",
+      "level": 3,
+      "facing": "W",
+      "pos": [1, 4],
+      "ai": "guard",
+      "named": false,
+      "grid_notes": "Bow on the croft wall-stub (elev 2) — a lesser height rhyme so the barrow isn't the only vertical read."
+    },
+    {
+      "id": "e8",
+      "job": "laeknir",
+      "level": 3,
+      "facing": "W",
+      "pos": [11, 5],
+      "ai": "support",
+      "named": false,
+      "grid_notes": "The host's only healer on the reverse slope behind the crest (east ring, elev 3), hoarding three bandage kits. Killing the poorest men's one laeknir is efficient and ugly; the game notices nothing aloud (True ledger does)."
+    }
+  ],
+  "neutrals": [
+    {
+      "id": "n1",
+      "type": "witness",
+      "pos": [1, 6],
+      "ai": "flee",
+      "escape_edge": "W",
+      "grid_notes": "The crofter whose home this was — burned out by Landless foragers a month back, hiding in the cellar corner (elev 1) from BOTH sides. Breaks W when any unit enters the ruin."
+    }
+  ],
+  "objectives": {
+    "primary": "Break the Landless host: topple the banner on the crest, or fell/rout every raider.",
+    "secondary": [
+      "Wound Brandr to his withdrawal (below 50%) — the levy's charge, and a named-enemy Wyrd beat.",
+      "The crofter (n1) survives.",
+      "Win with three or more enemies routed off edges rather than slain (the mercy-shaped victory the rout system exists to offer)."
+    ],
+    "defeat": "Grím falls."
+  },
+  "escape_edges": ["N", "E", "S", "W"],
+  "witness_rule": "sung_if_any_witness_or_router_escapes",
+  "triggers": [
+    {
+      "when": "flag:brandr_met",
+      "event": "brandr_name_barks",
+      "once": true,
+      "note": "If the truce-wand parley happened (scene ch1-s04 set brandr_met), Brandr's crest verses address Grím by name; his withdrawal salute uses the name-bark variant. This map only reads the flag."
+    },
+    {
+      "when": "hp_below:e1:50",
+      "event": "brandr_withdraws",
+      "once": true,
+      "note": "Brandr salutes Grím by name — the parley's name given back (brandr_name_barks variant if brandr_met) — and cuts his way N with any adjacent raider. The banner stays unless already toppled."
+    },
+    {
+      "when": "hp_below:e2:50",
+      "event": "banner_morale_demo",
+      "once": true,
+      "note": "UI beat: e2's rout check visibly PASSES with the banner icon shown — teaching the gimmick by counterexample."
+    },
+    {
+      "when": "unit_at:any_player:[10,4]",
+      "event": "banner_toppled_host_breaks",
+      "once": true,
+      "note": "A player unit reaches the banner tile on the crest (elev 4) and topples the raven-banner: the army-wide rout immunity ends, and every raider below half HP breaks downhill toward an escape edge on his next activation."
+    },
+    {
+      "when": "turn>=7",
+      "event": "landless_reinforce_south",
+      "once": true,
+      "note": "Two drengr (e9, e10, level 3, aggressive) enter at the S track end [12,11]-[13,11] — the host is bigger than this field; pressure not to turtle."
+    },
+    {
+      "when": "unit_downed:any_player",
+      "event": "valkyrie_vfx_cue"
+    }
+  ],
+  "designer_notes": {
+    "height_gimmick": "Elevation is morale: while Brandr's raven-banner stands on the barrow crest (elev 4), no Landless raider routs, regardless of casualties — the whole host's break-point lives on one high tile. Take the crest and topple the banner, and every raider below half HP breaks downhill on his next activation. The only Ch1 map where the high ground is worth more than the entire enemy body count; nowhere else does height gate an army-wide state. The barrow steps 2→3→4 in single climbs from all sides — the mound WANTS to be assaulted.",
+    "witness_setup": "A burned-out crofter (n1) hides in his own ruin and flees W when fighting nears — and the ROUTERS themselves are the real witnesses: this is the battle that teaches that every Landless who escapes an edge sings it (C-ALIGN-04). The player can hunt down routing, beaten men to keep the field quiet — the Sung ledger stays clean, the True ledger does not (C-ALIGN-03). The crofter can be saved, ignored, or silenced.",
+    "intent": "First clash with Brandr's outlawed-raider host and the introduction of morale/rout as a system: routing units drop weapons, flee at +2 move toward edges, and count as escaped routers. Brandr is introduced and NAMED — the chapter's first named enemy, a Wyrd Point on the hoof (C-WYRD-01) the script refuses to hand over: he withdraws at half health. The parley (scene ch1-s04) makes his cause legible before his spears are."
+  }
+}

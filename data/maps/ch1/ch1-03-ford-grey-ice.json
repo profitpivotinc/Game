@@ -1,0 +1,213 @@
+{
+  "id": "ch1-03-ford-grey-ice",
+  "name": "Ford of Grey Ice",
+  "chapter": 1,
+  "order": 3,
+  "route_tags": ["shared"],
+  "grid": { "cols": 16, "rows": 11 },
+  "terrain": [
+    ["grass", "grass", "grass", "grass", "dirt", "dirt", "ice", "ice", "ice", "ice", "dirt", "dirt", "rock", "rock", "rock", "rock"],
+    ["grass", "grass", "grass", "grass", "dirt", "dirt", "ice", "ice", "ice", "ice", "dirt", "dirt", "rock", "rock", "rock", "rock"],
+    ["grass", "grass", "grass", "grass", "dirt", "dirt", "ice", "water_shallow", "ice", "ice", "dirt", "dirt", "rock", "rock", "rock", "rock"],
+    ["grass", "grass", "grass", "grass", "dirt", "dirt", "ice", "ice", "ice", "water_deep", "dirt", "dirt", "rock", "rock", "dirt", "dirt"],
+    ["grass", "grass", "grass", "grass", "dirt", "dirt", "ice", "ice", "ice", "ice", "dirt", "dirt", "dirt", "dirt", "dirt", "dirt"],
+    ["road", "road", "road", "road", "road", "road", "water_deep", "ice", "ice", "ice", "road", "road", "road", "road", "road", "road"],
+    ["road", "road", "road", "road", "road", "road", "ice", "ice", "ice", "ice", "road", "road", "road", "road", "road", "road"],
+    ["grass", "grass", "grass", "grass", "dirt", "dirt", "ice", "ice", "ice", "ice", "dirt", "dirt", "dirt", "dirt", "rock", "rock"],
+    ["grass", "grass", "grass", "dirt", "dirt", "dirt", "ice", "ice", "water_shallow", "ice", "dirt", "dirt", "marsh", "marsh", "marsh", "rock"],
+    ["grass", "grass", "grass", "dirt", "dirt", "dirt", "ice", "ice", "ice", "ice", "dirt", "marsh", "marsh", "marsh", "marsh", "rock"],
+    ["grass", "grass", "grass", "dirt", "dirt", "dirt", "ice", "ice", "ice", "ice", "marsh", "marsh", "marsh", "marsh", "rock", "rock"]
+  ],
+  "elevation": [
+    [1, 1, 1, 2, 2, 2, 0, 0, 0, 0, 2, 2, 3, 3, 3, 2],
+    [1, 1, 1, 2, 2, 2, 0, 0, 0, 0, 2, 3, 4, 4, 3, 2],
+    [1, 1, 1, 2, 2, 2, 0, 0, 0, 0, 3, 3, 4, 4, 3, 2],
+    [1, 1, 1, 2, 2, 2, 0, 0, 0, 0, 3, 3, 3, 3, 2, 2],
+    [1, 1, 1, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2],
+    [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 2, 2, 2, 3, 3],
+    [1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 2, 2, 2, 3, 3],
+    [1, 1, 1, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2],
+    [1, 1, 1, 2, 2, 2, 0, 0, 0, 0, 2, 2, 0, 0, 0, 2],
+    [1, 1, 1, 2, 2, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2],
+    [1, 1, 1, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2]
+  ],
+  "overlays": [
+    { "pos": [6, 0], "type": "ice" },
+    { "pos": [7, 0], "type": "ice" },
+    { "pos": [8, 0], "type": "ice" },
+    { "pos": [9, 0], "type": "ice" },
+    { "pos": [6, 1], "type": "ice" },
+    { "pos": [7, 1], "type": "ice" },
+    { "pos": [8, 1], "type": "ice" },
+    { "pos": [9, 1], "type": "ice" },
+    { "pos": [6, 2], "type": "ice" },
+    { "pos": [8, 2], "type": "ice" },
+    { "pos": [9, 2], "type": "ice" },
+    { "pos": [6, 3], "type": "ice" },
+    { "pos": [7, 3], "type": "ice" },
+    { "pos": [8, 3], "type": "ice" },
+    { "pos": [9, 3], "type": "drown_edge", "note": "black water under the north plates — a 3h shove off e4's lip at [10,3] ends here" },
+    { "pos": [6, 4], "type": "ice" },
+    { "pos": [7, 4], "type": "ice" },
+    { "pos": [8, 4], "type": "ice" },
+    { "pos": [9, 4], "type": "ice" },
+    { "pos": [6, 5], "type": "drown_edge", "note": "the hole at the west ford mouth — row 6 is the true ramp lane; row 5 steps into the river" },
+    { "pos": [7, 5], "type": "ice" },
+    { "pos": [8, 5], "type": "ice", "note": "ford plate where the peddler stands when the ambush springs" },
+    { "pos": [9, 5], "type": "ice" },
+    { "pos": [6, 6], "type": "ice" },
+    { "pos": [7, 6], "type": "ice" },
+    { "pos": [8, 6], "type": "ice" },
+    { "pos": [9, 6], "type": "ice" },
+    { "pos": [6, 7], "type": "ice" },
+    { "pos": [7, 7], "type": "ice" },
+    { "pos": [8, 7], "type": "ice" },
+    { "pos": [9, 7], "type": "ice" },
+    { "pos": [6, 8], "type": "ice" },
+    { "pos": [7, 8], "type": "ice" },
+    { "pos": [9, 8], "type": "ice" },
+    { "pos": [6, 9], "type": "ice" },
+    { "pos": [7, 9], "type": "ice" },
+    { "pos": [8, 9], "type": "ice" },
+    { "pos": [9, 9], "type": "ice" },
+    { "pos": [6, 10], "type": "ice" },
+    { "pos": [7, 10], "type": "ice" },
+    { "pos": [8, 10], "type": "ice" },
+    { "pos": [9, 10], "type": "ice" },
+    { "pos": [12, 8], "type": "ice", "note": "frozen marsh pocket — SE flanking route" },
+    { "pos": [13, 8], "type": "ice" },
+    { "pos": [14, 8], "type": "ice" },
+    { "pos": [11, 9], "type": "ice" },
+    { "pos": [12, 9], "type": "ice" },
+    { "pos": [13, 9], "type": "ice" },
+    { "pos": [14, 9], "type": "ice" },
+    { "pos": [10, 10], "type": "ice" },
+    { "pos": [11, 10], "type": "ice" },
+    { "pos": [12, 10], "type": "ice" },
+    { "pos": [13, 10], "type": "ice" }
+  ],
+  "weather": "fog",
+  "deployment": {
+    "player_zones": [[2, 4], [2, 5], [2, 6], [2, 7], [3, 4], [3, 5], [3, 6], [3, 7]],
+    "max_units": 5
+  },
+  "enemies": [
+    {
+      "id": "e1",
+      "job": "skogarmadr",
+      "level": 4,
+      "facing": "W",
+      "pos": [14, 5],
+      "ai": "leader",
+      "grid_notes": "Ambush chief at the east road mouth (elev 3), behind the outcrop's shoulder — a forest-man who knows the levy's grain sledge is worth a winter. His scripted killing thrust at Grím (turn 4) is what falters."
+    },
+    {
+      "id": "e2",
+      "job": "skogarmadr",
+      "level": 3,
+      "facing": "W",
+      "pos": [12, 9],
+      "ai": "aggressive",
+      "grid_notes": "On the SE frozen marsh (elev 0); circles the marsh ice to take the ford ramp from behind."
+    },
+    {
+      "id": "e3",
+      "job": "veidimadr",
+      "level": 3,
+      "facing": "W",
+      "pos": [13, 1],
+      "ai": "guard",
+      "grid_notes": "East outcrop crown (elev 4). Owns the crossing with bow range; the outcrop is the map's one climbable height and it is his."
+    },
+    {
+      "id": "e4",
+      "job": "veidimadr",
+      "level": 3,
+      "facing": "S",
+      "pos": [10, 3],
+      "ai": "guard",
+      "grid_notes": "East bank lip north of the road (elev 3), directly over the black drown hole at [9,3]. Cross-fire partner to e3; between them the ford is a killing lane until one lip is cleared. Shove him west and the river takes him."
+    },
+    {
+      "id": "e5",
+      "job": "raider",
+      "level": 2,
+      "facing": "W",
+      "pos": [7, 3],
+      "ai": "aggressive",
+      "grid_notes": "Ice-runner on the mid-river plates north of the ford (elev 0); comfortable on slip tiles, herds the levy toward the drown holes."
+    },
+    {
+      "id": "e6",
+      "job": "raider",
+      "level": 2,
+      "facing": "W",
+      "pos": [7, 8],
+      "ai": "aggressive",
+      "grid_notes": "Ice-runner on the plates south of the ford (elev 0); twin prong of e5."
+    },
+    {
+      "id": "e7",
+      "job": "drengr",
+      "level": 2,
+      "facing": "E",
+      "pos": [0, 5],
+      "ai": "guard",
+      "grid_notes": "Rear-block at the west road mouth (elev 1): steps onto the road behind the levy to close the retreat."
+    }
+  ],
+  "neutrals": [
+    {
+      "id": "n1",
+      "type": "witness",
+      "pos": [8, 5],
+      "ai": "flee",
+      "escape_edge": "E",
+      "grid_notes": "Peddler, mid-crossing on the ford ice (elev 0) when the ambush springs; drags his pony E up the far road at 3-move. The battle's Sung/Unsung hinge and the Wyrd rumor's only carrier."
+    },
+    {
+      "id": "n2",
+      "type": "livestock",
+      "pos": [7, 5],
+      "ai": "flee",
+      "escape_edge": "E",
+      "grid_notes": "The pack-pony, one tile behind its master. Slips on ice; can block the very lane its master needs — cruel, teachable geometry."
+    }
+  ],
+  "objectives": {
+    "primary": "Break the ambush: fell the ambush chief (e1).",
+    "secondary": [
+      "The peddler (n1) survives (whether he ESCAPES is left to the player's conscience).",
+      "No levy-man lost to a drown hole.",
+      "Clear one bank lip (e3 or e4 down) before turn 5."
+    ],
+    "defeat": "Grím falls."
+  },
+  "escape_edges": ["E", "W"],
+  "witness_rule": "sung_if_any_witness_or_router_escapes",
+  "triggers": [
+    {
+      "when": "turn>=4",
+      "event": "wyrd_flicker_slip",
+      "set_flag": "wyrd_flicker_witnessed",
+      "once": true,
+      "note": "Scripted: e1's charge reaches Grím and — nothing. His turn slips down the CT track (Slip preview, C-WYRD-01) with no VFX, no explanation; the log just reads wrong. DENIABLE (C-GRIM-05): ice underfoot, fog, luck. Post-battle script finalizes the flag true only if n1 escaped east; if n1 died or the battle went Unsung, the flag is cleared — nobody credible saw anything."
+    },
+    {
+      "when": "hp_below:e1:25",
+      "event": "ambush_breaks",
+      "once": true,
+      "note": "Survivors rout W into the fog; routers escaping make it Sung (C-ALIGN-04) even if the peddler drowned — a second, subtler hinge."
+    },
+    {
+      "when": "unit_downed:any_player",
+      "event": "valkyrie_vfx_cue",
+      "note": "In fog, the valkyrie light is a smear. Beautiful and unverifiable — tone note for VFX."
+    }
+  ],
+  "designer_notes": {
+    "height_gimmick": "The only map where height is a weapon that points DOWN: bank lips overhang the ice by 2h (3h at e4's perch over the [9,3] hole), so a shove or knockback off the lip inflicts fall damage AND an ice-slide in the push direction (slip tiles carry momentum) — and any unit falling 2h+ onto a plate cracks it to water_shallow next tick. Elevation here is never climbed for advantage; it is spent, by throwing people off it.",
+    "witness_setup": "One peddler (n1) with a pack-pony is mid-crossing when the ambush springs; he flees east up the far road. The fog kills all other sightlines. If the player cuts him off on the ice, the fight vanishes into grey — Unsung, and Grím's flicker of impossible luck goes with it; if he escapes, 'the smith's boy the spears refuse' is talked into every hall by the Yule feast. The first Wyrd rumor is entirely the player's choice to permit (C-GRIM-05).",
+    "intent": "River-crossing fight on slip tiles; teaches ice movement, knockback positioning, and drown edges — and stages Grím's first involuntary Wyrd flicker as a scripted, deniable CT hiccup the fog half-swallows. CT-manipulation preview: the player SEES a turn slip on the timeline and is given no explanation."
+  }
+}
