@@ -1,0 +1,173 @@
+{
+  "id": "ch1-06-holmgang",
+  "name": "Holmgang",
+  "chapter": 1,
+  "order": 6,
+  "route_tags": ["shared"],
+  "grid": { "cols": 10, "rows": 10 },
+  "terrain": [
+    ["grass", "dirt", "dirt", "dirt", "stone_floor", "stone_floor", "dirt", "dirt", "dirt", "grass"],
+    ["shingle", "shingle", "shingle", "shingle", "shingle", "shingle", "shingle", "shingle", "shingle", "shingle"],
+    ["water_deep", "water_shallow", "rock", "ice", "ice", "ice", "ice", "rock", "water_shallow", "water_deep"],
+    ["water_deep", "water_shallow", "water_shallow", "plank", "plank", "plank", "plank", "water_shallow", "water_shallow", "water_deep"],
+    ["water_deep", "water_shallow", "water_shallow", "plank", "plank", "plank", "plank", "water_shallow", "water_shallow", "water_deep"],
+    ["water_deep", "water_shallow", "water_shallow", "plank", "plank", "plank", "plank", "water_shallow", "water_shallow", "water_deep"],
+    ["water_deep", "water_shallow", "water_shallow", "plank", "plank", "plank", "plank", "water_shallow", "water_shallow", "water_deep"],
+    ["water_deep", "water_shallow", "rock", "ice", "ice", "ice", "ice", "rock", "water_shallow", "water_deep"],
+    ["shingle", "shingle", "shingle", "shingle", "shingle", "shingle", "shingle", "shingle", "shingle", "shingle"],
+    ["grass", "grass", "grass", "dirt", "dirt", "dirt", "dirt", "grass", "grass", "grass"]
+  ],
+  "elevation": [
+    [2, 2, 2, 2, 3, 3, 2, 2, 2, 2],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [0, 0, 1, 0, 0, 0, 0, 1, 0, 0],
+    [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
+    [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
+    [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
+    [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 1, 0, 0],
+    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+  ],
+  "overlays": [
+    { "pos": [3, 3], "type": "law_circle", "note": "hazel-staked dueling deck, NW quarter — only the two duelists may stand here while the law holds; a foot off the planks is forfeit" },
+    { "pos": [4, 3], "type": "law_circle" },
+    { "pos": [5, 3], "type": "law_circle" },
+    { "pos": [6, 3], "type": "law_circle" },
+    { "pos": [3, 4], "type": "law_circle" },
+    { "pos": [4, 4], "type": "law_circle" },
+    { "pos": [5, 4], "type": "law_circle" },
+    { "pos": [6, 4], "type": "law_circle" },
+    { "pos": [3, 5], "type": "law_circle" },
+    { "pos": [4, 5], "type": "law_circle" },
+    { "pos": [5, 5], "type": "law_circle" },
+    { "pos": [6, 5], "type": "law_circle" },
+    { "pos": [3, 6], "type": "law_circle" },
+    { "pos": [4, 6], "type": "law_circle" },
+    { "pos": [5, 6], "type": "law_circle" },
+    { "pos": [6, 6], "type": "law_circle", "note": "SE corner of the deck — the sixteen law_circle tiles are the whole lawful ground" },
+    { "pos": [3, 2], "type": "ice", "note": "frozen north braid-channel — slip tiles if the law breaks and the melee spills off the deck" },
+    { "pos": [4, 2], "type": "ice" },
+    { "pos": [5, 2], "type": "ice" },
+    { "pos": [6, 2], "type": "ice" },
+    { "pos": [3, 7], "type": "ice", "note": "frozen south braid-channel" },
+    { "pos": [4, 7], "type": "ice" },
+    { "pos": [5, 7], "type": "ice" },
+    { "pos": [6, 7], "type": "ice" }
+  ],
+  "weather": "clear",
+  "deployment": {
+    "player_zones": [[4, 6], [5, 6]],
+    "max_units": 1
+  },
+  "enemies": [
+    {
+      "id": "e1",
+      "job": "berserker",
+      "level": 6,
+      "facing": "S",
+      "pos": [4, 3],
+      "ai": "script",
+      "named": true,
+      "grid_notes": "BǪÐVARR BEAR-SARK (Rename Table, C-CLAN-LEAD-01), deck north half, elev 1. Fights by holmgang law: scripted alternating-strike opening rounds, then free AI within the circle. At the yield trigger he casts down his axe. He does not use full berserkergang — a point the scene makes: he is testing the boy, and some part of him is afraid of what full rage might meet (his dossier's 'will not switch off' seed)."
+    },
+    {
+      "id": "e2",
+      "job": "berserker",
+      "level": 4,
+      "facing": "S",
+      "pos": [2, 0],
+      "ai": "script",
+      "named": false,
+      "grid_notes": "Bjarnholt second, north bank at elev 2; intervenes ONLY if the law is broken (any non-duelist enters the circle, or the yield is violated)."
+    },
+    {
+      "id": "e3",
+      "job": "berserker",
+      "level": 4,
+      "facing": "S",
+      "pos": [3, 0],
+      "ai": "script",
+      "named": false,
+      "grid_notes": "Second lodge-brother, north bank beside e2; as e2."
+    },
+    {
+      "id": "e4",
+      "job": "huscarl",
+      "level": 4,
+      "facing": "S",
+      "pos": [6, 1],
+      "ai": "script",
+      "named": false,
+      "grid_notes": "The lodge's shield-bearer on the north shingle bar (elev 1), holding Bǫðvarr's three lawful replacement shields — the holmgang shield-count made visible; a mechanical pacing device (each 'shield break' = phase mark on e1's HP bar)."
+    }
+  ],
+  "neutrals": [
+    {
+      "id": "n1",
+      "type": "witness",
+      "pos": [5, 0],
+      "ai": "script",
+      "escape_edge": "N",
+      "grid_notes": "Officiating goði (unnamed, minor — not Þorgeir) on the judge's stone slab at elev 3; reads the law at turn 1, calls the yield. Cannot be prevented from witnessing; leaves N when it ends."
+    },
+    {
+      "id": "n2",
+      "type": "witness",
+      "pos": [4, 9],
+      "ai": "script",
+      "escape_edge": "S",
+      "grid_notes": "Grím's second from the levy, south bank at elev 2 — his witness by right."
+    },
+    {
+      "id": "n3",
+      "type": "witness",
+      "pos": [7, 9],
+      "ai": "flee",
+      "escape_edge": "S",
+      "grid_notes": "Shore-folk cluster on the south bank, elev 2 (abstracted as one unit); scatters if the law breaks."
+    }
+  ],
+  "objectives": {
+    "primary": "Win the holmgang: bring Bǫðvarr below 30% HP, or force him off the deck (knockback ring-out).",
+    "secondary": [
+      "Never leave the law_circle yourself (leaving = forfeit, immediate defeat).",
+      "Win without spending a Wyrd Point — this duel is ALWAYS Sung, so any Wyrd use here is public and costs man_blood −4 (C-WYRD-02); winning clean is the deniability play (C-GRIM-05).",
+      "Win without Bǫðvarr's blood on the ice (pure ring-out) — the rarest, most-sung outcome."
+    ],
+    "defeat": "Grím is downed or forced off the deck (seconds end it — defeat, not death; story battle)."
+  },
+  "escape_edges": [],
+  "witness_rule": "always_sung",
+  "triggers": [
+    {
+      "when": "turn>=1",
+      "event": "law_is_read",
+      "once": true,
+      "note": "The goði on the slab names the terms: to yield, to ring-out, or to three shields broken. Camera beat; establishes law_circle rules in UI."
+    },
+    {
+      "when": "flag:wyrd_flicker_witnessed",
+      "event": "bodvarr_names_ford_rumor",
+      "once": true,
+      "note": "Fires with law_is_read if the ford peddler's tale is loose: Bǫðvarr half-voices it before the first blow — 'they say the spears refuse you, smith's boy; let us see' — the suspicion that sharpened his blood-claim into a challenge."
+    },
+    {
+      "when": "hp_below:e1:30",
+      "event": "bodvarr_yields",
+      "once": true,
+      "set_flag": "holmgang_grith",
+      "note": "He casts down his axe, names the wound-price paid, and offers his hand — a lawful yield before a full house. The accept/execute prompt writes the enum: 'honored' (take the hand: Sung mercy_terror +6, Bjarnholt seed planted) or 'executed' (kill a yielded man at a LAWFUL duel before witnesses: Sung mercy_terror −10, True −10, the guest-cup logic invoked — Bjarnholt enmity locked for Ch2, C-ALIGN-03/05: the game allows it and every hall will sing it). Ring-out (e1 pushed off the deck) resolves through this same yield beat — the law counts feet off lawful ground as the wound-price paid."
+    },
+    {
+      "when": "unit_downed:any_player",
+      "event": "seconds_end_it",
+      "note": "If Grím falls the seconds carry him off — defeat without permadeath; the challenge was to yield."
+    }
+  ],
+  "designer_notes": {
+    "height_gimmick": "The anti-elevation map: the deck is dead flat by LAW — sixteen plank tiles all at elevation 1, not one step of height to take — and the only meaningful edge is its rim, a 1h drop to the elevation-0 ice that means forfeit, not fall damage. Knockback becomes the whole vertical game: push the opponent's feet off the lawful ground and the duel is decided without a killing wound. Every other Ch1 map rewards taking height; this one forbids it, and makes facing and footwork carry everything (C-FACE-01 mastery test). The banks at elevation 2-3 exist only so the witnesses look DOWN into the fight like a bowl — height belongs to the audience here, never to the duelists.",
+    "witness_setup": "There is no preventing testimony here and the design says so out loud: seconds on both banks (e2/e3 north, n2 south), an officiating goði on the elevation-3 judge's slab, shore-folk (n3) ringing the holm — a lawful duel EXISTS to be witnessed. witness_rule is always_sung (the sanctioned exception for scripted story beats): whatever happens on the deck enters the saga, including exactly how Bǫðvarr's yield is answered (holmgang_grith: honored | executed).",
+    "intent": "Formal 1v1 with seconds standing off (ai script): facing mastery under holmgang law. Grím answers Bǫðvarr Bear-Sark's lawful challenge (blood-claim for a lodge kinsman fallen among the Landless at ch1-04, and half-voiced suspicion of the ford rumor). Duel is to yield, not death, per law (C-TONE-04): forcing Bǫðvarr below 30% or off the deck ends it. The grið answer afterward is the chapter's loudest mercy beat — performed for a full house."
+  }
+}
