@@ -1,0 +1,353 @@
+{
+  "id": "ch1-08-burn-ulfheim",
+  "name": "The Burning of Ulfheim",
+  "chapter": 1,
+  "order": 8,
+  "route_tags": ["shared"],
+  "grid": { "cols": 16, "rows": 13 },
+  "terrain": [
+    ["rock", "rock", "rock", "rock", "rock", "rock", "rock", "dirt", "dirt", "rock", "rock", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "snow", "wood_floor", "wood_floor", "road", "snow", "dirt", "dirt", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "rock"],
+    ["rock", "rock", "snow", "wood_floor", "wood_floor", "road", "snow", "dirt", "dirt", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "rock"],
+    ["rock", "rock", "snow", "snow", "dirt", "road", "dirt", "dirt", "dirt", "dirt", "dirt", "dirt", "snow", "snow", "rock", "rock"],
+    ["rock", "rock", "wood_floor", "wood_floor", "wood_floor", "road", "dirt", "dirt", "snow", "wood_floor", "wood_floor", "wood_floor", "snow", "snow", "rock", "rock"],
+    ["rock", "rock", "wood_floor", "wood_floor", "wood_floor", "road", "dirt", "dirt", "rock", "wood_floor", "wood_floor", "wood_floor", "snow", "snow", "rock", "rock"],
+    ["rock", "rock", "snow", "snow", "dirt", "road", "dirt", "snow", "snow", "dirt", "wood_floor", "wood_floor", "wood_floor", "snow", "rock", "rock"],
+    ["rock", "rock", "wood_floor", "wood_floor", "wood_floor", "road", "dirt", "snow", "wood_floor", "wood_floor", "dirt", "wood_floor", "wood_floor", "snow", "rock", "rock"],
+    ["rock", "rock", "wood_floor", "wood_floor", "wood_floor", "road", "dirt", "dirt", "wood_floor", "wood_floor", "dirt", "wood_floor", "wood_floor", "snow", "rock", "rock"],
+    ["rock", "rock", "rock", "snow", "snow", "road", "snow", "rock", "snow", "snow", "rock", "snow", "snow", "rock", "rock", "rock"],
+    ["snow", "snow", "snow", "snow", "dirt", "road", "snow", "snow", "snow", "dirt", "snow", "snow", "snow", "snow", "snow", "snow"],
+    ["road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road"],
+    ["snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow"]
+  ],
+  "elevation": [
+    [6, 6, 6, 6, 6, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6],
+    [6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6],
+    [6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6],
+    [6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6],
+    [6, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 6],
+    [6, 5, 3, 3, 3, 3, 3, 3, 4, 3, 3, 3, 3, 3, 5, 6],
+    [6, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 6],
+    [5, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 5],
+    [5, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 5],
+    [5, 4, 3, 2, 2, 2, 2, 3, 2, 2, 3, 2, 2, 3, 4, 5],
+    [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ],
+  "overlays": [
+    { "pos": [3, 1], "type": "flammable", "note": "smokehouse, north half" },
+    { "pos": [4, 1], "type": "flammable" },
+    { "pos": [3, 2], "type": "flammable", "note": "smokehouse, south half — n4's home" },
+    { "pos": [4, 2], "type": "flammable" },
+    { "pos": [9, 1], "type": "flammable", "note": "hearth-hall of Gunnhild's kin, west gable" },
+    { "pos": [10, 1], "type": "flammable" },
+    { "pos": [11, 1], "type": "flammable" },
+    { "pos": [12, 1], "type": "flammable" },
+    { "pos": [13, 1], "type": "flammable", "note": "hearth-hall, east gable" },
+    { "pos": [9, 2], "type": "flammable" },
+    { "pos": [10, 2], "type": "flammable", "note": "hearth-hall doorway; Gunnhild (e1) holds the threshold outside at [10,3]" },
+    { "pos": [11, 2], "type": "flammable" },
+    { "pos": [12, 2], "type": "flammable" },
+    { "pos": [13, 2], "type": "flammable" },
+    { "pos": [10, 1], "type": "grave_goods", "note": "Aldís-linked relics: her kin kept what the law said does not exist. Kingsman: looting them is the True Ledger's quietest atrocity. Outlaw: given, not taken — Ch2 hook." },
+    { "pos": [11, 1], "type": "grave_goods", "note": "loom-blessing whalebone plaque, rune-side down" },
+    { "pos": [12, 1], "type": "grave_goods", "note": "a child's arm-ring in Aldís's mother-line knotwork" },
+    { "pos": [4, 3], "type": "flammable", "note": "upper yard woodpile" },
+    { "pos": [6, 3], "type": "flammable" },
+    { "pos": [8, 3], "type": "flammable" },
+    { "pos": [9, 3], "type": "flammable" },
+    { "pos": [10, 3], "type": "flammable", "note": "hall threshold — when this tile burns, the hall is next; the fire's last step" },
+    { "pos": [11, 3], "type": "flammable" },
+    { "pos": [7, 2], "type": "flammable", "note": "brushwood stacked along the goat-track — the exit line CAN burn shut" },
+    { "pos": [7, 3], "type": "flammable", "note": "goat-track brushwood; hold this tile clear or the households' road closes" },
+    { "pos": [2, 4], "type": "flammable", "note": "west longhouse — n3's weaver-kin" },
+    { "pos": [3, 4], "type": "flammable" },
+    { "pos": [4, 4], "type": "flammable" },
+    { "pos": [2, 5], "type": "flammable" },
+    { "pos": [3, 5], "type": "flammable" },
+    { "pos": [4, 5], "type": "flammable" },
+    { "pos": [9, 4], "type": "flammable", "note": "east longhouse — e2 fights from its shadow" },
+    { "pos": [10, 4], "type": "flammable" },
+    { "pos": [11, 4], "type": "flammable" },
+    { "pos": [9, 5], "type": "flammable" },
+    { "pos": [10, 5], "type": "flammable" },
+    { "pos": [11, 5], "type": "flammable" },
+    { "pos": [10, 6], "type": "flammable", "note": "low longhouse on the middle-terrace lip" },
+    { "pos": [11, 6], "type": "flammable" },
+    { "pos": [12, 6], "type": "flammable" },
+    { "pos": [6, 4], "type": "flammable", "note": "well-yard hay rick" },
+    { "pos": [7, 4], "type": "flammable" },
+    { "pos": [9, 6], "type": "flammable" },
+    { "pos": [2, 7], "type": "flammable", "note": "byre, west wall" },
+    { "pos": [3, 7], "type": "flammable" },
+    { "pos": [4, 7], "type": "flammable" },
+    { "pos": [2, 8], "type": "flammable" },
+    { "pos": [3, 8], "type": "flammable", "note": "byre door bay — loose the cattle (n5) south before the fire-line arrives" },
+    { "pos": [4, 8], "type": "flammable" },
+    { "pos": [8, 7], "type": "flammable", "note": "west cot-house — n1's home, nearest the fire" },
+    { "pos": [9, 7], "type": "flammable" },
+    { "pos": [8, 8], "type": "flammable" },
+    { "pos": [9, 8], "type": "flammable" },
+    { "pos": [11, 7], "type": "flammable", "note": "east cot-house" },
+    { "pos": [12, 7], "type": "flammable" },
+    { "pos": [11, 8], "type": "flammable" },
+    { "pos": [12, 8], "type": "flammable" },
+    { "pos": [6, 7], "type": "flammable" },
+    { "pos": [6, 8], "type": "flammable" },
+    { "pos": [7, 8], "type": "flammable" },
+    { "pos": [10, 7], "type": "flammable" },
+    { "pos": [10, 8], "type": "flammable", "note": "cot-house yard straw — e4's ground" },
+    { "pos": [3, 9], "type": "fire", "note": "SEED, west: torch stack against the field wall — cold glow at deploy, lit by detachment_resolves (kingsman full seed; outlaw the thrown torches catch here anyway)" },
+    { "pos": [8, 9], "type": "fire", "note": "SEED, center: pitch-bundle at the wall gap below the cot-houses" },
+    { "pos": [12, 9], "type": "fire", "note": "SEED, east: torch stack; e11 at [12,10] stands over it — down him early (outlaw) and this seed lights a turn late" }
+  ],
+  "weather": "night",
+  "deployment": {
+    "player_zones": [[2, 11], [3, 11], [4, 11], [2, 12], [3, 12], [4, 12], [5, 12], [6, 12]],
+    "max_units": 6
+  },
+  "enemies": [
+    {
+      "id": "e1",
+      "job": "skogarmadr",
+      "level": 6,
+      "facing": "S",
+      "pos": [10, 3],
+      "ai": "script",
+      "named": true,
+      "grid_notes": "GUNNHILD THE WOLF-WIDOW (Rename Table, C-CLAN-LEAD-01). Holds the hall threshold [10,3] at elev 4, fights defensively, NEVER pursues downhill. Kingsman branch: withdraws N by the goat-track (cols 7-8) at 60% HP — she must survive to carry the KINSLAYER verse into the hills (C-CLAN-04). Outlaw branch: flips to scripted ally at the order and holds the track open. Either way the player cannot fell her; her face — half Aldís's — is the map's last argument."
+    },
+    {
+      "id": "e2",
+      "job": "skogarmadr",
+      "level": 5,
+      "facing": "S",
+      "pos": [8, 4],
+      "ai": "guard",
+      "grid_notes": "Night-fighter in the east longhouse's shadow (elev 3, beside the rowan at [8,5]); strikes from house-shadow and withdraws — Ulfheim doctrine, the skirmish screen. Outlaw branch: flips scripted ally at detachment_resolves, like all Ulfheim units e2-e7."
+    },
+    {
+      "id": "e3",
+      "job": "raider",
+      "level": 4,
+      "facing": "S",
+      "pos": [5, 7],
+      "ai": "guard",
+      "grid_notes": "First blade the advance meets, on the switchback road beside the byre wall (elev 2); young, loud, terrified. Ally on the outlaw flip."
+    },
+    {
+      "id": "e4",
+      "job": "raider",
+      "level": 4,
+      "facing": "S",
+      "pos": [10, 8],
+      "ai": "aggressive",
+      "grid_notes": "Counter-attacks at the field walls from the cot-house yard (elev 2); buys the households their first two turns. Ally on the outlaw flip."
+    },
+    {
+      "id": "e5",
+      "job": "veidimadr",
+      "level": 5,
+      "facing": "S",
+      "pos": [6, 0],
+      "ai": "guard",
+      "grid_notes": "Ulfheim's bow on the crag ledge west of the goat-track notch [7,0]-[8,0], elev 5: covers the track the whole battle. The fire never reaches him (bare rock); the player must — via the switchback top at [5,0] or the notch itself. Ally on the outlaw flip."
+    },
+    {
+      "id": "e6",
+      "job": "drengr",
+      "level": 4,
+      "facing": "S",
+      "pos": [5, 6],
+      "ai": "guard",
+      "grid_notes": "Holds the spine choke at the middle-terrace lip (road, elev 3); the road he defends is also the road the fire wants. Ally on the outlaw flip."
+    },
+    {
+      "id": "e7",
+      "job": "berserker",
+      "level": 5,
+      "facing": "S",
+      "pos": [9, 3],
+      "ai": "aggressive",
+      "grid_notes": "Gunnhild's hearth-guard on the upper yard (elev 4), her dead husband's sworn man. Outlaw secondary asks that he still stands at battle's end. Ally on the outlaw flip."
+    },
+    {
+      "id": "e8",
+      "job": "huscarl",
+      "level": 6,
+      "facing": "N",
+      "pos": [9, 11],
+      "ai": "script",
+      "grid_notes": "ROYAL DETACHMENT. The king's captain at the head of the line on the sledge-road (unnamed hird officer — deliberately a function, not a person: the order matters, not the mouth). Gives the turn-3 order. Kingsman: scripted ally, leads the torching. Outlaw: flips hostile-aggressive at detachment_resolves, priority target."
+    },
+    {
+      "id": "e9",
+      "job": "huscarl",
+      "level": 5,
+      "facing": "N",
+      "pos": [10, 11],
+      "ai": "script",
+      "grid_notes": "ROYAL DETACHMENT. Hird shield-man on the sledge-road line. Ally (kingsman) / flips hostile (outlaw) per the route trigger."
+    },
+    {
+      "id": "e10",
+      "job": "drengr",
+      "level": 5,
+      "facing": "N",
+      "pos": [11, 11],
+      "ai": "script",
+      "grid_notes": "ROYAL DETACHMENT. Hird spearman; carries the torch bundle — downing HIM early on the outlaw branch delays the fire seeds by one turn (hidden interaction, rewarded in the post-battle card). Flips hostile on the outlaw branch."
+    },
+    {
+      "id": "e11",
+      "job": "veidimadr",
+      "level": 5,
+      "facing": "N",
+      "pos": [12, 10],
+      "ai": "script",
+      "grid_notes": "ROYAL DETACHMENT. Hird bow on the in-field flank (elev 1) over the east torch seed [12,9]; on kingsman he shoots fleeing routers unless the player bodily blocks his lanes — the crown's mercilessness made mechanical, and the player's quiet counter-play. Flips hostile on the outlaw branch."
+    },
+    {
+      "id": "e12",
+      "job": "laeknir",
+      "level": 4,
+      "facing": "N",
+      "pos": [10, 12],
+      "ai": "script",
+      "grid_notes": "ROYAL DETACHMENT. Detachment healer at the rear, with the sledges; on outlaw the second-hardest thing to kill morally and the easiest mechanically. Cries grið when e8 falls (C-ALIGN-05) — the outlaw branch's own mercy test. Flips hostile on the outlaw branch."
+    },
+    {
+      "id": "e13",
+      "job": "godi",
+      "level": 4,
+      "facing": "N",
+      "pos": [11, 12],
+      "ai": "script",
+      "grid_notes": "ROYAL DETACHMENT. The RECORDING SKALD — the crown's official memory, beside the healer at the rear (statted on the godi chassis until the skald job lands in data/jobs; non-combatant either way). Kingsman: never fights, observes, exits S at battle end — his verse is scene ch1-s11's spine. Outlaw: flees S at the flip; if he ESCAPES the S edge, the crown's Ch2 hunt begins with facts; if stopped, with rumor. The witness mechanic given a face and a wage."
+    }
+  ],
+  "neutrals": [
+    {
+      "id": "n1",
+      "type": "civilian",
+      "pos": [8, 8],
+      "ai": "flee",
+      "escape_edge": "N",
+      "grid_notes": "Household 1: mother and bundled children abstracted as one unit; slowest, starts in the west cot-house (elev 2), nearest the fire seeds. Longest run: three terraces up the cols 6-8 line to the goat-track notch."
+    },
+    {
+      "id": "n2",
+      "type": "civilian",
+      "pos": [6, 5],
+      "ai": "flee",
+      "escape_edge": "N",
+      "grid_notes": "Household 2: the well-keeper and his blind father, in the well yard (elev 3). Moves at the blind man's pace; paths [6,4] -> [6,3] -> [7,2] -> [7,0]."
+    },
+    {
+      "id": "n3",
+      "type": "civilian",
+      "pos": [3, 5],
+      "ai": "flee",
+      "escape_edge": "N",
+      "grid_notes": "Household 3: weaver-women of Aldís's scattered kin in the west longhouse (elev 3); one carries the loom-weights she will NOT drop — 2-move until she does (scripted at first adjacent fire tile)."
+    },
+    {
+      "id": "n4",
+      "type": "civilian",
+      "pos": [3, 2],
+      "ai": "flee",
+      "escape_edge": "N",
+      "grid_notes": "Household 4: the old fletcher who taught half the steading's bows, in the smokehouse (elev 4); last to believe it is happening — does not move until fire reaches the upper terrace or a player unit reaches adjacency."
+    },
+    {
+      "id": "n5",
+      "type": "livestock",
+      "pos": [3, 8],
+      "ai": "flee",
+      "escape_edge": "S",
+      "grid_notes": "Byre cattle (one unit) behind the byre door at [3,8]. Loosing the door before the fire-line reaches it lets them stampede S down the road — a small mercy no ledger records; designer-note beat, C-TONE-04's 'weight' rendered small."
+    }
+  ],
+  "objectives": {
+    "primary": "Advance with the king's detachment on the steading — the order comes at turn 3 (route locks there; see route_variants).",
+    "defeat": "Grím falls.",
+    "route_variants": {
+      "kingsman": {
+        "primary": "Carry out the king's test: put the hearth-hall to the torch and fell or rout every Ulfheim fighter (e2-e7; Gunnhild withdraws scripted).",
+        "secondary": [
+          "Accept any grið cried by Ulfheim fighters — mercy given under the recording skald's eyes is mercy the crown must acknowledge (C-ALIGN-05).",
+          "All four households (n1-n4) reach the goat-track: the order was a razing, not a slaughter — whether it STAYS one is the player's hands.",
+          "Do not loot the grave_goods in the hearth-hall (True Ledger; the relics of kin you are burning)."
+        ],
+        "defeat": "Grím falls."
+      },
+      "outlaw": {
+        "primary": "Turn on the royal detachment: fell or rout the king's men (e8-e13).",
+        "secondary": [
+          "The recording skald (e13) does not escape the S edge — or does: letting the crown's memory live is a choice with a Ch2 price either way.",
+          "All four households (n1-n4) survive.",
+          "Gunnhild's hearth-guard (e7) still stands at battle's end.",
+          "Accept the læknir's grið (e12) when the captain falls."
+        ],
+        "defeat": "Grím falls."
+      }
+    }
+  },
+  "escape_edges": ["N", "S"],
+  "witness_rule": "sung_if_any_witness_or_router_escapes",
+  "triggers": [
+    {
+      "when": "turn>=3",
+      "event": "the_kings_order",
+      "set_flag": "route",
+      "once": true,
+      "note": "e8 gives the order: 'Fire the walls. Begin with the hall.' Full-stop choice prompt — OBEY (route=kingsman) or TURN (route=outlaw). Irreversible, saves locked (C-ROUTE-01/02). Until this trigger, no unit of either side may be attacked by the player — enforced peace, so the choice is made cold."
+    },
+    {
+      "when": "flag:route",
+      "event": "detachment_resolves",
+      "once": true,
+      "note": "kingsman: e8-e12 activate as scripted allies and light the row-9 fire seeds ([3,9],[8,9],[12,9]); e13 observes. outlaw: e8-e12 flip hostile-aggressive, e13 flees S, Ulfheim units e2-e7 become scripted allies, Gunnhild's withdrawal is cancelled, and only the seed nearest the thrown torches ([3,9]) lights anyway — some of it burns no matter what you chose; that is the point."
+    },
+    {
+      "when": "flag:ulfheim_shelter",
+      "event": "guest_cup_register",
+      "once": true,
+      "note": "Register change, read at battle start: if Grím accepted Gunnhild's fire and meal in ch1-s09, every bark, order text, and Gunnhild line on this map shifts to the guest-cup-betrayal register — the burning is oath-breach on top of kin-blood. No mechanical change; the words get worse."
+    },
+    {
+      "when": "turn>=4",
+      "event": "fire_walks_uphill",
+      "note": "Recurring: fire spreads each tick from burning tiles, preferring the HIGHEST adjacent flammable tile — the terrace-by-terrace countdown (row 9 seeds -> lowest terrace elev 2 -> middle 3 -> upper 4 -> hall). Households re-path as tiles close; the goat-track brush at [7,2]-[7,3] can burn the exit shut."
+    },
+    {
+      "when": "hp_below:e1:60",
+      "event": "gunnhild_withdraws",
+      "once": true,
+      "note": "Kingsman branch only: Gunnhild goes N from [10,3] by the goat-track notch with any adjacent kin, looking back exactly once. She must survive (KINSLAYER verse carrier, C-CLAN-04); the trigger guarantees it against even a determined player."
+    },
+    {
+      "when": "turn>=5",
+      "event": "count_the_saved",
+      "set_flag": "ulfheim_civilians_saved",
+      "note": "Counter maintenance: post-battle script sets the counter to the number of households (n1-n4) that exited the N goat-track. Read by ch1-s11/s12 and Ch2 on both routes."
+    },
+    {
+      "when": "hp_below:e8:1",
+      "event": "laeknir_grid",
+      "once": true,
+      "note": "Outlaw branch: with the captain down, e12 drops her satchel and cries grið. The night's last mercy question, asked amid your own treason (C-ALIGN-05)."
+    },
+    {
+      "when": "unit_downed:any_player",
+      "event": "valkyrie_vfx_cue",
+      "note": "Over a burning steading the valkyrie light and the fire-glow are indistinguishable. Art direction is REQUIRED to make them so (C-LIE-01: the last night the Lie is beautiful)."
+    }
+  ],
+  "designer_notes": {
+    "height_gimmick": "Fire climbs: burning tiles spread preferentially to the HIGHEST adjacent flammable tile, so the burn walks uphill terrace by terrace (row-9 seeds at elev 2 -> lowest terrace 2 -> middle 3 -> upper 4 -> the hall), converting the map's south-to-north climb into a countdown — everything below the fire-line is ash and silence, everything above is a shrinking island where defenders, civilians, and objectives compress. Elevation is not advantage here; it is TIME REMAINING. No other map makes height a clock. The single cheap ascent (switchback road, col 5) is shared by the player, the households, and the fire; the crag flanks (cols 0-1, 14-15, jumps of 2-3h) are Jump-proof, and the goat-track notch at [7,0]-[8,0] is the only way off the top.",
+    "witness_setup": "Two kinds of witness, one per route's conscience: Ulfheim's non-combatant households (n1-n4) flee for the N goat-track and can be let out, herded out, or cut off (the track brush at [7,2]-[7,3] can burn shut; e5's bow and e11's lanes both cover the runners) — and the royal detachment carries its own RECORDING SKALD (e13), the crown's official memory. On the kingsman branch the king's verse gets carved regardless (the skald cannot be silenced by his own side); the only question is whether any Ulfheim voice survives to counter-sing it. On the outlaw branch the inversion: e13 becomes the witness the player may need to stop at the S edge — kill the king's memory and the crown knows only that its detachment never came home (C-ALIGN-03/04 at full pressure).",
+    "intent": "THE SPLIT (Balmamusa pattern, C-ROUTE-02). One map, two objective sets via route_variants: the king's test is to raze his mother's kin with his own hand. Turn 3 the order comes and the choice locks route forever. Until then both forces advance together and the map is deliberately quiet — hearth-smoke, dogs barking, snow starting to glow orange at the south field walls. Levels 4-6, the chapter's hardest fight on either branch."
+  }
+}
