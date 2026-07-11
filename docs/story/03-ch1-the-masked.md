@@ -2,7 +2,7 @@
 
 # 03 — Chapter One: THE MASKED
 
-*Scene-by-scene script with full dialogue (KICKOFF §5.2 — Chapter 1 gets complete dialogue, not intent lines). Structure, flags, choices, and ledger effects are authoritative from the Phase-3 spine (`ph3-spine.json`, scenes ch1-s01…s13, battles ch1-01…ch1-08). Canon anchors cited inline (C-\*). Chapter-1 constraints in force throughout: the Harvest Lie is BELIEVED and valkyrie language is played straight (C-LIE-01); Grím's Wyrd is deniable — uncanny skill or luck only (C-GRIM-05, C-WORLD-02); all verse is composed fornyrðislag flavor, never quoted from any real translation (C-TONE-01/02); rating per C-TONE-04. Salgerð and Bótólfr do not appear in Chapter 1 (per spine); Hel's country waits for Chapter 2.*
+*Scene-by-scene script with full dialogue (KICKOFF §5.2 — Chapter 1 gets complete dialogue, not intent lines). Structure, flags, choices, and ledger effects are authoritative from the Phase-3 design spine (a scratchpad phase artifact; its durable content lives in `data/maps/ch1/`, `data/flags/story-flags.json`, and `manifest/battle-manifest.md` — scenes ch1-s01…s13, battles ch1-01…ch1-08). Canon anchors cited inline (C-\*). Chapter-1 constraints in force throughout: the Harvest Lie is BELIEVED and valkyrie language is played straight (C-LIE-01); Grím's Wyrd is deniable — uncanny skill or luck only (C-GRIM-05, C-WORLD-02); all verse is composed fornyrðislag flavor, never quoted from any real translation (C-TONE-01/02); rating per C-TONE-04. Salgerð and Bótólfr do not appear in Chapter 1 (per spine); Hel's country waits for Chapter 2.*
 
 ---
 
@@ -84,7 +84,7 @@ SMITH: (hefting a hammer that has never hit iron) Post-ban men. Hungry men. Hung
 
 [BATTLE TRIGGER → ch1-01-strandhogg]
 
-[IN-BATTLE NOTE: first downed unit cues the valkyrie VFX — the descent that looks like an ascent, played absolutely straight and beautiful; doctrine is fact in Chapter 1 (C-LIE-01, C-DEATH-01). Beaten raiders rout west to their boat; escaped routers make the day Sung (C-ALIGN-04) — surfaced gently in the post-battle ledger card.]
+[IN-BATTLE NOTE: the first unit TAKEN — the ravens counted down to none (C-DEATH-01) — cues the valkyrie VFX — the descent that looks like an ascent, played absolutely straight and beautiful; doctrine is fact in Chapter 1 (C-LIE-01, C-DEATH-01). Beaten raiders rout west to their boat; escaped routers make the day Sung (C-ALIGN-04) — surfaced gently in the post-battle ledger card.]
 
 ---
 
@@ -218,13 +218,13 @@ BRANDR: (the half-smile of a man filing something away) Mine don't, mostly. (he 
 [STAGE: Brandr offers his hand across the fallen wand — to Grím, not the reeve; he has already decided whose face this field belongs to.]
 
   > CHOICE: [Take Brandr's offered hand under the wand] → no ledger; unlocks the parley name-barks in ch1-04 and a warmer Brandr register in Ch2 (brandr_met texture deepened).
-  > CHOICE: [Keep your hands on your belt] → mercy_terror −1 (TRUE only — a courtesy withheld where no saga watches; UNSUNG). `brandr_met` sets TRUE either way; the introduction is canonical.
+  > CHOICE: [Keep your hands on your belt] → mercy_terror −1 (TRUE only — a courtesy withheld is no deed; the benches sing acts, not absences; UNSUNG). `brandr_met` sets TRUE either way; the introduction is canonical.
 
 BRANDR: (mounting; over his shoulder, without heat) Guard your grain, then. I'd have liked you across a fire instead of a field.
 
 [BATTLE TRIGGER → ch1-04-the-landless]
 
-[IN-BATTLE NOTE: while the raven-banner stands on the barrow crest, no Landless routs — the host's whole break-point lives on one high tile. Brandr fights from the crest, throwing rousing fornyrðislag barks each round; at half health he withdraws scripted, saluting Grím BY NAME if brandr_met warmed the parley — the wand's name given back. Felling him is deliberately impossible (the arc needs him breathing); wounding him to the trigger pays the named-enemy Wyrd beat instead. Every Landless who escapes an edge sings this field (C-ALIGN-04); hunting down routing, beaten men keeps the Sung ledger clean and the True ledger not (C-ALIGN-03).]
+[IN-BATTLE NOTE: while the raven-banner stands on the barrow crest, no Landless routs — the host's whole break-point lives on one high tile. Brandr fights from the crest, throwing rousing fornyrðislag barks each round; at half health he withdraws scripted, saluting Grím BY NAME if brandr_met warmed the parley — the wand's name given back. Felling him is deliberately impossible (the arc needs him breathing); no Wyrd Point attaches to the wound — C-WYRD-01 pays +1 only for FELLING a named enemy — instead, wounding him to the withdrawal trigger cracks the host's morale faster once their firebrand bleeds, and the saga marks the wound in the post-battle card. Every Landless who escapes an edge sings this field (C-ALIGN-04); hunting down routing, beaten men keeps the Sung ledger clean and the True ledger not (C-ALIGN-03).]
 
 ---
 
@@ -243,7 +243,7 @@ FREEDMAN: Shorter than the one we were on.
 
 [STAGE: horn-song from the wooded rise to the north — long, old, older than the ban. Then drums. Then, once, a bull's bellow. Smoke climbs from the terrace above the tree-line. The levy's old-faith men go quiet in a way that is not fear.]
 
-OLD LEVY-MAN: (half to himself) That horn hallowed my father's wedding. And his grave-ale. Every oath I ever swore, I swore under it. (he does not look at the reeve) And now it's breaking the king's law by sounding, and it's still the sound of everyone I come from. All three of those are true at once, and no one asked me which I'd keep. (C-LIE-05a)
+OLD LEVY-MAN: (half to himself) That's Þorgeir's horn. It hallowed my father's wedding. And his grave-ale. Every oath I ever swore, I swore under it. (he does not look at the reeve) And now it's breaking the king's law by sounding, and it's still the sound of everyone I come from. All three of those are true at once, and no one asked me which I'd keep. (C-LIE-05a)
 
 REEVE: (grim) A blót. Now. In the ban's third winter. That's rope for whoever presides.
 
@@ -370,9 +370,18 @@ NÍÐ-SKALD:
 > Bright on the boards    the bear-lord's better —
 > so fair a fame    for a fostered smith.
 
+[VARIANT — IF Grím took up the axe in silence at the Bear-Sark's claim (ch1-s07, choice 2 — carried as scene-script memory, no flag, like this scene's own exit choice): the promised colder opening. The hall heard no denial at Yule, and the verse opens on that silence — first, second, and fourth lines sung instead as below; the third line is kept, so the holmgang_grith variants that follow land unchanged:]
+
+> Hail the hall's champion —    the hushed one, masked!
+> Mum was his mouth    when men cried seiðr.
+> Bright on the boards    the bear-lord's better —
+> so fair a fame    for a face unshown.
+
 [VARIANT — IF holmgang_grith = executed, the third line is sung instead as: *"Cold on the boards / the bear-lord cooled —"* and the hall is already cold with it; the verse lands on dry tinder and no bench will shout for the masked man tonight.]
 
 [VARIANT — IF holmgang_grith = honored: a Bjarnholt lodge-brother left behind with the ale bangs the bench — LODGE-BROTHER: "The bear took his hand! Sing it straight, harp!" — and the poem talks him down by itself: the NÍÐ-SKALD bows to him, smiles, and folds the objection into the next stanza's first line ("Straight I sing it —") without dropping a beat. The hall laughs. The hall should not have laughed.]
+
+[VARIANT — the second stanza follows whatever rumor the winter actually grew. IF wyrd_flicker_witnessed — the ford-story is loose, and the verse rides it:]
 
 NÍÐ-SKALD:
 
@@ -380,6 +389,15 @@ NÍÐ-SKALD:
 > edges err,    aim goes elsewhere.
 > What ward so wills it?    What woman's craft?
 > Ask whose son    the slain make way for.
+
+[VARIANT — IF NOT wyrd_flicker_witnessed — no ford-rumor ever existed to ride; the insinuation goes at the mask and the fostering instead, the same blade on a different whetstone:]
+
+NÍÐ-SKALD:
+
+> Who fostered the foundling    no father owned?
+> Bought was the burn-story,    the boy's own coin.
+> Leather lies lightly    where the lie sits deep —
+> ask what face    the fire would know.
 
 [STAGE: the hall's warmth curdles by degrees — this is still shaped like praise and no longer tastes like it. Dag, at the high bench, has stopped eating. He does not look away for the rest of the scene, and he does not move (arithmetic).]
 
@@ -464,7 +482,7 @@ GRÍM: (watching the fire) What will the king do with the verse?
 GUNNHILD: (a silence with a shape to it — she knows, or guesses, and withholds; her one dishonesty of the night) …Eat your broth.
 
   > CHOICE: [Take the fire and the meal] → `ulfheim_shelter` = true; no axis movement — but ch1-08's kingsman branch becomes guest-cup betrayal atop kin-blood (Gunnhild's battle-barks change; the KINSLAYER verse gains an oath-breach stanza, C-CLAN-04), and Ch2-outlaw opens warmer.
-  > CHOICE: [Refuse, and walk on alone] → `ulfheim_shelter` = false; man_blood +2 (TRUE — he will not be blood's banner, yet). *(GUNNHILD, to his back, without raising her voice: "Your mother said no to us once, too.")*
+  > CHOICE: [Refuse, and walk on alone] → `ulfheim_shelter` = false; man_blood +2 (TRUE — he will not be blood's banner, yet). *(GUNNHILD, to his back, without raising her voice: "Your mother said no to us once, too.")* [STAGE/DESIGN NOTE: keep the line — and keep it hers. This is Gunnhild's carving, unverifiable: no scene, flag, or dossier confirms Aldís was ever asked, or ever answered. Per `02-characters.md` (Aldís's rule: no source about her is clean, and Ulfheim's Aldís is Gunnhild's banner-myth), downstream files must never corroborate it, footnote it, or let it harden into canon. It is a recruiter's grief doing recruitment — the saga gets no ruling on it.]
 
 [STAGE: scripted either way — the road, next dusk. The hird, in numbers no fugitive argues with, and orders no blade contradicts: the crown wants him ALIVE (ch1-07's capture note pays off). They are almost courteous. That is somehow worse.]
 
@@ -474,7 +492,7 @@ GUNNHILD: (a silence with a shape to it — she knows, or guesses, and withholds
 
 **[STAGE: the recitation pauses. The SKALD banks the fire himself — no thrall comes; none ever comes. He does not sit again straightaway. Present tense, to the hall (C-TONE-03); he is not named (C-FRAME-04).]**
 
-> **SKALD:** Give me a breath before this one. Even a hired mouth wants water before the bitter verse.
+> **SKALD:** Give me a breath before this one. Even a hired mouth wants water before the bitter verse. And mark, while I drink, how much of that winter the carving has already spent: of Brandr's whole hungry host it keeps one half-line — *barrow-thieves held    the bare high waste* — wolf's-heads on honest grain, and not a word of the arithmetic. A generation, priced at four beats.
 >
 > Hear first how it is *carved*, for the carving is the version that lived. The king's own singer cut it, that very spring: *the king honored young Grím with the torch at Ulfheim; the traitor-den was put down; the peace held.* An honor. A torch handed to a champion, like an arm-ring, like a name-day sword. That verse outlived its maker, his wage, and his king, and if you have heard of this burning before tonight, that is the shape you heard.
 >
@@ -585,6 +603,10 @@ RECORDING SKALD: (mildly, a professional answering a layman) Nothing does, at fi
 
 [BRANCH — IF ulfheim_shelter: faint, from the hills, on the wind — women's voices, a verse already being sung in the high country. The KINSLAYER carving, with the guest-cup stanza in it: *he burned the hearth he ate at.* Two sagas of the same morning are now alive and hunting each other (C-CLAN-04).]
 
+[BRANCH — IF holmgang_grith = honored: at the hird's morning fires the Yule holm travels with the column still — grudging respect, passed hand to hand with the cup: *the bear yielded and kept his hand; the boy fights clean.* Room is made for Grím at the fire without a word being spent on it.]
+
+[BRANCH — IF holmgang_grith = executed: the hird keeps its fires to itself. The guest-cup goes around Grím, never to him, and the muttering under it is Yule still — *a yielded man, killed on lawful boards.* No one says it to his face. After this morning, no one needs to.]
+
 [STAGE: DAG arrives by sledge with the king's writ, dressed for court, not for ash. He reads the terraces the way he reads everything: totals first.]
 
 DAG: The writ. (he hands it over; the seal is heavy) The vargdropi question is answered — so it says here, and what a document says, the crown remembers. You winter with the king's levies now; there'll be work. (he looks at the smoking tiers a moment; when he speaks again it is exactly one degree quieter) Congratulations are the wrong shape for this. Consider them unshaped.
@@ -608,7 +630,7 @@ CAPTAIN: (approaching with something wrapped in cloth: an arm-ring, king-weight 
 
 ### SCENE ch1-s12 — "Ash — the Outlaw" *(plays only when route = outlaw)*
 LOCATION: the Ulfheim steading, half-burned — the goat-track crest | TIME: dawn after the burning | WEATHER: snow
-FLAGS READ: [route, ulfheim_civilians_saved, ulfheim_shelter, brandr_met] | FLAGS SET: [—]
+FLAGS READ: [route, ulfheim_civilians_saved, ulfheim_shelter, brandr_met, crown_singer_escaped] | FLAGS SET: [—]
 PRESENT: Grím, Gunnhild, Brandr; unnamed: Ulfheim survivors, the Landless outriders
 
 [STAGE: the king's detachment lies in the in-fields where it turned to fight its own guide. The byre burned anyway — the torches were already thrown; a black smoking socket in the lowest terrace says the choice was never clean, and was never going to be. GUNNHILD stands on the goat-track crest, counting. Out loud. That is what she is for.]
@@ -643,13 +665,13 @@ BRANDR: (unashamed) Where better? Everyone's convictions are warm.
 
 GUNNHILD: Their singer. The crown's memory, the one with the wage. (she watches Grím's face for the answer before he gives it)
 
-[BRANCH — IF e13 escaped S:] GUNNHILD: Got out, then. So the hunt comes north with FACTS — names, numbers, the order refused, the captain down. A verse with figures in it. (grimly) Worse than hounds. Hounds tire.
+[BRANCH — IF crown_singer_escaped (e13 got out the S edge):] GUNNHILD: Got out, then. So the hunt comes north with FACTS — names, numbers, the order refused, the captain down. A verse with figures in it. (grimly) Worse than hounds. Hounds tire.
 
-[BRANCH — IF e13 was stopped:] GUNNHILD: No singer went south. (she turns it over, unsentimental) So the crown gets rumor — and rumor has more shapes than truth. Some of them are even kind. (beat; the one thing she says quietly all scene) The true count of this morning lives in no mouth the king can hire now. Remember where it does live. *(she does not say more; the True Ledger's country is a Chapter-2 door, and this scene only sets a hand on the latch — C-ALIGN-02.)*
+[BRANCH — IF NOT crown_singer_escaped (e13 was stopped on the field):] GUNNHILD: No singer went south. (she turns it over, unsentimental) So the crown gets rumor — and rumor has more shapes than truth. Some of them are even kind. (beat; the one thing she says quietly all scene) The true count of this morning lives in no mouth the king can hire now. Remember where it does live. *(she does not say more; the True Ledger's country is a Chapter-2 door, and this scene only sets a hand on the latch — C-ALIGN-02.)*
 
 [STAGE: the wolves are already at the field's edge, patient, and the king's dead lie where the fight left them.]
 
-  > CHOICE: [Give the king's fallen the raven-rite before the wolves strip them] → mercy_terror +2 (TRUE; SUNG only if e13 escaped — mercy to the crown's dead has no living crown witness otherwise).
+  > CHOICE: [Give the king's fallen the raven-rite before the wolves strip them] → mercy_terror +2 (TRUE; SUNG only if crown_singer_escaped — mercy to the crown's dead has no living crown witness otherwise).
   > CHOICE: [Let the steading take back its own from their packs] → mercy_terror −2 (TRUE); + salvage note (gear-tier bump into Ch2-outlaw). *(Either way, GUNNHILD watches which way the new blade cuts when no law is looking — and counts that, too.)*
 
 ---
@@ -660,6 +682,8 @@ FLAGS READ: [route, grove_blot_witnessed, ulfheim_civilians_saved, holmgang_grit
 PRESENT: — (frame; the SKALD, never named — C-FRAME-04; the benches)
 
 **[STAGE: the hall. The fire lower. The mead in the horns has not warmed all night, and no one has remarked on it, and no one will (C-WORLD-02). The SKALD finishes the Burning — and the recitation is checked, live, against the played record, and diverges in exactly ONE deliberate small way, chosen from the ledger state. The engine picks a single block below, priority as listed; the chosen gap is logged to the Saga Discrepancies table (`00-frame.md §3`) in the same commit as this file (C-FRAME-02).]**
+
+[VARIANT — one half-line earlier in the telling, where the recitation passed the Yule holm, bends to `holmgang_grith` — the same live-check pattern as the divergence blocks below, but sung at true pitch: the holm was always_sung, so the saga keeps whichever answer was witnessed. IF honored: *"the bear's bared hand    was borne up whole."* IF executed: *"the bear's bared hand    the boards drank cold."*]
 
 [DIVERGENCE — IF grith_first_accepted = false:]
 
@@ -707,7 +731,7 @@ PRESENT: — (frame; the SKALD, never named — C-FRAME-04; the benches)
 | 11 *(ch1-s03/ch1-03, ch1-s07)* | "The gods loved the smith's boy: iron turned from him at the grey ford, and the spears stepped wide." | A scripted CT slip nobody can explain — no light, no rune, just a killing thrust that arrives late (`wyrd_flicker_witnessed`); it enters the record only if one peddler lived to carry it, and if the battle went Unsung it never happened at all. The saga names it Wyrd only in hindsight (C-GRIM-05). | Rumor hardens into providence by retelling. The "blessing" is one frightened peddler's account passed hall to hall until it has a god in it — and the player chose whether that account was ever allowed to exist. |
 | 12 *(ch1-s02, ch1-s13 divergence)* | "The beaten boy cried grið in the burning hall, and the masked man raised him up and gave it, as the strong did in those days." | `grith_first_accepted` may be false: the yield refused before the watching household, −mercy on both ledgers. The saga sings the mercy regardless. | The hall wants its hero merciful, so the carving rounds him up. Mercy denied in front of family becomes mercy granted in front of posterity — the Sung ledger's gentlest and most total forgery. |
 | 13 *(ch1-s05, ch1-s13 divergence)* | "No fire burned on the old terrace in those years, for such fires were banned; the freedfolk came down to the coast unseen of any rite." | A present-day illegal blót (Y0, C-WORLD-05/OQ-5): white bull, pyre, Þorgeir presiding — witnessed, unseen, or silenced by the player's shepherding (`grove_blot_witnessed`), with depositions on crown vellum if it talked. | What the law says cannot happen, the record says did not happen. The recitation obeys the ban three hundred years after the kingdom that made it — law outliving fact, the níð-mechanism working on an entire rite. |
-| 14 *(ch1-s04)* | "Barrow-thieves held the high waste in those days, and their chief was a common wolf's-head who fell on honest grain." | The truce-wand parley: Brandr, named, righteous in fornyrðislag and in arithmetic — a generation outlawed for being born late and poor (C-LANDLESS-01), taking grain because the alternative is starving politely. Parley fails on tallies, not malice. | The crown's word for a man ("Landless," "wolf's-head") becomes the saga's job description for him. The erased generation is erased twice: once by the ban, once by the carving that remembers only the theft and never the arithmetic. |
+| 14 *(ch1-s04; recited in the Skald's Return before the Burning)* | "Barrow-thieves held the high waste in those days, and their chief was a common wolf's-head who fell on honest grain." | The truce-wand parley: Brandr, named, righteous in fornyrðislag and in arithmetic — a generation outlawed for being born late and poor (C-LANDLESS-01), taking grain because the alternative is starving politely. Parley fails on tallies, not malice. | The crown's word for a man ("Landless," "wolf's-head") becomes the saga's job description for him. The erased generation is erased twice: once by the ban, once by the carving that remembers only the theft and never the arithmetic. |
 
 ---
 
@@ -728,7 +752,8 @@ PRESENT: — (frame; the SKALD, never named — C-FRAME-04; the benches)
 | `ulfheim_shelter` | boolean | scene ch1-s09 (fire and meal taken) | scene ch1-s10; map ch1-08-burn-ulfheim; scene ch1-s11; scene ch1-s12 |
 | `route` | enum: kingsman / outlaw | map ch1-08-burn-ulfheim, turn-3 order (scripted in scene ch1-s10; irreversible, saves locked — C-ROUTE-02) | scene ch1-s11; scene ch1-s12; scene ch1-s13; all of Chapter 2 |
 | `ulfheim_civilians_saved` | counter 0–4 | map ch1-08-burn-ulfheim (households out the goat-track, either route) | scene ch1-s11; scene ch1-s12; scene ch1-s13 |
+| `crown_singer_escaped` | boolean | map ch1-08-burn-ulfheim (outlaw trigger — did the recording skald e13 escape the S edge) | scene ch1-s12; Ch2-outlaw (planned) |
 
 ---
 
-*File owner: narrative lead. Consumes: `CANON.md` (§1.4 Grím, §1.9 routes, §1.10 tone, §4 timeline), `00-frame.md` (skald voice, Discrepancies), `01-story-bible.md §4` (faith texture), `02-characters.md` (voices), `ph3-spine.json` (authoritative structure). Feeds: `00-frame.md §3` (rows 9–14 above, same commit), `04-ch2-*.md` (route openings), `data/flags/story-flags.json` (index above). All verse herein is composed, never quoted (C-TONE-01/02).*
+*File owner: narrative lead. Consumes: `CANON.md` (§1.4 Grím, §1.9 routes, §1.10 tone, §4 timeline), `00-frame.md` (skald voice, Discrepancies), `01-story-bible.md §4` (faith texture), `02-characters.md` (voices), the Phase-3 design spine (authoritative structure; a scratchpad phase artifact — its durable content lives in `data/maps/ch1/`, `data/flags/story-flags.json`, and `manifest/battle-manifest.md`). Feeds: `00-frame.md §3` (rows 9–14 above, same commit), `04-ch2-*.md` (route openings), `data/flags/story-flags.json` (index above). All verse herein is composed, never quoted (C-TONE-01/02).*
