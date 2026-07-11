@@ -1,0 +1,217 @@
+{
+  "id": "ch1-02-longhouse-night",
+  "name": "Longhouse Night",
+  "chapter": 1,
+  "order": 2,
+  "route_tags": ["shared"],
+  "grid": { "cols": 14, "rows": 9 },
+  "terrain": [
+    ["snow", "snow", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "snow", "snow", "snow", "snow"],
+    ["snow", "snow", "rock", "plank", "plank", "plank", "plank", "plank", "plank", "rock", "dirt", "snow", "snow", "snow"],
+    ["snow", "snow", "rock", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "dirt", "dirt", "dirt", "snow"],
+    ["snow", "snow", "rock", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "dirt", "dirt", "snow", "snow"],
+    ["snow", "snow", "wood_floor", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "wood_floor", "dirt", "dirt", "dirt", "dirt"],
+    ["snow", "snow", "rock", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "dirt", "dirt", "snow", "snow"],
+    ["snow", "snow", "rock", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "dirt", "dirt", "water_shallow", "snow"],
+    ["snow", "snow", "rock", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "dirt", "snow", "snow", "snow"],
+    ["snow", "snow", "rock", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "dirt", "snow", "snow", "snow"]
+  ],
+  "elevation": [
+    [0, 0, 6, 6, 6, 6, 6, 6, 6, 6, 0, 0, 0, 0],
+    [0, 0, 6, 3, 3, 3, 3, 3, 3, 6, 0, 0, 0, 0],
+    [0, 0, 6, 2, 1, 1, 1, 1, 2, 6, 0, 0, 0, 0],
+    [0, 0, 6, 1, 1, 1, 1, 1, 1, 6, 0, 0, 0, 0],
+    [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+    [0, 0, 6, 1, 1, 1, 1, 1, 1, 6, 0, 0, 0, 0],
+    [0, 0, 6, 1, 1, 1, 1, 1, 1, 6, 0, 0, 0, 0],
+    [0, 0, 6, 1, 1, 1, 1, 1, 1, 6, 0, 0, 0, 0],
+    [0, 0, 6, 1, 1, 1, 1, 1, 1, 6, 0, 0, 0, 0]
+  ],
+  "overlays": [
+    { "pos": [3, 1], "type": "flammable", "note": "west sleeping-loft, plank — catches from below by mid-battle; hall-folk start here" },
+    { "pos": [4, 1], "type": "flammable" },
+    { "pos": [5, 1], "type": "flammable" },
+    { "pos": [6, 1], "type": "flammable" },
+    { "pos": [7, 1], "type": "flammable" },
+    { "pos": [8, 1], "type": "flammable", "note": "east sleeping-loft end — nearest the fire seed, first loft tile to catch" },
+    { "pos": [3, 2], "type": "flammable", "note": "west ladder tile (elev 2) — if this burns, the loft's only easy way down is a 2h drop" },
+    { "pos": [4, 2], "type": "flammable" },
+    { "pos": [5, 2], "type": "flammable" },
+    { "pos": [6, 2], "type": "flammable" },
+    { "pos": [7, 2], "type": "flammable" },
+    { "pos": [8, 2], "type": "flammable", "note": "east ladder tile (elev 2)" },
+    { "pos": [3, 3], "type": "flammable" },
+    { "pos": [4, 3], "type": "flammable" },
+    { "pos": [5, 3], "type": "flammable" },
+    { "pos": [6, 3], "type": "flammable" },
+    { "pos": [7, 3], "type": "flammable" },
+    { "pos": [8, 3], "type": "flammable" },
+    { "pos": [2, 4], "type": "flammable", "note": "west door threshold" },
+    { "pos": [9, 4], "type": "flammable", "note": "east door threshold — e2's torch seeds fire here on turn 1" },
+    { "pos": [3, 5], "type": "flammable" },
+    { "pos": [4, 5], "type": "flammable" },
+    { "pos": [5, 5], "type": "flammable" },
+    { "pos": [6, 5], "type": "flammable" },
+    { "pos": [7, 5], "type": "flammable" },
+    { "pos": [8, 5], "type": "flammable" },
+    { "pos": [3, 6], "type": "flammable" },
+    { "pos": [4, 6], "type": "flammable" },
+    { "pos": [5, 6], "type": "flammable" },
+    { "pos": [6, 6], "type": "flammable" },
+    { "pos": [7, 6], "type": "flammable" },
+    { "pos": [8, 6], "type": "flammable" },
+    { "pos": [3, 7], "type": "flammable" },
+    { "pos": [4, 7], "type": "flammable" },
+    { "pos": [5, 7], "type": "flammable" },
+    { "pos": [6, 7], "type": "flammable" },
+    { "pos": [7, 7], "type": "flammable" },
+    { "pos": [8, 7], "type": "flammable" },
+    { "pos": [3, 8], "type": "flammable", "note": "byre stalls — straw bedding, burns fast" },
+    { "pos": [4, 8], "type": "flammable" },
+    { "pos": [5, 8], "type": "flammable" },
+    { "pos": [6, 8], "type": "flammable" },
+    { "pos": [7, 8], "type": "flammable" },
+    { "pos": [8, 8], "type": "flammable" },
+    { "pos": [11, 2], "type": "flammable", "note": "east-yard woodpile — e1 directs the burn from beside it" }
+  ],
+  "weather": "night",
+  "deployment": {
+    "player_zones": [[4, 3], [5, 3], [6, 3], [4, 5], [5, 5], [6, 5]],
+    "max_units": 4
+  },
+  "enemies": [
+    {
+      "id": "e1",
+      "job": "raider",
+      "level": 3,
+      "facing": "W",
+      "pos": [12, 2],
+      "ai": "leader",
+      "named": false,
+      "grid_notes": "East yard by the woodpile at [11,2], elev 0. Brother of the boat-steerer routed at the strand; came back at night for food and for shame. Directs the burn from the yard and enters late."
+    },
+    {
+      "id": "e2",
+      "job": "raider",
+      "level": 2,
+      "facing": "W",
+      "pos": [10, 4],
+      "ai": "script",
+      "named": false,
+      "grid_notes": "Torch-bearer at the east door, elev 0: scripted to fire the east doorframe [9,4] on turn 1, then fight. Downing him before turn 1 ends (hard) prevents one fire seed."
+    },
+    {
+      "id": "e3",
+      "job": "berserker",
+      "level": 3,
+      "facing": "W",
+      "pos": [9, 4],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "The door-breaker, on the east door threshold (elev 1), pushing into the hall. Teaches that a choke-point holds only if facing is disciplined."
+    },
+    {
+      "id": "e4",
+      "job": "drengr",
+      "level": 2,
+      "facing": "E",
+      "pos": [1, 4],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "West yard, elev 0, forcing the west door [2,4]. Second prong; punishes stacking everyone at the east door."
+    },
+    {
+      "id": "e5",
+      "job": "veidimadr",
+      "level": 2,
+      "facing": "W",
+      "pos": [12, 4],
+      "ai": "guard",
+      "named": false,
+      "grid_notes": "East yard on the row-4 door line, elev 0. Interior LoS lesson: the open east-door corridor (row 4) is his firing slot down the hearth-line; closing the angle blinds him."
+    },
+    {
+      "id": "e6",
+      "job": "drengr",
+      "level": 1,
+      "facing": "W",
+      "pos": [13, 3],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "East yard rear, elev 0. A boy of fifteen winters with a shield too big for him. Cries grið when the leader falls or below 25% HP — the chapter's first yield (C-ALIGN-05)."
+    }
+  ],
+  "neutrals": [
+    {
+      "id": "n1",
+      "type": "witness",
+      "pos": [3, 1],
+      "ai": "flee",
+      "escape_edge": "W",
+      "grid_notes": "The smith's mother, west sleeping-loft (elev 3); will not leave until the ladder tile [3,2] is safe. Sees the grið answer from above."
+    },
+    {
+      "id": "n2",
+      "type": "civilian",
+      "pos": [4, 1],
+      "ai": "flee",
+      "escape_edge": "W",
+      "grid_notes": "House-thrall in the west loft beside n1; carries n3's bundle."
+    },
+    {
+      "id": "n3",
+      "type": "civilian",
+      "pos": [5, 1],
+      "ai": "flee",
+      "escape_edge": "W",
+      "grid_notes": "Elderly kinsman, far corner of the west loft, 2-move. The fire clock is really HIS clock."
+    }
+  ],
+  "objectives": {
+    "primary": "Hold the hall: fell or rout all raiders before fire consumes the sleeping-lofts.",
+    "secondary": [
+      "All three hall-folk survive.",
+      "Douse at least two fire tiles at the well (teaches the overlay interaction).",
+      "Accept the boy's grið (surfaced after the trigger fires)."
+    ],
+    "defeat": "Grim falls, or fire takes the west loft with hall-folk still on it."
+  },
+  "escape_edges": ["E", "W"],
+  "witness_rule": "sung_if_any_witness_or_router_escapes",
+  "triggers": [
+    {
+      "when": "turn>=1",
+      "event": "torch_the_east_door",
+      "once": true,
+      "note": "e2's script: fire overlay seeds on the east doorframe tile [9,4]; the flammable hall starts burning."
+    },
+    {
+      "when": "turn>=3",
+      "event": "fire_spread_tick",
+      "note": "Recurring: fire spreads to adjacent flammable tiles, preferring the highest — smoke and heat climb; the lofts (row 1, elev 3) catch from mid-battle. The well at [12,6] is the douse-action anchor."
+    },
+    {
+      "when": "unit_downed:e1",
+      "event": "grid_cry_e6",
+      "set_flag": "grith_first_accepted",
+      "once": true,
+      "note": "Leader down: e6 throws his shield and cries grið before the loft's eyes. Accepting writes the flag true and (Sung) +mercy; executing leaves it false, -mercy on True always and on Sung too, since the household watches (C-ALIGN-05). The scene ch1-s03 pays the flag off."
+    },
+    {
+      "when": "hp_below:e6:25",
+      "event": "grid_cry_e6_early",
+      "set_flag": "grith_first_accepted",
+      "once": true,
+      "note": "Same yield, alternate path — whichever fires first resolves the grið choice and writes the same flag."
+    },
+    {
+      "when": "unit_downed:any_player",
+      "event": "valkyrie_vfx_cue"
+    }
+  ],
+  "designer_notes": {
+    "height_gimmick": "High ground with an expiry date: heat and smoke climb, so as fire overlays spread, tiles catch and choke from the TOP down — the lofts (elev 3, reached by ladder tiles at [3,2] and [8,2], elev 2) are the best firing platforms in the hall and the first ground the fire makes untenable. The only Ch1 map where elevation is a wasting asset you must abandon on time rather than a prize you hold.",
+    "witness_setup": "Three hall-folk (n1-n3) are trapped in the west sleeping-loft — the household witnesses everything, including how the first grið cry is answered. The player cannot remove these witnesses except by letting their own people burn (the game permits it; the True Ledger remembers, C-ALIGN-03). Effectively always witnessed in practice, by design: mercy's first test happens in front of family.",
+    "intent": "Interior defense under a spreading-fire clock; teaches overlays (flammable→fire), choke-point fighting at doors, and the grið mechanic — the first yield of the game, offered by a beaten boy in front of the household (C-ALIGN-05). Layout: turf-wall longhouse (rock, elev 6, LoS-blocking) fills cols 2-9 with doors west [2,4] and east [9,4]; stone_floor hearth-line down row 4; plank sleeping-lofts along row 1 at elev 3; byre stalls at row 8; snow yard west (cols 0-1), dirt-and-snow east yard (cols 10-13) with woodpile [11,2] and well [12,6]."
+  }
+}
