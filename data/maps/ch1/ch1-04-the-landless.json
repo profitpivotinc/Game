@@ -123,10 +123,10 @@
       "job": "veidimadr",
       "level": 3,
       "facing": "W",
-      "pos": [1, 4],
+      "pos": [1, 5],
       "ai": "guard",
       "named": false,
-      "grid_notes": "Bow on the croft wall-stub (elev 2) — a lesser height rhyme so the barrow isn't the only vertical read."
+      "grid_notes": "Bow on the croft wall-stub (elev 2), one row south of the old [1,4] post so the deployment zone (rows 0-2, cols 1-3) sits outside his turn-1 arc — he spoils the approach to the croft, not the drop zone. Still a lesser height rhyme so the barrow isn't the only vertical read."
     },
     {
       "id": "e8",
@@ -137,6 +137,26 @@
       "ai": "support",
       "named": false,
       "grid_notes": "The host's only healer on the reverse slope behind the crest (east ring, elev 3), hoarding three bandage kits. Killing the poorest men's one laeknir is efficient and ugly; the game notices nothing aloud (True ledger does)."
+    },
+    {
+      "id": "e9",
+      "job": "drengr",
+      "level": 3,
+      "facing": "W",
+      "pos": [12, 11],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "REINFORCEMENT — held off-board until the turn-7 trigger fires; enters at this road tile."
+    },
+    {
+      "id": "e10",
+      "job": "drengr",
+      "level": 3,
+      "facing": "W",
+      "pos": [13, 11],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "REINFORCEMENT — held off-board until the turn-7 trigger fires; enters at this road tile."
     }
   ],
   "neutrals": [

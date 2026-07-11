@@ -23,33 +23,13 @@
     [0, 0, 0, 0, 1, 1, 2, 2, 5, 4, 4, 4],
     [0, 0, 0, 0, 0, 1, 2, 3, 5, 4, 4, 4],
     [0, 0, 0, 0, 0, 1, 2, 3, 5, 4, 4, 4],
-    [0, 0, 0, 0, 0, 1, 2, 3, 5, 4, 4, 4],
     [0, 0, 0, 0, 0, 2, 2, 3, 5, 4, 4, 4],
-    [0, 0, 0, 1, 1, 2, 2, 3, 5, 4, 4, 4],
+    [0, 0, 0, 0, 0, 2, 2, 3, 5, 4, 4, 4],
+    [0, 0, 0, 1, 0, 2, 2, 3, 5, 4, 4, 4],
     [0, 0, 0, 1, 1, 2, 2, 3, 5, 4, 4, 4],
     [0, 0, 0, 0, 0, 0, 0, 0, 5, 4, 4, 4]
   ],
   "overlays": [
-    { "pos": [0, 0], "type": "drown_edge", "note": "winter sea — the downward pull; drown_edge on every water_deep tile (cols 0-1), foreshadowing" },
-    { "pos": [1, 0], "type": "drown_edge" },
-    { "pos": [0, 1], "type": "drown_edge" },
-    { "pos": [1, 1], "type": "drown_edge" },
-    { "pos": [0, 2], "type": "drown_edge" },
-    { "pos": [1, 2], "type": "drown_edge" },
-    { "pos": [0, 3], "type": "drown_edge" },
-    { "pos": [1, 3], "type": "drown_edge" },
-    { "pos": [0, 4], "type": "drown_edge" },
-    { "pos": [1, 4], "type": "drown_edge" },
-    { "pos": [0, 5], "type": "drown_edge" },
-    { "pos": [1, 5], "type": "drown_edge" },
-    { "pos": [0, 6], "type": "drown_edge" },
-    { "pos": [1, 6], "type": "drown_edge" },
-    { "pos": [0, 7], "type": "drown_edge" },
-    { "pos": [1, 7], "type": "drown_edge" },
-    { "pos": [0, 8], "type": "drown_edge" },
-    { "pos": [1, 8], "type": "drown_edge" },
-    { "pos": [0, 9], "type": "drown_edge" },
-    { "pos": [1, 9], "type": "drown_edge" },
     { "pos": [5, 6], "type": "flammable", "note": "naust (boat-shed), NW corner — nothing ignites here; vocabulary planted for ch1-02" },
     { "pos": [6, 6], "type": "flammable" },
     { "pos": [5, 7], "type": "flammable" },
@@ -92,7 +72,7 @@
       "pos": [4, 6],
       "ai": "aggressive",
       "named": false,
-      "grid_notes": "Charges due east at the naust and stalls at the 2h lip ([4,6] elev 0 vs [5,6] elev 2) — demonstrates Jump limits."
+      "grid_notes": "Charges due east at the naust and stalls at the 2h lip ([4,6] elev 0 vs [5,6] elev 2) — demonstrates Jump limits (C-ELEV-02: 2h faces are walls to Jump 2). The naust's whole west face ([5,5]-[5,7] over col 4) is a uniform 2h step; his nearest ways up are detours — e5's skerry stepping-stone stair [4,8]→[5,8] to the south, or the grass terraces to the north."
     },
     {
       "id": "e4",
@@ -122,7 +102,7 @@
       "pos": [5, 5],
       "ai": "flee",
       "escape_edge": "E",
-      "grid_notes": "Fisher-wife at the naust doorway on the first terrace (elev 1); bolts north for the switchback and the rim when blades come out."
+      "grid_notes": "Fisher-wife at the naust doorway on the naust terrace (elev 2); bolts north — a 1h drop to [5,4] — for the switchback and the rim when blades come out."
     },
     {
       "id": "n2",
@@ -172,7 +152,7 @@
   ],
   "designer_notes": {
     "height_gimmick": "A one-way amphitheatre fought from the top down: the defenders (player) begin holding ALL the height — deployment on the rim plateau (cols 9-11, elev 4-5) and the crag lip (col 8, elev 5) — and the raiders must climb into bow-fire, so the tutorial lesson is spending elevation. Every 2h of advantage buys +1 bow range over the beach (C-ELEV-01): the crag archer at elev 5 shoots +2 over shingle at 0 and over the skerry bow at 1, and neither can answer. The north switchback road (rows 2→1→0, elev 0,1,1,2,2 then 3,3 then 4,4) is the ONLY 0-to-4 ascent in single steps; the face below the rim (col 7 elev 3 vs col 8 elev 5, and the north shoulder at 4 over slopes 1-2) jumps 2-4h per tile and is unclimbable for Jump 2 — so the only path down into melee gives all of it back, and no other Ch1 map starts the player rich in height and teaches its exchange rate.",
-    "witness_setup": "Two hold-folk shelter in the raiders' path and see everything: n1 the fisher-wife at the naust doorway ([5,5], elev 1) and n2 the old net-mender among the herring-racks ([7,4], elev 3); a loose goat (n3) adds flight-line comedy on the road choke. e5 flanks over the skerry stepping-stones straight at them. Beaten raiders can rout west to their beached boat (escape edge W). This battle is meant to be Sung — it is the player's own hearth and the witnesses are their own people; keeping it Unsung would require letting or making the hold's folk die, which the game permits and remembers (C-ALIGN-03). Teaches the witness/ledger UI in its gentlest case.",
-    "intent": "Tutorial: movement, CT turn order, facing basics, elevation and bow range, first valkyrie VFX on a downed unit (the Harvest Lie shown as beautiful fact, C-LIE-01/C-DEATH-01). Enemy count and levels forgiving; defeat unlikely."
+    "witness_setup": "Two hold-folk shelter in the raiders' path and see everything: n1 the fisher-wife at the naust doorway ([5,5], elev 2) and n2 the old net-mender among the herring-racks ([7,4], elev 3); a loose goat (n3) adds flight-line comedy on the road choke. e5 flanks over the skerry stepping-stones straight at them. Beaten raiders can rout west to their beached boat (escape edge W). This battle is meant to be Sung — it is the player's own hearth and the witnesses are their own people; keeping it Unsung would require letting or making the hold's folk die, which the game permits and remembers (C-ALIGN-03). Teaches the witness/ledger UI in its gentlest case.",
+    "intent": "Tutorial: movement, CT turn order, facing basics, elevation and bow range, first valkyrie VFX on a downed unit (the Harvest Lie shown as beautiful fact, C-LIE-01/C-DEATH-01). Enemy count and levels forgiving; defeat unlikely. The winter sea (cols 0-1) is water_deep and therefore intrinsically drowning-lethal — the downward pull is the terrain itself, no drown_edge overlays needed (D-TERR-02)."
   }
 }

@@ -45,7 +45,7 @@
     { "pos": [5, 3], "type": "flammable" },
     { "pos": [6, 3], "type": "flammable" },
     { "pos": [7, 3], "type": "flammable" },
-    { "pos": [8, 3], "type": "flammable" },
+    { "pos": [8, 3], "type": "flammable", "note": "east doorframe flank, interior — seeded by torch_the_east_door with [9,4]; orthogonally connected to the hall's flammable network via [7,3] and [8,2]" },
     { "pos": [2, 4], "type": "flammable", "note": "west door threshold" },
     { "pos": [9, 4], "type": "flammable", "note": "east door threshold — e2's torch seeds fire here on turn 1" },
     { "pos": [3, 5], "type": "flammable" },
@@ -53,7 +53,7 @@
     { "pos": [5, 5], "type": "flammable" },
     { "pos": [6, 5], "type": "flammable" },
     { "pos": [7, 5], "type": "flammable" },
-    { "pos": [8, 5], "type": "flammable" },
+    { "pos": [8, 5], "type": "flammable", "note": "east doorframe flank, interior — seeded by torch_the_east_door with [9,4]; orthogonally connected to the hall's flammable network via [7,5] and [8,6]" },
     { "pos": [3, 6], "type": "flammable" },
     { "pos": [4, 6], "type": "flammable" },
     { "pos": [5, 6], "type": "flammable" },
@@ -98,7 +98,7 @@
       "pos": [10, 4],
       "ai": "script",
       "named": false,
-      "grid_notes": "Torch-bearer at the east door, elev 0: scripted to fire the east doorframe [9,4] on turn 1, then fight. Downing him before turn 1 ends (hard) prevents one fire seed."
+      "grid_notes": "Torch-bearer at the east door, elev 0: scripted to fire the east doorframe [9,4] and its interior flanks [8,3],[8,5] on turn 1, then fight. Downing him before turn 1 ends (hard) prevents the east fire seeds."
     },
     {
       "id": "e3",
@@ -174,7 +174,7 @@
       "Douse at least two fire tiles at the well (teaches the overlay interaction).",
       "Accept the boy's grið (surfaced after the trigger fires)."
     ],
-    "defeat": "Grim falls, or fire takes the west loft with hall-folk still on it."
+    "defeat": "Grím falls, or fire or smoke takes the west loft with hall-folk still on it."
   },
   "escape_edges": ["E", "W"],
   "witness_rule": "sung_if_any_witness_or_router_escapes",
@@ -183,26 +183,29 @@
       "when": "turn>=1",
       "event": "torch_the_east_door",
       "once": true,
-      "note": "e2's script: fire overlay seeds on the east doorframe tile [9,4]; the flammable hall starts burning."
+      "note": "e2's script: it ignites [9,4],[8,3],[8,5]. The threshold tile [9,4] alone has no orthogonally-adjacent flammable (stone_floor west, turf walls north/south, dirt east), so the torch also catches the interior doorframe flanks [8,3] and [8,5], which are orthogonally connected to the hall's flammable network; the flammable hall starts burning."
+    },
+    {
+      "when": "turn>=2",
+      "event": "smoke_choke_tick",
+      "note": "Recurring: smoke pools under the roof, so each tick the HIGHEST interior tiles become untenable from smoke regardless of flame adjacency — the sleeping-lofts (row 1, elev 3) choke first, then the ladder tiles (elev 2), then the hall floor as the smoke banks down. A choked tile is dousable at the well [12,6] like a burning one. TOP-DOWN SMOKE is this map's clock — inverts ch1-08, where fire climbs from below."
     },
     {
       "when": "turn>=3",
       "event": "fire_spread_tick",
-      "note": "Recurring: fire spreads to adjacent flammable tiles, preferring the highest — smoke and heat climb; the lofts (row 1, elev 3) catch from mid-battle. The well at [12,6] is the douse-action anchor."
+      "note": "Recurring: flame spreads along orthogonally-adjacent flammable tiles with NO height preference — the burn is a floor problem; the killing clock overhead is smoke_choke_tick. The well at [12,6] is the douse-action anchor for both."
     },
     {
       "when": "unit_downed:e1",
       "event": "grid_cry_e6",
-      "set_flag": "grith_first_accepted",
       "once": true,
-      "note": "Leader down: e6 throws his shield and cries grið before the loft's eyes. Accepting writes the flag true and (Sung) +mercy; executing leaves it false, -mercy on True always and on Sung too, since the household watches (C-ALIGN-05). The scene ch1-s03 pays the flag off."
+      "note": "Leader down: e6 throws his shield and cries grið before the loft's eyes. The cry only OPENS the accept/execute prompt — no flag is written here; a post-battle resolution script owns the grith_first_accepted write (true only on accept, false otherwise), mirroring ch1-03's finalize pattern for wyrd_flicker_witnessed. Accepting is (Sung) +mercy; executing is -mercy on True always and on Sung too, since the household watches (C-ALIGN-05). The scene ch1-s03 pays the flag off. Once-group with grid_cry_e6_early: whichever fires first resolves the yield; the other is suppressed."
     },
     {
       "when": "hp_below:e6:25",
       "event": "grid_cry_e6_early",
-      "set_flag": "grith_first_accepted",
       "once": true,
-      "note": "Same yield, alternate path — whichever fires first resolves the grið choice and writes the same flag."
+      "note": "Same yield, alternate path — opens the same accept/execute prompt, writes nothing; the post-battle resolution script owns the grith_first_accepted write (true only on accept), per ch1-03's finalize pattern. Once-group with grid_cry_e6: whichever fires first resolves the grið choice; the other is suppressed."
     },
     {
       "when": "unit_downed:any_player",
@@ -210,7 +213,7 @@
     }
   ],
   "designer_notes": {
-    "height_gimmick": "High ground with an expiry date: heat and smoke climb, so as fire overlays spread, tiles catch and choke from the TOP down — the lofts (elev 3, reached by ladder tiles at [3,2] and [8,2], elev 2) are the best firing platforms in the hall and the first ground the fire makes untenable. The only Ch1 map where elevation is a wasting asset you must abandon on time rather than a prize you hold.",
+    "height_gimmick": "Height SUFFOCATES FIRST: smoke pools at the roof, so each smoke tick the HIGHEST interior tiles choke before anything under them burns — the sleeping-lofts (row 1, elev 3, reached by ladder tiles at [3,2] and [8,2], elev 2) are the best firing platforms in the hall and the first tiles lost, made untenable regardless of where the flames have reached, while flame itself creeps along adjacent flammables with no height preference; the well at [12,6] douses either. The lofts you'd hold are the first ground you lose: elevation here is a wasting asset to abandon on time, not a prize to hold — top-down smoke inverts ch1-08, where fire climbs from below.",
     "witness_setup": "Three hall-folk (n1-n3) are trapped in the west sleeping-loft — the household witnesses everything, including how the first grið cry is answered. The player cannot remove these witnesses except by letting their own people burn (the game permits it; the True Ledger remembers, C-ALIGN-03). Effectively always witnessed in practice, by design: mercy's first test happens in front of family.",
     "intent": "Interior defense under a spreading-fire clock; teaches overlays (flammable→fire), choke-point fighting at doors, and the grið mechanic — the first yield of the game, offered by a beaten boy in front of the household (C-ALIGN-05). Layout: turf-wall longhouse (rock, elev 6, LoS-blocking) fills cols 2-9 with doors west [2,4] and east [9,4]; stone_floor hearth-line down row 4; plank sleeping-lofts along row 1 at elev 3; byre stalls at row 8; snow yard west (cols 0-1), dirt-and-snow east yard (cols 10-13) with woodpile [11,2] and well [12,6]."
   }

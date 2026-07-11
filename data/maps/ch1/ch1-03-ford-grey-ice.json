@@ -46,12 +46,10 @@
     { "pos": [6, 3], "type": "ice" },
     { "pos": [7, 3], "type": "ice" },
     { "pos": [8, 3], "type": "ice" },
-    { "pos": [9, 3], "type": "drown_edge", "note": "black water under the north plates — a 3h shove off e4's lip at [10,3] ends here" },
     { "pos": [6, 4], "type": "ice" },
     { "pos": [7, 4], "type": "ice" },
     { "pos": [8, 4], "type": "ice" },
     { "pos": [9, 4], "type": "ice" },
-    { "pos": [6, 5], "type": "drown_edge", "note": "the hole at the west ford mouth — row 6 is the true ramp lane; row 5 steps into the river" },
     { "pos": [7, 5], "type": "ice" },
     { "pos": [8, 5], "type": "ice", "note": "ford plate where the peddler stands when the ambush springs" },
     { "pos": [9, 5], "type": "ice" },
@@ -206,8 +204,8 @@
     }
   ],
   "designer_notes": {
-    "height_gimmick": "The only map where height is a weapon that points DOWN: bank lips overhang the ice by 2h (3h at e4's perch over the [9,3] hole), so a shove or knockback off the lip inflicts fall damage AND an ice-slide in the push direction (slip tiles carry momentum) — and any unit falling 2h+ onto a plate cracks it to water_shallow next tick. Elevation here is never climbed for advantage; it is spent, by throwing people off it.",
+    "height_gimmick": "The only map where height is a weapon that points DOWN: bank lips overhang the ice by 2h (3h at e4's perch over the [9,3] hole). A shove or knockback off a 2h lip deals no fall damage (C-ELEV-01: falling >2h damages) — its payoff is the ice-slide in the push direction (slip tiles carry momentum) plus the plate-crack: any unit falling 2h+ onto a plate cracks it to water_shallow next tick. e4's 3h perch is the map's one damaging drop. Elevation here is never climbed for advantage; it is spent, by throwing people off it.",
     "witness_setup": "One peddler (n1) with a pack-pony is mid-crossing when the ambush springs; he flees east up the far road. The fog kills all other sightlines. If the player cuts him off on the ice, the fight vanishes into grey — Unsung, and Grím's flicker of impossible luck goes with it; if he escapes, 'the smith's boy the spears refuse' is talked into every hall by the Yule feast. The first Wyrd rumor is entirely the player's choice to permit (C-GRIM-05).",
-    "intent": "River-crossing fight on slip tiles; teaches ice movement, knockback positioning, and drown edges — and stages Grím's first involuntary Wyrd flicker as a scripted, deniable CT hiccup the fog half-swallows. CT-manipulation preview: the player SEES a turn slip on the timeline and is given no explanation."
+    "intent": "River-crossing fight on slip tiles; teaches ice movement, knockback positioning, and drowning holes — the black water at [9,3] (under e4's lip; a 3h shove off [10,3] ends here) and at [6,5] (west ford mouth: row 6 is the true ramp lane, row 5 steps into the river) is water_deep terrain, intrinsically drowning-lethal with no drown_edge overlay needed (D-TERR-02) — and stages Grím's first involuntary Wyrd flicker as a scripted, deniable CT hiccup the fog half-swallows. CT-manipulation preview: the player SEES a turn slip on the timeline and is given no explanation."
   }
 }
