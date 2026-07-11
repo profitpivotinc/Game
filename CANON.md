@@ -92,6 +92,7 @@ Status legend: **[P]** placeholder (subject to Rename Table) · **[T]** TUNABLE 
 - **C-CT-01.** Charge Time: each tick `CT += Speed`; act at CT ≥ 100. Act+move resets to 0; move-only or act-only resets to 20 **[T]**. Spells/rune-carvings charge on their own per-spell speed — diegetically, casting time IS carving/chanting time.
 - **C-FACE-01.** Side attacks +12% hit, back +25% hit **[T]**. Facing auto-sets on act end; Wait lets you choose.
 - **C-ELEV-01.** Melee strikes within ±1h. Bows: +1 range per 2h advantage; LoS blocked by intervening tiles at/above the sightline. +1 move cost per 1h climbed, capped by Jump. Falling > 2h damages. **[T]**
+- **C-ELEV-02.** **Climb convention (Phase 3 ruling, [T]):** the maximum single-step climb is **Jump − 1** height units; Chapter-1 standard units have Jump 2, so only 1h steps are climbable and any 2h+ face is a wall to them. Every ch1 map is built to this reading. Revisit in `spec-combat-core.md` (Phase 2) — see OQ-6.
 - **C-DEATH-01.** Downed unit persists 3 of its own would-be activations (ravens 3→2→1). At zero: valkyrie descends, unit is gone, drops grave-goods (equipped weapon), name enters the Einherjar Roster. Reviving is, in-fiction, theft from the gods.
 - **C-DEATH-02.** **[F]** Einherjar returns: from Chapter 3 on, enemy formations may include the player's permanently fallen units — final job, final abilities, +1 gear tier, rune-lit. Striking them down "unhooks them from the harvest": +1 Wyrd Point and a unique saga line per unit. FIXED — it is the permadeath payoff.
 - **C-WYRD-01.** Wyrd Points (Grím only): pool of 3 per battle **[T]**; +1 per fate-defiance (surviving a lethal hit at 1 HP; felling a named enemy). Powers: **Slip** (enemy CT −30, cost 1), **Thread** (ally CT +30, cost 1), **Twist** (reroll one to-hit, cost 1), **Sever** (rewind Grím's last action, once per battle, cost 3). **[T]**
@@ -162,6 +163,8 @@ Status legend: **[P]** placeholder (subject to Rename Table) · **[T]** TUNABLE 
 | the high grove | old-faith altar in the high fells | where Yrsa was hanged and Ingunn martyred; goðar blót-site. **Distinct** from the raven-wood | — |
 | the raven-wood | Hrafnmark's seat (rune-grove of seiðr-halls) | a wooded inland march; the fire-path "burns the raven-wood" (C-NID-EVIDENCE-01). Kept distinct from the high grove to prevent map/scene conflation | — |
 | the White God | new-faith epithet | historically attested Norse epithet for Christ (*Hvítakristr*); kept as in-world epithet for the invented faith | — |
+| the Trickster | in-world epithet of Loki | used in níð-verse and pious speech where the god's name is avoided (cf. 00-frame row 4, the second níð) | — |
+| the Landless | Brandr's outlawed-raider host | the movement's name (C-LANDLESS-01); capitalized as a faction noun, not a clan | — |
 | the Corpse-Eater | the hunger at the roots | Níðhöggr-analog; canon deliberately does not use the real name | — |
 | the World-Tree | cosmic tree | Yggdrasill-analog; canon uses only the common noun | — |
 | Hel | goddess, keeper of the un-glorious dead | real-myth. Loki's daughter | — |
@@ -213,6 +216,7 @@ Standardized spellings for prose. Story files may gloss on first use; specs use 
 | **wyrd** | fate. Anglo-Saxon cognate used for readability; ON purist alternative *urðr* recorded here. Standardize on "wyrd." |
 | **seeding the roots** | the old priesthood's inner-rite euphemism for the true downward harvest — half-knowledge that the dead go *down*, not up (C-LIE-02a). Used only by the inner circle (e.g. Þorgeir's rite), never in public doctrine. |
 | **guest-cup** | the hospitality-oath cup; breaking it is the deepest Norse stigma (the OATHBREAKER fire-tag, C-CLAN-04). |
+| **Yule** | the midwinter feast; capitalized calendar term (like "Thing"). Chapter 1's Yule feast hosts the second níð. |
 
 **Job-name gloss** (full definitions in `docs/design/spec-jobs.md`): Drengr "worthy young warrior" (base); Huscarl "house-man" (knight); Veiðimaðr "hunter" (archer); Berserker (monk); Læknir "healer" (chemist); Völva "staff-bearer, seeress" (white mage); Seiðmaðr "seiðr-man" (black mage); Norn-touched (time mage); Goði (summoner); Raider (thief); Skald (orator/bard fused); Runespeaker (oracle); Vættir-speaker (geomancer); Wyrmslayer (dragoon); Skógarmaðr (ninja); Varangian (samurai); Rune-reckoner (calculator); Riddari "rider" (mounted knight, Hjortdal-exclusive); **Wyrdless** (Grím-unique command, not a job).
 
@@ -243,6 +247,7 @@ Ordering per KICKOFF §5.1 is fixed: Unmaking → Blót of Yrsa → Raiding Ban 
 - **D-COORD-01.** Positions are `[col, row]`, 0-indexed. `col 0` = west edge, `row 0` = north edge. Map edges are `"N" | "S" | "E" | "W"`.
 - **D-COORD-02.** `terrain` and `elevation` are row-major: outer array = rows (north → south), inner arrays = cols (west → east). Dimensions must equal `grid.rows` × `grid.cols`.
 - **D-TERR-01.** Terrain vocabulary **[T, extensible via schema]**: `grass, dirt, rock, sand, shingle, snow, ice, water_shallow, water_deep, marsh, road, plank, wood_floor, stone_floor, root`.
+- **D-TERR-02.** **Passability rulings (Phase 3):** (a) `rock` is passable stone — impassability arises ONLY from elevation deltas (walls are modeled as high-elevation tiles, cf. ch1-02's elev-6 turf walls); (b) `water_deep` is intrinsically drowning-lethal to grounded units — the `drown_edge` overlay marks *additional* scripted drowning tiles on other terrain (ice holes, deck edges), not a prerequisite for water_deep lethality; (c) a neutral's `escape_edge` is independent of the map's top-level `escape_edges`, which govern rout/player escape accounting (C-ALIGN-04) only.
 - **D-OVER-01.** Overlay vocabulary **[T, extensible via schema]**: `flammable, fire, ice, rubble, law_circle, corpse_road, rockslide_zone, drown_edge, hallowed, grave_goods`.
 - **D-AI-01.** AI vocabulary **[T]**: `guard, aggressive, flee, support, leader, script`.
 - **D-FLAG-01.** Every narrative flag lives in `data/flags/story-flags.json` with a type and setter/reader refs. Map triggers reference flags via `"when": "flag:<id>"` and `"set_flag": "<id>"`; the validator cross-checks both.
@@ -260,6 +265,7 @@ Ordering per KICKOFF §5.1 is fixed: Unmaking → Blót of Yrsa → Raiding Ban 
 | OQ-3 | Benevolent God gate says "mercy ≥ +40" without naming a ledger (King of Men explicitly uses Sung; Merciless Ruler mixes True and Sung). | Use the **True** ledger — Hel judges what actually happened, not what is sung. Mark TUNABLE in spec-alignment and 08-branch-map. **DECISION (working):** adopt — Benevolent God gate reads the **True** ledger (mercy ≥ +40 True); Hel and the straw-dead judge reality, not the song. **[T]** |
 | OQ-4 | Wyrd Point pool: is 3 a hard cap, or can fate-defiance gains exceed 3 in a battle? | Pool starts at 3, gains can exceed it up to a soft cap of 5 **[T]**; decide in Phase 2 (spec-wyrd). **DECISION (working):** adopt — pool starts 3/battle; fate-defiance may raise it to a soft cap of 5; excess gains are lost, nothing banked between battles. **[T]** |
 | OQ-5 | "Last great blót" (Yrsa, pre-ban) vs. "escalating blóts" after the ban (§3 World). | Resolved editorially in Timeline §4: "great" = royally sanctioned; post-ban blóts are illegal and escalating. Confirm in Phase 1. **DECISION (confirmed, Phase 1):** "great" = royally sanctioned (last: Blót of Yrsa, Y−6); post-ban blóts are illegal and escalating. Timeline §4 stands; no contradiction with C-WORLD-05. |
+| OQ-6 | C-ELEV-01 "capped by Jump" is ambiguous: is a Jump-2 unit's max single-step climb 2h or 1h? All eight ch1 maps assume 2h faces are walls to standard units. | **DECISION (working, Phase 3):** max single-step climb = **Jump − 1** h (C-ELEV-02) — preserves every shipped map. Human lead may instead lower standard Ch1 Jump to 1 and keep climb ≤ Jump; either way spec-combat-core (Phase 2) must restate the rule. **[T]** |
 
 ---
 

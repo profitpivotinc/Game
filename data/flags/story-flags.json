@@ -13,9 +13,13 @@
         "map:ch1-08-burn-ulfheim"
       ],
       "read_by": [
-        "docs/story/04a-ch2-kingsman.md",
-        "docs/story/04b-ch2-outlaw.md",
-        "docs/story/08-branch-map.md"
+        "map:ch1-08-burn-ulfheim",
+        "scene:ch1-s11",
+        "scene:ch1-s12",
+        "scene:ch1-s13",
+        "docs/story/04a-ch2-kingsman.md (planned, Phase 4)",
+        "docs/story/04b-ch2-outlaw.md (planned, Phase 4)",
+        "docs/story/08-branch-map.md (planned, Phase 4)"
       ],
       "status": "seed"
     },
@@ -50,6 +54,7 @@
         "map:ch1-03-ford-grey-ice"
       ],
       "read_by": [
+        "scene:ch1-s04",
         "scene:ch1-s07",
         "map:ch1-06-holmgang",
         "scene:ch1-s08"
@@ -176,6 +181,19 @@
         "scene:ch1-s11",
         "scene:ch1-s12",
         "scene:ch1-s13"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "crown_singer_escaped",
+      "type": "boolean",
+      "description": "Outlaw branch of the Burning: did the crown's recording skald (e13) escape the S edge? True = the crown's Ch2 hunt begins with facts (the king's memory lives); false = with rumor only (the detachment simply never came home). Read by the outlaw epilogue and Ch2-outlaw.",
+      "set_by": [
+        "map:ch1-08-burn-ulfheim"
+      ],
+      "read_by": [
+        "scene:ch1-s12",
+        "docs/story/04b-ch2-outlaw.md (planned, Phase 4)"
       ],
       "status": "seed"
     }

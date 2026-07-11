@@ -116,7 +116,7 @@
           "type": { "type": "string", "enum": ["witness", "civilian", "escort", "livestock"] },
           "pos": { "$ref": "#/$defs/pos" },
           "ai": { "type": "string", "enum": ["guard", "aggressive", "flee", "support", "leader", "script"] },
-          "escape_edge": { "type": "string", "enum": ["N", "S", "E", "W"] },
+          "escape_edge": { "type": "string", "enum": ["N", "S", "E", "W"], "description": "This neutral's personal exit edge — independent of the map's top-level escape_edges, which govern rout/player escape accounting only (D-TERR-02c)." },
           "grid_notes": { "type": "string" }
         }
       }
@@ -164,10 +164,11 @@
           "when": {
             "type": "string",
             "minLength": 1,
-            "description": "Condition DSL: 'turn>=N', 'unit_downed:<id|any_player|any_enemy>', 'unit_at:<id>:[col,row]', 'flag:<flag_id>', 'hp_below:<id>:<pct>'. Flag refs cross-checked by validate.mjs."
+            "description": "Condition DSL: 'turn>=N', 'unit_downed:<id|any_player|any_enemy>', 'unit_at:<id|any_player|any_enemy>:[col,row]', 'unit_off_zone:<id>:<overlay_type>' (unit leaves the tiles carrying that overlay), 'flag:<flag_id>', 'hp_below:<id>:<pct>'. Flag refs cross-checked by validate.mjs."
           },
           "event": { "type": "string", "minLength": 1 },
-          "set_flag": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$", "description": "Flag id set when the trigger fires. Must exist in data/flags/story-flags.json." },
+          "set_flag": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$", "description": "Flag id written when the trigger fires. Must exist in data/flags/story-flags.json. For boolean flags, firing sets true unless set_flag_value says otherwise. For enum/counter flags, provide set_flag_value OR state in the note which resolution script owns the write — a bare set_flag on a non-boolean is a declaration, not a write." },
+          "set_flag_value": { "type": ["string", "integer"], "description": "Explicit value written to set_flag (enum member, counter delta, or boolean literal)." },
           "once": { "type": "boolean" },
           "note": { "type": "string" }
         }
