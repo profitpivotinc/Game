@@ -1,0 +1,178 @@
+{
+  "id": "ch1-01-strandhogg",
+  "name": "Strandhögg",
+  "chapter": 1,
+  "order": 1,
+  "route_tags": ["shared"],
+  "grid": { "cols": 12, "rows": 10 },
+  "terrain": [
+    ["water_deep", "water_deep", "water_shallow", "shingle", "shingle", "rock", "rock", "rock", "road", "road", "snow", "snow"],
+    ["water_deep", "water_deep", "water_shallow", "shingle", "shingle", "grass", "grass", "road", "road", "grass", "grass", "snow"],
+    ["water_deep", "water_deep", "water_shallow", "road", "road", "road", "road", "road", "rock", "grass", "wood_floor", "wood_floor"],
+    ["water_deep", "water_deep", "water_shallow", "shingle", "shingle", "grass", "grass", "dirt", "rock", "grass", "wood_floor", "wood_floor"],
+    ["water_deep", "water_deep", "water_shallow", "shingle", "shingle", "grass", "grass", "dirt", "rock", "grass", "grass", "grass"],
+    ["water_deep", "water_deep", "water_shallow", "shingle", "shingle", "grass", "grass", "dirt", "rock", "grass", "grass", "grass"],
+    ["water_deep", "water_deep", "water_shallow", "shingle", "shingle", "wood_floor", "wood_floor", "dirt", "rock", "grass", "grass", "grass"],
+    ["water_deep", "water_deep", "water_shallow", "rock", "rock", "wood_floor", "wood_floor", "dirt", "rock", "grass", "grass", "grass"],
+    ["water_deep", "water_deep", "water_shallow", "rock", "rock", "grass", "grass", "dirt", "rock", "grass", "grass", "grass"],
+    ["water_deep", "water_deep", "water_shallow", "shingle", "shingle", "shingle", "rock", "rock", "rock", "grass", "grass", "grass"]
+  ],
+  "elevation": [
+    [0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 5, 5],
+    [0, 0, 0, 0, 0, 1, 2, 3, 3, 4, 4, 5],
+    [0, 0, 0, 0, 1, 1, 2, 2, 5, 4, 4, 4],
+    [0, 0, 0, 0, 0, 1, 2, 3, 5, 4, 4, 4],
+    [0, 0, 0, 0, 0, 1, 2, 3, 5, 4, 4, 4],
+    [0, 0, 0, 0, 0, 1, 2, 3, 5, 4, 4, 4],
+    [0, 0, 0, 0, 0, 2, 2, 3, 5, 4, 4, 4],
+    [0, 0, 0, 1, 1, 2, 2, 3, 5, 4, 4, 4],
+    [0, 0, 0, 1, 1, 2, 2, 3, 5, 4, 4, 4],
+    [0, 0, 0, 0, 0, 0, 0, 0, 5, 4, 4, 4]
+  ],
+  "overlays": [
+    { "pos": [0, 0], "type": "drown_edge", "note": "winter sea — the downward pull; drown_edge on every water_deep tile (cols 0-1), foreshadowing" },
+    { "pos": [1, 0], "type": "drown_edge" },
+    { "pos": [0, 1], "type": "drown_edge" },
+    { "pos": [1, 1], "type": "drown_edge" },
+    { "pos": [0, 2], "type": "drown_edge" },
+    { "pos": [1, 2], "type": "drown_edge" },
+    { "pos": [0, 3], "type": "drown_edge" },
+    { "pos": [1, 3], "type": "drown_edge" },
+    { "pos": [0, 4], "type": "drown_edge" },
+    { "pos": [1, 4], "type": "drown_edge" },
+    { "pos": [0, 5], "type": "drown_edge" },
+    { "pos": [1, 5], "type": "drown_edge" },
+    { "pos": [0, 6], "type": "drown_edge" },
+    { "pos": [1, 6], "type": "drown_edge" },
+    { "pos": [0, 7], "type": "drown_edge" },
+    { "pos": [1, 7], "type": "drown_edge" },
+    { "pos": [0, 8], "type": "drown_edge" },
+    { "pos": [1, 8], "type": "drown_edge" },
+    { "pos": [0, 9], "type": "drown_edge" },
+    { "pos": [1, 9], "type": "drown_edge" },
+    { "pos": [5, 6], "type": "flammable", "note": "naust (boat-shed), NW corner — nothing ignites here; vocabulary planted for ch1-02" },
+    { "pos": [6, 6], "type": "flammable" },
+    { "pos": [5, 7], "type": "flammable" },
+    { "pos": [6, 7], "type": "flammable" },
+    { "pos": [7, 3], "type": "flammable", "note": "herring-racks, north end" },
+    { "pos": [7, 4], "type": "flammable" },
+    { "pos": [7, 5], "type": "flammable" }
+  ],
+  "weather": "clear",
+  "deployment": {
+    "player_zones": [[9, 0], [9, 1], [10, 1], [10, 2], [8, 3], [9, 3]],
+    "max_units": 4
+  },
+  "enemies": [
+    {
+      "id": "e1",
+      "job": "raider",
+      "level": 2,
+      "facing": "E",
+      "pos": [3, 5],
+      "ai": "leader",
+      "named": false,
+      "grid_notes": "Boat-steerer of a hungry post-ban crew; holds the landing at beach centre beside the beached boat (surf line, elev 0) and routs W when half the crew falls."
+    },
+    {
+      "id": "e2",
+      "job": "drengr",
+      "level": 1,
+      "facing": "E",
+      "pos": [3, 2],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "Starts on the foot of the switchback road ([3,2], elev 0) and takes it — demonstrates the single-step 0→4 ascent along rows 2→1→0."
+    },
+    {
+      "id": "e3",
+      "job": "drengr",
+      "level": 1,
+      "facing": "E",
+      "pos": [4, 6],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "Charges due east at the naust and stalls at the 2h lip ([4,6] elev 0 vs [5,6] elev 2) — demonstrates Jump limits."
+    },
+    {
+      "id": "e4",
+      "job": "veidimadr",
+      "level": 1,
+      "facing": "E",
+      "pos": [3, 8],
+      "ai": "guard",
+      "named": false,
+      "grid_notes": "Enemy bow on the grounded skerry SW ([3,8], elev 1): 1h is not enough against the crag (elev 5) — the player's archer above out-ranges him by +2, making the 2h-per-+1 range rule legible from both sides."
+    },
+    {
+      "id": "e5",
+      "job": "raider",
+      "level": 1,
+      "facing": "N",
+      "pos": [4, 9],
+      "ai": "aggressive",
+      "named": false,
+      "grid_notes": "South shingle; flanks north over the skerry stepping-stones (elev 1) onto the naust terrace (elev 2) — the witness pressure that teaches bodyguarding."
+    }
+  ],
+  "neutrals": [
+    {
+      "id": "n1",
+      "type": "civilian",
+      "pos": [5, 5],
+      "ai": "flee",
+      "escape_edge": "E",
+      "grid_notes": "Fisher-wife at the naust doorway on the first terrace (elev 1); bolts north for the switchback and the rim when blades come out."
+    },
+    {
+      "id": "n2",
+      "type": "witness",
+      "pos": [7, 4],
+      "ai": "flee",
+      "escape_edge": "E",
+      "grid_notes": "Old net-mender among the herring-racks on the second terrace (elev 3); slow, high, sees everything. The battle's default singer."
+    },
+    {
+      "id": "n3",
+      "type": "livestock",
+      "pos": [6, 3],
+      "ai": "flee",
+      "escape_edge": "E",
+      "grid_notes": "A loose goat on the grass terrace below the racks; its flight line east crosses the switchback choke ([7,2]-[8,0]) and blocks one road tile at the worst moment. Tutorial charm."
+    }
+  ],
+  "objectives": {
+    "primary": "Drive the raiders from the hold — fell or rout all five.",
+    "secondary": [
+      "No hold-folk (n1, n2) downed.",
+      "Down a raider with a bow shot fired from elevation 3+ (the range lesson, rewarded)."
+    ],
+    "defeat": "Grím falls."
+  },
+  "escape_edges": ["W", "E"],
+  "witness_rule": "sung_if_any_witness_or_router_escapes",
+  "triggers": [
+    {
+      "when": "unit_downed:any_enemy",
+      "event": "valkyrie_vfx_cue",
+      "note": "First sight of the descent-that-looks-like-ascent. Played absolutely straight; doctrine is fact in Ch1 (C-LIE-01)."
+    },
+    {
+      "when": "hp_below:e1:25",
+      "event": "raiders_break_for_boat",
+      "once": true,
+      "note": "Rout preview: surviving raiders flee W to the boat. Routers who escape make the battle Sung (C-ALIGN-04) — surfaced in the post-battle ledger card."
+    },
+    {
+      "when": "turn>=2",
+      "event": "tutorial_facing_prompt",
+      "once": true,
+      "note": "UI beat: back-attack bonus called out on e2 (C-FACE-01)."
+    }
+  ],
+  "designer_notes": {
+    "height_gimmick": "A one-way amphitheatre fought from the top down: the defenders (player) begin holding ALL the height — deployment on the rim plateau (cols 9-11, elev 4-5) and the crag lip (col 8, elev 5) — and the raiders must climb into bow-fire, so the tutorial lesson is spending elevation. Every 2h of advantage buys +1 bow range over the beach (C-ELEV-01): the crag archer at elev 5 shoots +2 over shingle at 0 and over the skerry bow at 1, and neither can answer. The north switchback road (rows 2→1→0, elev 0,1,1,2,2 then 3,3 then 4,4) is the ONLY 0-to-4 ascent in single steps; the face below the rim (col 7 elev 3 vs col 8 elev 5, and the north shoulder at 4 over slopes 1-2) jumps 2-4h per tile and is unclimbable for Jump 2 — so the only path down into melee gives all of it back, and no other Ch1 map starts the player rich in height and teaches its exchange rate.",
+    "witness_setup": "Two hold-folk shelter in the raiders' path and see everything: n1 the fisher-wife at the naust doorway ([5,5], elev 1) and n2 the old net-mender among the herring-racks ([7,4], elev 3); a loose goat (n3) adds flight-line comedy on the road choke. e5 flanks over the skerry stepping-stones straight at them. Beaten raiders can rout west to their beached boat (escape edge W). This battle is meant to be Sung — it is the player's own hearth and the witnesses are their own people; keeping it Unsung would require letting or making the hold's folk die, which the game permits and remembers (C-ALIGN-03). Teaches the witness/ledger UI in its gentlest case.",
+    "intent": "Tutorial: movement, CT turn order, facing basics, elevation and bow range, first valkyrie VFX on a downed unit (the Harvest Lie shown as beautiful fact, C-LIE-01/C-DEATH-01). Enemy count and levels forgiving; defeat unlikely."
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "id": "ch1-05-grove-road",
+  "name": "Grove Road",
+  "chapter": 1,
+  "order": 5,
+  "route_tags": ["shared"],
+  "grid": { "cols": 18, "rows": 10 },
+  "terrain": [
+    ["rock", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "stone_floor", "rock", "stone_floor", "stone_floor", "rock", "stone_floor", "stone_floor", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "rock", "stone_floor", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "rock", "rock", "rock", "rock"],
+    ["grass", "grass", "rock", "grass", "grass", "rock", "grass", "grass", "dirt", "dirt", "dirt", "dirt", "dirt", "dirt", "dirt", "grass", "grass", "grass"],
+    ["grass", "grass", "rock", "grass", "dirt", "grass", "rock", "grass", "dirt", "grass", "rock", "grass", "grass", "grass", "rock", "grass", "grass", "grass"],
+    ["grass", "grass", "grass", "grass", "grass", "dirt", "grass", "dirt", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass"],
+    ["road", "road", "road", "road", "road", "ice", "road", "road", "road", "road", "road", "road", "ice", "road", "road", "road", "road", "road"],
+    ["road", "road", "road", "road", "road", "ice", "road", "road", "road", "road", "road", "road", "ice", "road", "road", "road", "road", "road"],
+    ["snow", "grass", "snow", "snow", "grass", "ice", "snow", "grass", "snow", "snow", "snow", "grass", "ice", "snow", "grass", "snow", "snow", "snow"],
+    ["snow", "snow", "grass", "snow", "snow", "snow", "grass", "snow", "snow", "snow", "snow", "snow", "snow", "grass", "snow", "snow", "grass", "snow"]
+  ],
+  "elevation": [
+    [5, 5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5],
+    [5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5],
+    [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+    [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 3, 3, 3],
+    [2, 2, 3, 2, 2, 3, 3, 3, 3, 2, 3, 3, 2, 3, 3, 3, 2, 2],
+    [1, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1],
+    [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
+    [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ],
+  "overlays": [
+    { "pos": [8, 0], "type": "hallowed" },
+    { "pos": [10, 0], "type": "hallowed" },
+    { "pos": [11, 0], "type": "hallowed" },
+    { "pos": [13, 0], "type": "hallowed" },
+    { "pos": [14, 0], "type": "hallowed" },
+    { "pos": [8, 1], "type": "hallowed" },
+    { "pos": [9, 1], "type": "hallowed" },
+    { "pos": [10, 1], "type": "hallowed" },
+    { "pos": [11, 1], "type": "hallowed" },
+    { "pos": [12, 1], "type": "hallowed" },
+    { "pos": [14, 1], "type": "hallowed" },
+    { "pos": [8, 2], "type": "hallowed", "note": "terrace lip at the goat-track top — the only hallowed tile a road-bound unit can reach in under four moves" },
+    { "pos": [9, 2], "type": "hallowed" },
+    { "pos": [10, 2], "type": "hallowed" },
+    { "pos": [11, 2], "type": "hallowed" },
+    { "pos": [12, 2], "type": "hallowed" },
+    { "pos": [13, 2], "type": "hallowed" },
+    { "pos": [11, 0], "type": "flammable", "note": "stacked pyre wood behind the altar" },
+    { "pos": [11, 1], "type": "flammable", "note": "the pyre. Never lit by any scripted event on this map — restraint by design; the fire rhyme belongs to ch1-08" },
+    { "pos": [5, 6], "type": "ice", "note": "frozen runnel ford — slip tile" },
+    { "pos": [5, 7], "type": "ice", "note": "frozen runnel ford — slip tile" },
+    { "pos": [5, 8], "type": "ice", "note": "runnel draining south across the verge" },
+    { "pos": [12, 6], "type": "ice", "note": "frozen runnel ford — slip tile" },
+    { "pos": [12, 7], "type": "ice", "note": "frozen runnel ford — slip tile" },
+    { "pos": [12, 8], "type": "ice", "note": "runnel draining south across the verge" }
+  ],
+  "weather": "snow",
+  "deployment": {
+    "player_zones": [[2, 8], [3, 8], [4, 8], [2, 9], [3, 9], [4, 9]],
+    "max_units": 5
+  },
+  "enemies": [
+    {
+      "id": "e1",
+      "job": "godi",
+      "level": 5,
+      "facing": "S",
+      "pos": [10, 1],
+      "ai": "script",
+      "named": true,
+      "grid_notes": "GOÐI ÞORGEIR (Rename Table; C-DAG-01, Y-6 presider). Presides the rite before the pyre at [11,1], the white bull led beneath the hanging-tree at [13,1]. NEVER engages and is never targetable: the 3h scarp (row 3 ditch, elev 1, under the elev-4 terrace) and script keep him out of reach. Withdraws N with the rite-guard when three wardens fall. His presence is the battle's moral architecture, not its difficulty."
+    },
+    {
+      "id": "e2",
+      "job": "huscarl",
+      "level": 4,
+      "facing": "S",
+      "pos": [8, 2],
+      "ai": "guard",
+      "grid_notes": "Rite-guard on the terrace lip at the goat-track top ([8,3]->[8,2], the only sub-2h ascent). Fighting him is optional; the objective is on the road below."
+    },
+    {
+      "id": "e3",
+      "job": "drengr",
+      "level": 3,
+      "facing": "E",
+      "pos": [9, 4],
+      "ai": "aggressive",
+      "grid_notes": "Warden on the mid-rise, elev 2 — standing in one of the two tree-line windows ([9,4]/[12,4]) that see the terrace. Hunts the travelers: prioritizes downing civilians over engaging soldiers. The AI cruelty that makes the escort real."
+    },
+    {
+      "id": "e4",
+      "job": "drengr",
+      "level": 3,
+      "facing": "E",
+      "pos": [1, 7],
+      "ai": "aggressive",
+      "grid_notes": "Warden on the west road behind the travelers; drives the flock from behind, forcing pace."
+    },
+    {
+      "id": "e5",
+      "job": "veidimadr",
+      "level": 3,
+      "facing": "S",
+      "pos": [16, 3],
+      "ai": "guard",
+      "grid_notes": "Bow on the east tree-line, elev 3: kill-lane covers the road's east exit (cols 16-17, rows 6-7, 2h advantage = +1 range). The player must climb INTO witness-height (elev 2-3, rows 3-5) to silence him — clearing the safe road creates the seeing ground."
+    },
+    {
+      "id": "e6",
+      "job": "berserker",
+      "level": 4,
+      "facing": "W",
+      "pos": [10, 6],
+      "ai": "aggressive",
+      "grid_notes": "The wardens' blunt instrument, planted mid-road facing the oncoming flock; goes for whoever guards the travelers. (Brief facing SE is not in the facing enum; W faces the approaching escort.)"
+    },
+    {
+      "id": "e7",
+      "job": "volva",
+      "level": 4,
+      "facing": "S",
+      "pos": [9, 2],
+      "ai": "support",
+      "grid_notes": "Rite-sister on the terrace lip west; chants ward-verses (buffs wardens' resolve) from elev 4; retreats with Þorgeir. Downing her requires the goat-track — again, at witness-height."
+    }
+  ],
+  "neutrals": [
+    {
+      "id": "n1",
+      "type": "escort",
+      "pos": [4, 6],
+      "ai": "flee",
+      "escape_edge": "E",
+      "grid_notes": "Freed thrall, manumission-cord at his wrist; leads the group east along the road at 3-move."
+    },
+    {
+      "id": "n2",
+      "type": "escort",
+      "pos": [3, 6],
+      "ai": "flee",
+      "escape_edge": "E",
+      "grid_notes": "His wife; stays within 1 tile of n1 or stalls."
+    },
+    {
+      "id": "n3",
+      "type": "escort",
+      "pos": [3, 7],
+      "ai": "flee",
+      "escape_edge": "E",
+      "grid_notes": "Old freedman, 2-move — the pace-setter the wardens count on catching."
+    },
+    {
+      "id": "n4",
+      "type": "escort",
+      "pos": [5, 9],
+      "ai": "flee",
+      "escape_edge": "E",
+      "grid_notes": "Young freedwoman on the south verge; PANICS toward high ground when a warden closes — likeliest to climb uncommanded onto the elev-2 rise base (row 5) and through a sightline window ([9,5]/[12,5]). The gimmick's live wire."
+    },
+    {
+      "id": "n5",
+      "type": "witness",
+      "pos": [7, 3],
+      "ai": "flee",
+      "escape_edge": "W",
+      "grid_notes": "Charcoal-burner already ON the rise (elev 3, beside the goat-track bend) when battle starts — already sighted on the terrace lip and the rite spilling across it. He flees WEST along the rise, away from the group: the player must choose whether to spend turns on him at all."
+    }
+  ],
+  "objectives": {
+    "primary": "See the travelers through: at least three of n1-n4 exit the east edge.",
+    "secondary": [
+      "All five neutrals survive.",
+      "n4 exits without ever standing on elevation 2+ (the quiet road — protects HER from what seeing costs).",
+      "No warden routs north to the terrace (the grove never learns exactly who fought for the witnesses)."
+    ],
+    "defeat": "Grím falls, or all of n1-n4 are downed."
+  },
+  "escape_edges": ["E", "W"],
+  "witness_rule": "sung_if_any_witness_or_router_escapes",
+  "triggers": [
+    {
+      "when": "turn>=2",
+      "event": "blot_horn_sounds",
+      "set_flag": "grove_blot_witnessed",
+      "once": true,
+      "note": "The rite crests: from any elev 2+ tile with clear LoS the terrace becomes readable testimony (pyre stacked, white bull led out, Þorgeir's silhouette against the hanging-tree). Post-battle script writes the enum: 'talked' if any neutral escaped after holding sightline, 'unseen' if neutrals escaped but none ever saw, 'silenced' if every sighted unit died. Read by scene ch1-s06."
+    },
+    {
+      "when": "hp_below:e2:25",
+      "event": "wardens_break",
+      "once": true,
+      "note": "Remaining wardens rout N up the goat-track ([7,5]->[8,4]->[8,3]->[8,2]); Þorgeir's withdrawal begins."
+    },
+    {
+      "when": "unit_downed:e3",
+      "event": "thorgeir_marks_grim",
+      "once": true,
+      "note": "Þorgeir studies the masked boy from the terrace lip a long moment — recognition without name. Seeds Ch2/Ch3 (his dossier's 'may glimpse')."
+    },
+    {
+      "when": "unit_downed:any_player",
+      "event": "valkyrie_vfx_cue",
+      "note": "Under the grove's eyes the VFX reads as doctrine CONFIRMED — the wardens cry out in vindication. The Lie flexing (C-LIE-01)."
+    }
+  ],
+  "designer_notes": {
+    "height_gimmick": "Sightline as testimony: the blót terrace (rows 0-2, cols 8-14, elev 4, dead level) is visible ONLY from tiles of elevation 2+ with clear LoS past the tree-rocks — C-ELEV-01's LoS rule reused for witnessing, not damage. From the road (rows 6-7, elev 0-1) the rise band (rows 4-5, every terrace-facing column holding elev 2-3) sits at/above the sightline, so civilians herded along the low road see nothing and can swear to nothing; two windows in the tree-line (cols 9 and 12, where row 4 dips to elev 2) let elev-2 tiles at [9,4]/[12,4]/[9,5]/[12,5] see the altar. Physical access is separately throttled: the scarp-foot ditch (row 3, cols 9-14, elev 1) makes the terrace a Jump-proof 3h sheer everywhere except the goat-track [7,5]->[8,4]->[8,3]->[8,2], all 1h steps — the rite is architecturally out of the player's reach. The only Ch1 map where elevation decides not what you can HIT but what can be SUNG.",
+    "witness_setup": "Five travelers flee while grove-wardens hunt them — the wardens' whole objective is preventing witnesses to a present-day, post-ban, ILLEGAL blót (Y0, C-WORLD-05/OQ-5). Escorts n1-n3 start on the west road (elev 0-1, blind), n4 on the south verge and prone to panic-climbing into sightline, n5 already on the rise at [7,3] (elev 3, already sighted) fleeing W away from the group. The player chooses what the survivors saw: shepherd them low and fast (escape, but unseen — they can only attest a skirmish), let or help them reach elev 2+ (escape as true blót-witnesses — they will TALK, grove_blot_witnessed='talked'), or fail/silence every sighted unit ('silenced'). Þorgeir is present, presiding, and untouchable; preventing testimony is fully possible and fully remembered (C-ALIGN-03).",
+    "intent": "Escort mission and the witness-system masterclass — the Sung/Unsung lesson taught with civilians who flee and TALK. Faith-nuance carried in both hands: the travelers are freed thralls walking to the coast under manumission-cords (the new faith's genuine gift, C-LIE-04), and the rite on the terrace is the old faith's real belonging curdled into desperation (C-LIE-05/05a) — Þorgeir sacrifices a WHITE BULL, not a person, this time; the escalation is dread, not gore (C-TONE-04). Hallowed overlay on the terrace unsettles old-faith levy units who reach it via the goat-track — texture, not hazard. No fire event exists on this map: the pyre stays flammable-but-unlit so it cannot become ch1-08's rhyme too early."
+  }
+}
