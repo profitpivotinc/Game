@@ -3,62 +3,676 @@
   "name": "The Second Níð",
   "chapter": 1,
   "order": 7,
-  "route_tags": ["shared"],
-  "grid": { "cols": 16, "rows": 14 },
+  "route_tags": [
+    "shared"
+  ],
+  "grid": {
+    "cols": 16,
+    "rows": 14
+  },
   "terrain": [
-    ["rock", "rock", "rock", "rock", "rock", "rock", "rock", "snow", "snow", "snow", "road", "snow", "snow", "snow", "plank", "rock"],
-    ["rock", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "snow", "snow", "snow", "road", "snow", "snow", "snow", "plank", "rock"],
-    ["rock", "stone_floor", "stone_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "dirt", "snow", "snow", "road", "snow", "snow", "snow", "plank", "rock"],
-    ["rock", "stone_floor", "stone_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "road", "road", "road", "road", "snow", "snow", "snow", "plank", "rock"],
-    ["rock", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "snow", "wood_floor", "wood_floor", "road", "snow", "snow", "snow", "plank", "rock"],
-    ["rock", "rock", "rock", "rock", "wood_floor", "rock", "rock", "snow", "wood_floor", "wood_floor", "road", "snow", "snow", "snow", "plank", "rock"],
-    ["snow", "snow", "snow", "snow", "road", "snow", "snow", "snow", "snow", "snow", "road", "snow", "plank", "plank", "plank", "rock"],
-    ["snow", "snow", "snow", "snow", "road", "snow", "snow", "dirt", "dirt", "dirt", "road", "snow", "snow", "snow", "plank", "rock"],
-    ["snow", "snow", "snow", "snow", "road", "snow", "snow", "dirt", "dirt", "dirt", "road", "wood_floor", "wood_floor", "snow", "plank", "rock"],
-    ["snow", "snow", "snow", "snow", "road", "dirt", "dirt", "dirt", "dirt", "dirt", "road", "wood_floor", "wood_floor", "snow", "plank", "rock"],
-    ["snow", "ice", "ice", "ice", "ice", "plank", "road", "road", "road", "road", "road", "road", "road", "road", "plank", "rock"],
-    ["snow", "ice", "ice", "ice", "ice", "plank", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "road", "plank", "rock"],
-    ["snow", "ice", "ice", "ice", "ice", "plank", "plank", "plank", "plank", "plank", "plank", "plank", "plank", "road", "road", "rock"],
-    ["rock", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "rock", "road", "road", "rock"]
+    [
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "snow",
+      "snow",
+      "snow",
+      "road",
+      "snow",
+      "snow",
+      "snow",
+      "plank",
+      "rock"
+    ],
+    [
+      "rock",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "rock",
+      "snow",
+      "snow",
+      "snow",
+      "road",
+      "snow",
+      "snow",
+      "snow",
+      "plank",
+      "rock"
+    ],
+    [
+      "rock",
+      "stone_floor",
+      "stone_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "rock",
+      "dirt",
+      "snow",
+      "snow",
+      "road",
+      "snow",
+      "snow",
+      "snow",
+      "plank",
+      "rock"
+    ],
+    [
+      "rock",
+      "stone_floor",
+      "stone_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "road",
+      "road",
+      "road",
+      "road",
+      "snow",
+      "snow",
+      "snow",
+      "plank",
+      "rock"
+    ],
+    [
+      "rock",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "rock",
+      "snow",
+      "wood_floor",
+      "wood_floor",
+      "road",
+      "snow",
+      "snow",
+      "snow",
+      "plank",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "wood_floor",
+      "rock",
+      "rock",
+      "snow",
+      "wood_floor",
+      "wood_floor",
+      "road",
+      "snow",
+      "snow",
+      "snow",
+      "plank",
+      "rock"
+    ],
+    [
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "road",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "road",
+      "snow",
+      "plank",
+      "plank",
+      "plank",
+      "rock"
+    ],
+    [
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "road",
+      "snow",
+      "snow",
+      "dirt",
+      "dirt",
+      "dirt",
+      "road",
+      "snow",
+      "snow",
+      "snow",
+      "plank",
+      "rock"
+    ],
+    [
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "road",
+      "snow",
+      "snow",
+      "dirt",
+      "dirt",
+      "dirt",
+      "road",
+      "wood_floor",
+      "wood_floor",
+      "snow",
+      "plank",
+      "rock"
+    ],
+    [
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "road",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "road",
+      "wood_floor",
+      "wood_floor",
+      "snow",
+      "plank",
+      "rock"
+    ],
+    [
+      "snow",
+      "ice",
+      "ice",
+      "ice",
+      "ice",
+      "plank",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "plank",
+      "rock"
+    ],
+    [
+      "snow",
+      "ice",
+      "ice",
+      "ice",
+      "ice",
+      "plank",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "road",
+      "plank",
+      "rock"
+    ],
+    [
+      "snow",
+      "ice",
+      "ice",
+      "ice",
+      "ice",
+      "plank",
+      "plank",
+      "plank",
+      "plank",
+      "plank",
+      "plank",
+      "plank",
+      "plank",
+      "road",
+      "road",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "road",
+      "road",
+      "rock"
+    ]
   ],
   "elevation": [
-    [4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 3, 3],
-    [4, 1, 1, 1, 1, 1, 4, 0, 0, 0, 0, 0, 0, 0, 3, 3],
-    [4, 2, 2, 1, 1, 1, 4, 0, 0, 0, 0, 0, 0, 0, 3, 3],
-    [4, 2, 2, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 3, 3],
-    [4, 1, 1, 1, 1, 1, 4, 0, 3, 2, 0, 0, 0, 0, 3, 3],
-    [4, 4, 4, 4, 1, 4, 4, 0, 3, 3, 0, 0, 0, 0, 3, 3],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 3],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 3, 3],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 0, 3, 3],
-    [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3],
-    [0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 4, 3],
-    [0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 3, 4, 0, 0, 3],
-    [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 3]
+    [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    [
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    [
+      4,
+      2,
+      2,
+      1,
+      1,
+      1,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    [
+      4,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    [
+      4,
+      1,
+      1,
+      1,
+      1,
+      1,
+      4,
+      0,
+      3,
+      2,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    [
+      4,
+      4,
+      4,
+      4,
+      1,
+      4,
+      4,
+      0,
+      3,
+      3,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      2,
+      3,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3,
+      0,
+      3,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      3,
+      0,
+      3,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      0,
+      0,
+      3
+    ],
+    [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      0,
+      0,
+      3
+    ]
   ],
   "overlays": [
-    { "pos": [7, 2], "type": "fire", "note": "brazier — static pool of light and singe, no spread; this map must not burn (that is ch1-08's verb)" },
-    { "pos": [10, 6], "type": "fire", "note": "brazier in the central lane — static, no spread; pursuers and players route around the light" },
-    { "pos": [5, 9], "type": "fire", "note": "brazier by the south yard — static, no spread" },
-    { "pos": [9, 4], "type": "rubble", "note": "stacked Yule crates at the north storehouse corner (elev 2) — the only ascent to its roof (elev 3)" },
-    { "pos": [11, 9], "type": "rubble", "note": "stacked crates at the south storehouse corner (elev 2) — the only ascent to its roof (elev 3)" },
-    { "pos": [1, 10], "type": "ice", "note": "frozen midden-pond — slip tiles; the AI avoids it, the player can gamble on the SW shortcut to the south stair" },
-    { "pos": [2, 10], "type": "ice" },
-    { "pos": [3, 10], "type": "ice" },
-    { "pos": [4, 10], "type": "ice" },
-    { "pos": [1, 11], "type": "ice" },
-    { "pos": [2, 11], "type": "ice" },
-    { "pos": [3, 11], "type": "ice" },
-    { "pos": [4, 11], "type": "ice" },
-    { "pos": [1, 12], "type": "ice" },
-    { "pos": [2, 12], "type": "ice" },
-    { "pos": [3, 12], "type": "ice" },
-    { "pos": [4, 12], "type": "ice" }
+    {
+      "pos": [
+        7,
+        2
+      ],
+      "type": "fire",
+      "note": "brazier — static pool of light and singe, no spread; this map must not burn (that is ch1-08's verb)"
+    },
+    {
+      "pos": [
+        10,
+        6
+      ],
+      "type": "fire",
+      "note": "brazier in the central lane — static, no spread; pursuers and players route around the light"
+    },
+    {
+      "pos": [
+        5,
+        9
+      ],
+      "type": "fire",
+      "note": "brazier by the south yard — static, no spread"
+    },
+    {
+      "pos": [
+        9,
+        4
+      ],
+      "type": "rubble",
+      "note": "stacked Yule crates at the north storehouse corner (elev 2) — the only ascent to its roof (elev 3)"
+    },
+    {
+      "pos": [
+        11,
+        9
+      ],
+      "type": "rubble",
+      "note": "stacked crates at the south storehouse corner (elev 2) — the only ascent to its roof (elev 3)"
+    },
+    {
+      "pos": [
+        1,
+        10
+      ],
+      "type": "ice",
+      "note": "frozen midden-pond — slip tiles; the AI avoids it, the player can gamble on the SW shortcut to the south stair"
+    },
+    {
+      "pos": [
+        2,
+        10
+      ],
+      "type": "ice"
+    },
+    {
+      "pos": [
+        3,
+        10
+      ],
+      "type": "ice"
+    },
+    {
+      "pos": [
+        4,
+        10
+      ],
+      "type": "ice"
+    },
+    {
+      "pos": [
+        1,
+        11
+      ],
+      "type": "ice"
+    },
+    {
+      "pos": [
+        2,
+        11
+      ],
+      "type": "ice"
+    },
+    {
+      "pos": [
+        3,
+        11
+      ],
+      "type": "ice"
+    },
+    {
+      "pos": [
+        4,
+        11
+      ],
+      "type": "ice"
+    },
+    {
+      "pos": [
+        1,
+        12
+      ],
+      "type": "ice"
+    },
+    {
+      "pos": [
+        2,
+        12
+      ],
+      "type": "ice"
+    },
+    {
+      "pos": [
+        3,
+        12
+      ],
+      "type": "ice"
+    },
+    {
+      "pos": [
+        4,
+        12
+      ],
+      "type": "ice"
+    }
   ],
   "weather": "night_snow",
   "deployment": {
-    "player_zones": [[3, 2], [4, 2], [5, 2], [3, 3], [4, 3], [5, 3]],
+    "player_zones": [
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        5,
+        3
+      ]
+    ],
     "max_units": 5
   },
   "enemies": [
@@ -67,7 +681,10 @@
       "job": "huscarl",
       "level": 5,
       "facing": "W",
-      "pos": [6, 3],
+      "pos": [
+        6,
+        3
+      ],
       "ai": "guard",
       "named": false,
       "grid_notes": "Hird door-ward in the east doorway (elev 1); holds the obvious exit. The opening lesson: the front door is a lie."
@@ -77,7 +694,10 @@
       "job": "drengr",
       "level": 4,
       "facing": "W",
-      "pos": [4, 6],
+      "pos": [
+        4,
+        6
+      ],
       "ai": "aggressive",
       "named": false,
       "grid_notes": "First pursuer on Grím's heels, in the yard outside the south hall door [4,5] (elev 0)."
@@ -87,7 +707,10 @@
       "job": "drengr",
       "level": 4,
       "facing": "N",
-      "pos": [10, 4],
+      "pos": [
+        10,
+        4
+      ],
       "ai": "aggressive",
       "named": false,
       "grid_notes": "Cuts the direct lane to the gate — the central road beside the north storehouse (elev 0)."
@@ -97,7 +720,10 @@
       "job": "veidimadr",
       "level": 4,
       "facing": "N",
-      "pos": [14, 8],
+      "pos": [
+        14,
+        8
+      ],
       "ai": "guard",
       "named": false,
       "grid_notes": "Bow on the east wall-walk south of the SE stair at [14,6] (elev 3): owns the open yards. His height is also the player's exit — killing him buys BOTH safety and a launch point; the map's best trade."
@@ -107,17 +733,23 @@
       "job": "huscarl",
       "level": 4,
       "facing": "N",
-      "pos": [14, 11],
+      "pos": [
+        14,
+        11
+      ],
       "ai": "guard",
       "named": false,
       "grid_notes": "Gate-ward on the east gate-tower (elev 4) over the S gate passage [13,12]-[14,13]; drops the bar at turn 8 (trigger). Until then the S gate is the cheap exit; after, the wall-drop is the only door."
     },
     {
       "id": "e6",
-      "job": "seidmadr",
+      "job": "skald",
       "level": 4,
       "facing": "W",
-      "pos": [2, 2],
+      "pos": [
+        2,
+        2
+      ],
       "ai": "support",
       "named": false,
       "grid_notes": "The hired níð-singer on the dais (elev 2; unnamed by design — a mouth, not a man; the commissioner is the Ch2 question). Chants the verse on loop: aura debuff (player units within 3 tiles, −hit morale sting) and pursuit buff. Faces the steward's high seat, back to the hall — an offered backstab. Downing him stops the chant, not the poem."
@@ -127,7 +759,10 @@
       "job": "berserker",
       "level": 5,
       "facing": "W",
-      "pos": [9, 6],
+      "pos": [
+        9,
+        6
+      ],
       "ai": "aggressive",
       "named": false,
       "grid_notes": "The steward's champion, drunk and delighted, mid-yard by the lane brazier at [10,6] (elev 0); fastest pursuer, ignores facing discipline — punishable but relentless."
@@ -137,7 +772,10 @@
       "job": "drengr",
       "level": 4,
       "facing": "S",
-      "pos": [10, 0],
+      "pos": [
+        10,
+        0
+      ],
       "ai": "aggressive",
       "named": false,
       "grid_notes": "REINFORCEMENT (turn 3 trigger): wave 1 of the roused hird, entering at the north lane mouth [10,0]. Held off-board until the trigger fires."
@@ -147,7 +785,10 @@
       "job": "drengr",
       "level": 4,
       "facing": "E",
-      "pos": [1, 1],
+      "pos": [
+        1,
+        1
+      ],
       "ai": "aggressive",
       "named": false,
       "grid_notes": "REINFORCEMENT (turn 5 trigger): wave 2, through the steward's private west door behind the dais [1,1] — flushes the hall if the player lingers indoors. Held off-board until the trigger fires."
@@ -157,7 +798,10 @@
       "job": "veidimadr",
       "level": 4,
       "facing": "S",
-      "pos": [14, 1],
+      "pos": [
+        14,
+        1
+      ],
       "ai": "guard",
       "named": false,
       "grid_notes": "REINFORCEMENT (turn 7 trigger): wave 3, entering at the NE end of the wall-walk [14,1] (elev 3) — retakes the walk; the escape window narrows visibly. Held off-board until the trigger fires."
@@ -167,7 +811,10 @@
     {
       "id": "n1",
       "type": "civilian",
-      "pos": [5, 4],
+      "pos": [
+        5,
+        4
+      ],
       "ai": "flee",
       "escape_edge": "N",
       "grid_notes": "Feast-guest scattering from the tables (hall floor, elev 1); already a witness to the verse — flees the blades, changes nothing about the singing."
@@ -175,7 +822,10 @@
     {
       "id": "n2",
       "type": "civilian",
-      "pos": [7, 4],
+      "pos": [
+        7,
+        4
+      ],
       "ai": "flee",
       "escape_edge": "N",
       "grid_notes": "Serving-thrall with a dropped platter, in the yard between hall and north storehouse; pathing hazard in the lanes."
@@ -183,7 +833,10 @@
     {
       "id": "n3",
       "type": "civilian",
-      "pos": [11, 11],
+      "pos": [
+        11,
+        11
+      ],
       "ai": "flee",
       "escape_edge": "N",
       "grid_notes": "Stable-boy in the south yard near the gate; if downed by a PLAYER unit in the chaos: Sung mercy_terror −4 — the feast is watching from every doorway."
@@ -199,7 +852,10 @@
     ],
     "defeat": "Grím is downed."
   },
-  "escape_edges": ["S", "E"],
+  "escape_edges": [
+    "S",
+    "E"
+  ],
   "witness_rule": "always_sung",
   "triggers": [
     {

@@ -3,108 +3,1002 @@
   "name": "The Burning of Ulfheim",
   "chapter": 1,
   "order": 8,
-  "route_tags": ["shared"],
-  "grid": { "cols": 16, "rows": 13 },
+  "route_tags": [
+    "shared"
+  ],
+  "grid": {
+    "cols": 16,
+    "rows": 13
+  },
   "terrain": [
-    ["rock", "rock", "rock", "rock", "rock", "rock", "rock", "dirt", "dirt", "rock", "rock", "rock", "rock", "rock", "rock", "rock"],
-    ["rock", "rock", "snow", "wood_floor", "wood_floor", "road", "snow", "dirt", "dirt", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "rock"],
-    ["rock", "rock", "snow", "wood_floor", "wood_floor", "road", "snow", "dirt", "dirt", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "rock", "rock"],
-    ["rock", "rock", "snow", "snow", "dirt", "road", "dirt", "dirt", "dirt", "dirt", "dirt", "dirt", "snow", "snow", "rock", "rock"],
-    ["rock", "rock", "wood_floor", "wood_floor", "wood_floor", "road", "dirt", "dirt", "snow", "wood_floor", "wood_floor", "wood_floor", "snow", "snow", "rock", "rock"],
-    ["rock", "rock", "wood_floor", "wood_floor", "wood_floor", "road", "dirt", "dirt", "rock", "wood_floor", "wood_floor", "wood_floor", "snow", "snow", "rock", "rock"],
-    ["rock", "rock", "snow", "snow", "dirt", "road", "dirt", "snow", "snow", "dirt", "wood_floor", "wood_floor", "wood_floor", "snow", "rock", "rock"],
-    ["rock", "rock", "wood_floor", "wood_floor", "wood_floor", "road", "dirt", "snow", "wood_floor", "wood_floor", "dirt", "wood_floor", "wood_floor", "snow", "rock", "rock"],
-    ["rock", "rock", "wood_floor", "wood_floor", "wood_floor", "road", "dirt", "dirt", "wood_floor", "wood_floor", "dirt", "wood_floor", "wood_floor", "snow", "rock", "rock"],
-    ["rock", "rock", "rock", "snow", "snow", "road", "snow", "rock", "snow", "snow", "rock", "snow", "snow", "rock", "rock", "rock"],
-    ["snow", "snow", "snow", "snow", "dirt", "road", "snow", "snow", "snow", "dirt", "snow", "snow", "snow", "snow", "snow", "snow"],
-    ["road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road"],
-    ["snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow", "snow"]
+    [
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "dirt",
+      "dirt",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "snow",
+      "wood_floor",
+      "wood_floor",
+      "road",
+      "snow",
+      "dirt",
+      "dirt",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "rock",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "snow",
+      "wood_floor",
+      "wood_floor",
+      "road",
+      "snow",
+      "dirt",
+      "dirt",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "rock",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "snow",
+      "snow",
+      "dirt",
+      "road",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "dirt",
+      "snow",
+      "snow",
+      "rock",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "road",
+      "dirt",
+      "dirt",
+      "snow",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "snow",
+      "snow",
+      "rock",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "road",
+      "dirt",
+      "dirt",
+      "rock",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "snow",
+      "snow",
+      "rock",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "snow",
+      "snow",
+      "dirt",
+      "road",
+      "dirt",
+      "snow",
+      "snow",
+      "dirt",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "snow",
+      "rock",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "road",
+      "dirt",
+      "snow",
+      "wood_floor",
+      "wood_floor",
+      "dirt",
+      "wood_floor",
+      "wood_floor",
+      "snow",
+      "rock",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "road",
+      "dirt",
+      "dirt",
+      "wood_floor",
+      "wood_floor",
+      "dirt",
+      "wood_floor",
+      "wood_floor",
+      "snow",
+      "rock",
+      "rock"
+    ],
+    [
+      "rock",
+      "rock",
+      "rock",
+      "snow",
+      "snow",
+      "road",
+      "snow",
+      "rock",
+      "snow",
+      "snow",
+      "rock",
+      "snow",
+      "snow",
+      "rock",
+      "rock",
+      "rock"
+    ],
+    [
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "dirt",
+      "road",
+      "snow",
+      "snow",
+      "snow",
+      "dirt",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow"
+    ],
+    [
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road",
+      "road"
+    ],
+    [
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow",
+      "snow"
+    ]
   ],
   "elevation": [
-    [6, 6, 6, 6, 6, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6],
-    [6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6],
-    [6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6],
-    [6, 6, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 6, 6],
-    [6, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 6],
-    [6, 5, 3, 3, 3, 3, 3, 3, 4, 3, 3, 3, 3, 3, 5, 6],
-    [6, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 6],
-    [5, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 5],
-    [5, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 5],
-    [5, 4, 3, 2, 2, 2, 2, 3, 2, 2, 3, 2, 2, 3, 4, 5],
-    [2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    [
+      6,
+      6,
+      6,
+      6,
+      6,
+      5,
+      5,
+      5,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    [
+      6,
+      6,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6,
+      6
+    ],
+    [
+      6,
+      6,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6,
+      6
+    ],
+    [
+      6,
+      6,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6,
+      6
+    ],
+    [
+      6,
+      5,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      5,
+      6
+    ],
+    [
+      6,
+      5,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      5,
+      6
+    ],
+    [
+      6,
+      5,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      5,
+      6
+    ],
+    [
+      5,
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      5
+    ],
+    [
+      5,
+      4,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      5
+    ],
+    [
+      5,
+      4,
+      3,
+      2,
+      2,
+      2,
+      2,
+      3,
+      2,
+      2,
+      3,
+      2,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
   ],
   "overlays": [
-    { "pos": [3, 1], "type": "flammable", "note": "smokehouse, north half" },
-    { "pos": [4, 1], "type": "flammable" },
-    { "pos": [3, 2], "type": "flammable", "note": "smokehouse, south half — n4's home" },
-    { "pos": [4, 2], "type": "flammable" },
-    { "pos": [9, 1], "type": "flammable", "note": "hearth-hall of Gunnhild's kin, west gable" },
-    { "pos": [10, 1], "type": "flammable" },
-    { "pos": [11, 1], "type": "flammable" },
-    { "pos": [12, 1], "type": "flammable" },
-    { "pos": [13, 1], "type": "flammable", "note": "hearth-hall, east gable" },
-    { "pos": [9, 2], "type": "flammable" },
-    { "pos": [10, 2], "type": "flammable", "note": "hearth-hall doorway; Gunnhild (e1) holds the threshold outside at [10,3]" },
-    { "pos": [11, 2], "type": "flammable" },
-    { "pos": [12, 2], "type": "flammable" },
-    { "pos": [13, 2], "type": "flammable" },
-    { "pos": [10, 1], "type": "grave_goods", "note": "Aldís-linked relics: her kin kept what the law said does not exist. Kingsman: looting them is the True Ledger's quietest atrocity. Outlaw: given, not taken — Ch2 hook." },
-    { "pos": [11, 1], "type": "grave_goods", "note": "loom-blessing whalebone plaque, rune-side down" },
-    { "pos": [12, 1], "type": "grave_goods", "note": "a child's arm-ring in Aldís's mother-line knotwork" },
-    { "pos": [4, 3], "type": "flammable", "note": "upper yard woodpile" },
-    { "pos": [6, 3], "type": "flammable" },
-    { "pos": [8, 3], "type": "flammable" },
-    { "pos": [9, 3], "type": "flammable" },
-    { "pos": [10, 3], "type": "flammable", "note": "hall threshold — when this tile burns, the hall is next; the fire's last step" },
-    { "pos": [11, 3], "type": "flammable" },
-    { "pos": [7, 2], "type": "flammable", "note": "brushwood stacked along the goat-track — the exit line CAN burn shut" },
-    { "pos": [7, 3], "type": "flammable", "note": "goat-track brushwood; hold this tile clear or the households' road closes" },
-    { "pos": [2, 4], "type": "flammable", "note": "west longhouse — n3's weaver-kin" },
-    { "pos": [3, 4], "type": "flammable" },
-    { "pos": [4, 4], "type": "flammable" },
-    { "pos": [2, 5], "type": "flammable" },
-    { "pos": [3, 5], "type": "flammable" },
-    { "pos": [4, 5], "type": "flammable" },
-    { "pos": [9, 4], "type": "flammable", "note": "east longhouse — e2 fights from its shadow" },
-    { "pos": [10, 4], "type": "flammable" },
-    { "pos": [11, 4], "type": "flammable" },
-    { "pos": [9, 5], "type": "flammable" },
-    { "pos": [10, 5], "type": "flammable" },
-    { "pos": [11, 5], "type": "flammable" },
-    { "pos": [10, 6], "type": "flammable", "note": "low longhouse on the middle-terrace lip" },
-    { "pos": [11, 6], "type": "flammable" },
-    { "pos": [12, 6], "type": "flammable" },
-    { "pos": [6, 4], "type": "flammable", "note": "well-yard hay rick" },
-    { "pos": [7, 4], "type": "flammable" },
-    { "pos": [9, 6], "type": "flammable" },
-    { "pos": [2, 7], "type": "flammable", "note": "byre, west wall" },
-    { "pos": [3, 7], "type": "flammable" },
-    { "pos": [4, 7], "type": "flammable" },
-    { "pos": [2, 8], "type": "flammable" },
-    { "pos": [3, 8], "type": "flammable", "note": "byre door bay — loose the cattle (n5) south before the fire-line arrives" },
-    { "pos": [4, 8], "type": "flammable" },
-    { "pos": [8, 7], "type": "flammable", "note": "west cot-house — n1's home, nearest the fire" },
-    { "pos": [9, 7], "type": "flammable" },
-    { "pos": [8, 8], "type": "flammable" },
-    { "pos": [9, 8], "type": "flammable" },
-    { "pos": [11, 7], "type": "flammable", "note": "east cot-house" },
-    { "pos": [12, 7], "type": "flammable" },
-    { "pos": [11, 8], "type": "flammable" },
-    { "pos": [12, 8], "type": "flammable" },
-    { "pos": [6, 7], "type": "flammable" },
-    { "pos": [6, 8], "type": "flammable" },
-    { "pos": [7, 8], "type": "flammable" },
-    { "pos": [10, 7], "type": "flammable" },
-    { "pos": [10, 8], "type": "flammable", "note": "cot-house yard straw — e4's ground" },
-    { "pos": [3, 9], "type": "fire", "note": "SEED, west: torch stack against the field wall — cold glow at deploy, lit by detachment_resolves (kingsman full seed; outlaw the thrown torches catch here anyway)" },
-    { "pos": [8, 9], "type": "fire", "note": "SEED, center: pitch-bundle at the wall gap below the cot-houses" },
-    { "pos": [12, 9], "type": "fire", "note": "SEED, east: torch stack; e11 at [12,10] stands over it — down him early (outlaw) and this seed lights a turn late" }
+    {
+      "pos": [
+        3,
+        1
+      ],
+      "type": "flammable",
+      "note": "smokehouse, north half"
+    },
+    {
+      "pos": [
+        4,
+        1
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        3,
+        2
+      ],
+      "type": "flammable",
+      "note": "smokehouse, south half — n4's home"
+    },
+    {
+      "pos": [
+        4,
+        2
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        9,
+        1
+      ],
+      "type": "flammable",
+      "note": "hearth-hall of Gunnhild's kin, west gable"
+    },
+    {
+      "pos": [
+        10,
+        1
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        11,
+        1
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        12,
+        1
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        13,
+        1
+      ],
+      "type": "flammable",
+      "note": "hearth-hall, east gable"
+    },
+    {
+      "pos": [
+        9,
+        2
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        10,
+        2
+      ],
+      "type": "flammable",
+      "note": "hearth-hall doorway; Gunnhild (e1) holds the threshold outside at [10,3]"
+    },
+    {
+      "pos": [
+        11,
+        2
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        12,
+        2
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        13,
+        2
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        10,
+        1
+      ],
+      "type": "grave_goods",
+      "note": "Aldís-linked relics: her kin kept what the law said does not exist. Kingsman: looting them is the True Ledger's quietest atrocity. Outlaw: given, not taken — Ch2 hook."
+    },
+    {
+      "pos": [
+        11,
+        1
+      ],
+      "type": "grave_goods",
+      "note": "loom-blessing whalebone plaque, rune-side down"
+    },
+    {
+      "pos": [
+        12,
+        1
+      ],
+      "type": "grave_goods",
+      "note": "a child's arm-ring in Aldís's mother-line knotwork"
+    },
+    {
+      "pos": [
+        4,
+        3
+      ],
+      "type": "flammable",
+      "note": "upper yard woodpile"
+    },
+    {
+      "pos": [
+        6,
+        3
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        8,
+        3
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        9,
+        3
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        10,
+        3
+      ],
+      "type": "flammable",
+      "note": "hall threshold — when this tile burns, the hall is next; the fire's last step"
+    },
+    {
+      "pos": [
+        11,
+        3
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        7,
+        2
+      ],
+      "type": "flammable",
+      "note": "brushwood stacked along the goat-track — the exit line CAN burn shut"
+    },
+    {
+      "pos": [
+        7,
+        3
+      ],
+      "type": "flammable",
+      "note": "goat-track brushwood; hold this tile clear or the households' road closes"
+    },
+    {
+      "pos": [
+        2,
+        4
+      ],
+      "type": "flammable",
+      "note": "west longhouse — n3's weaver-kin"
+    },
+    {
+      "pos": [
+        3,
+        4
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        4,
+        4
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        2,
+        5
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        3,
+        5
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        4,
+        5
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        9,
+        4
+      ],
+      "type": "flammable",
+      "note": "east longhouse — e2 fights from its shadow"
+    },
+    {
+      "pos": [
+        10,
+        4
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        11,
+        4
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        9,
+        5
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        10,
+        5
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        11,
+        5
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        10,
+        6
+      ],
+      "type": "flammable",
+      "note": "low longhouse on the middle-terrace lip"
+    },
+    {
+      "pos": [
+        11,
+        6
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        12,
+        6
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        6,
+        4
+      ],
+      "type": "flammable",
+      "note": "well-yard hay rick"
+    },
+    {
+      "pos": [
+        7,
+        4
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        9,
+        6
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        2,
+        7
+      ],
+      "type": "flammable",
+      "note": "byre, west wall"
+    },
+    {
+      "pos": [
+        3,
+        7
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        4,
+        7
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        2,
+        8
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        3,
+        8
+      ],
+      "type": "flammable",
+      "note": "byre door bay — loose the cattle (n5) south before the fire-line arrives"
+    },
+    {
+      "pos": [
+        4,
+        8
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        8,
+        7
+      ],
+      "type": "flammable",
+      "note": "west cot-house — n1's home, nearest the fire"
+    },
+    {
+      "pos": [
+        9,
+        7
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        8,
+        8
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        9,
+        8
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        11,
+        7
+      ],
+      "type": "flammable",
+      "note": "east cot-house"
+    },
+    {
+      "pos": [
+        12,
+        7
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        11,
+        8
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        12,
+        8
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        6,
+        7
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        6,
+        8
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        7,
+        8
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        10,
+        7
+      ],
+      "type": "flammable"
+    },
+    {
+      "pos": [
+        10,
+        8
+      ],
+      "type": "flammable",
+      "note": "cot-house yard straw — e4's ground"
+    },
+    {
+      "pos": [
+        3,
+        9
+      ],
+      "type": "fire",
+      "note": "SEED, west: torch stack against the field wall — cold glow at deploy, lit by detachment_resolves (kingsman full seed; outlaw the thrown torches catch here anyway)"
+    },
+    {
+      "pos": [
+        8,
+        9
+      ],
+      "type": "fire",
+      "note": "SEED, center: pitch-bundle at the wall gap below the cot-houses"
+    },
+    {
+      "pos": [
+        12,
+        9
+      ],
+      "type": "fire",
+      "note": "SEED, east: torch stack; e11 at [12,10] stands over it — down him early (outlaw) and this seed lights a turn late"
+    }
   ],
   "weather": "night",
   "deployment": {
-    "player_zones": [[2, 11], [3, 11], [4, 11], [2, 12], [3, 12], [4, 12], [5, 12], [6, 12]],
+    "player_zones": [
+      [
+        2,
+        11
+      ],
+      [
+        3,
+        11
+      ],
+      [
+        4,
+        11
+      ],
+      [
+        2,
+        12
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        4,
+        12
+      ],
+      [
+        5,
+        12
+      ],
+      [
+        6,
+        12
+      ]
+    ],
     "max_units": 6
   },
   "enemies": [
@@ -113,7 +1007,10 @@
       "job": "skogarmadr",
       "level": 6,
       "facing": "S",
-      "pos": [10, 3],
+      "pos": [
+        10,
+        3
+      ],
       "ai": "script",
       "named": true,
       "grid_notes": "GUNNHILD THE WOLF-WIDOW (Rename Table, C-CLAN-LEAD-01). Holds the hall threshold [10,3] at elev 4, fights defensively, NEVER pursues downhill. Kingsman branch: withdraws N by the goat-track (cols 7-8) at 60% HP — she must survive to carry the KINSLAYER verse into the hills (C-CLAN-04). Outlaw branch: flips to scripted ally at the order and holds the track open. Either way the player cannot fell her; her face — half Aldís's — is the map's last argument."
@@ -123,7 +1020,10 @@
       "job": "skogarmadr",
       "level": 5,
       "facing": "S",
-      "pos": [8, 4],
+      "pos": [
+        8,
+        4
+      ],
       "ai": "guard",
       "grid_notes": "Night-fighter in the east longhouse's shadow (elev 3, beside the rowan at [8,5]); strikes from house-shadow and withdraws — Ulfheim doctrine, the skirmish screen. Outlaw branch: flips scripted ally at detachment_resolves, like all Ulfheim units e2-e7."
     },
@@ -132,7 +1032,10 @@
       "job": "raider",
       "level": 4,
       "facing": "S",
-      "pos": [5, 7],
+      "pos": [
+        5,
+        7
+      ],
       "ai": "guard",
       "grid_notes": "First blade the advance meets, on the switchback road beside the byre wall (elev 2); young, loud, terrified. Ally on the outlaw flip."
     },
@@ -141,7 +1044,10 @@
       "job": "raider",
       "level": 4,
       "facing": "S",
-      "pos": [10, 8],
+      "pos": [
+        10,
+        8
+      ],
       "ai": "aggressive",
       "grid_notes": "Counter-attacks at the field walls from the cot-house yard (elev 2); buys the households their first two turns. Ally on the outlaw flip."
     },
@@ -150,7 +1056,10 @@
       "job": "veidimadr",
       "level": 5,
       "facing": "S",
-      "pos": [6, 0],
+      "pos": [
+        6,
+        0
+      ],
       "ai": "guard",
       "grid_notes": "Ulfheim's bow on the crag ledge west of the goat-track notch [7,0]-[8,0], elev 5: covers the track the whole battle. The fire never reaches him (bare rock); the player must — via the switchback top at [5,0] or the notch itself. Ally on the outlaw flip."
     },
@@ -159,7 +1068,10 @@
       "job": "drengr",
       "level": 4,
       "facing": "S",
-      "pos": [5, 6],
+      "pos": [
+        5,
+        6
+      ],
       "ai": "guard",
       "grid_notes": "Holds the spine choke at the middle-terrace lip (road, elev 3); the road he defends is also the road the fire wants. Ally on the outlaw flip."
     },
@@ -168,7 +1080,10 @@
       "job": "berserker",
       "level": 5,
       "facing": "S",
-      "pos": [9, 3],
+      "pos": [
+        9,
+        3
+      ],
       "ai": "aggressive",
       "grid_notes": "Gunnhild's hearth-guard on the upper yard (elev 4), her dead husband's sworn man. Outlaw secondary asks that he still stands at battle's end. Ally on the outlaw flip."
     },
@@ -177,7 +1092,10 @@
       "job": "huscarl",
       "level": 6,
       "facing": "N",
-      "pos": [9, 11],
+      "pos": [
+        9,
+        11
+      ],
       "ai": "script",
       "grid_notes": "ROYAL DETACHMENT. The king's captain at the head of the line on the sledge-road (unnamed hird officer — deliberately a function, not a person: the order matters, not the mouth). Gives the turn-3 order. Kingsman: scripted ally, leads the torching. Outlaw: flips hostile-aggressive at detachment_resolves, priority target."
     },
@@ -186,7 +1104,10 @@
       "job": "huscarl",
       "level": 5,
       "facing": "N",
-      "pos": [10, 11],
+      "pos": [
+        10,
+        11
+      ],
       "ai": "script",
       "grid_notes": "ROYAL DETACHMENT. Hird shield-man on the sledge-road line. Ally (kingsman) / flips hostile (outlaw) per the route trigger."
     },
@@ -195,7 +1116,10 @@
       "job": "drengr",
       "level": 5,
       "facing": "N",
-      "pos": [11, 11],
+      "pos": [
+        11,
+        11
+      ],
       "ai": "script",
       "grid_notes": "ROYAL DETACHMENT. Hird spearman; carries the torch bundle — downing HIM early on the outlaw branch delays the fire seeds by one turn (hidden interaction, rewarded in the post-battle card). Flips hostile on the outlaw branch."
     },
@@ -204,7 +1128,10 @@
       "job": "veidimadr",
       "level": 5,
       "facing": "N",
-      "pos": [12, 10],
+      "pos": [
+        12,
+        10
+      ],
       "ai": "script",
       "grid_notes": "ROYAL DETACHMENT. Hird bow on the in-field flank (elev 1) over the east torch seed [12,9]; on kingsman he shoots fleeing routers unless the player bodily blocks his lanes — the crown's mercilessness made mechanical, and the player's quiet counter-play. Flips hostile on the outlaw branch."
     },
@@ -213,25 +1140,34 @@
       "job": "laeknir",
       "level": 4,
       "facing": "N",
-      "pos": [10, 12],
+      "pos": [
+        10,
+        12
+      ],
       "ai": "script",
       "grid_notes": "ROYAL DETACHMENT. Detachment healer at the rear, with the sledges; on outlaw the second-hardest thing to kill morally and the easiest mechanically. Cries grið when e8 falls (C-ALIGN-05) — the outlaw branch's own mercy test. Flips hostile on the outlaw branch."
     },
     {
       "id": "e13",
-      "job": "godi",
+      "job": "skald",
       "level": 4,
       "facing": "N",
-      "pos": [11, 12],
+      "pos": [
+        11,
+        12
+      ],
       "ai": "script",
-      "grid_notes": "ROYAL DETACHMENT. The RECORDING SKALD — the crown's official memory, beside the healer at the rear (statted on the godi chassis until the skald job lands in data/jobs; non-combatant either way). Kingsman: never fights, observes, exits S at battle end — his verse is scene ch1-s11's spine. Outlaw: flees S at the flip; if he ESCAPES the S edge, the crown's Ch2 hunt begins with facts; if stopped, with rumor. The witness mechanic given a face and a wage."
+      "grid_notes": "ROYAL DETACHMENT. The RECORDING SKALD — the crown's official memory, beside the healer at the rear (non-combatant). Kingsman: never fights, observes, exits S at battle end — his verse is scene ch1-s11's spine. Outlaw: flees S at the flip; if he ESCAPES the S edge, the crown's Ch2 hunt begins with facts; if stopped, with rumor. The witness mechanic given a face and a wage."
     }
   ],
   "neutrals": [
     {
       "id": "n1",
       "type": "civilian",
-      "pos": [8, 8],
+      "pos": [
+        8,
+        8
+      ],
       "ai": "flee",
       "escape_edge": "N",
       "grid_notes": "Household 1: mother and bundled children abstracted as one unit; slowest, starts in the west cot-house (elev 2), nearest the fire seeds. Longest run: three terraces up the cols 6-8 line to the goat-track notch."
@@ -239,7 +1175,10 @@
     {
       "id": "n2",
       "type": "civilian",
-      "pos": [6, 5],
+      "pos": [
+        6,
+        5
+      ],
       "ai": "flee",
       "escape_edge": "N",
       "grid_notes": "Household 2: the well-keeper and his blind father, in the well yard (elev 3). Moves at the blind man's pace; paths [6,4] -> [6,3] -> [7,2] -> [7,0]."
@@ -247,7 +1186,10 @@
     {
       "id": "n3",
       "type": "civilian",
-      "pos": [3, 5],
+      "pos": [
+        3,
+        5
+      ],
       "ai": "flee",
       "escape_edge": "N",
       "grid_notes": "Household 3: weaver-women of Aldís's scattered kin in the west longhouse (elev 3); one carries the loom-weights she will NOT drop — 2-move until she does (scripted at first adjacent fire tile)."
@@ -255,7 +1197,10 @@
     {
       "id": "n4",
       "type": "civilian",
-      "pos": [3, 2],
+      "pos": [
+        3,
+        2
+      ],
       "ai": "flee",
       "escape_edge": "N",
       "grid_notes": "Household 4: the old fletcher who taught half the steading's bows, in the smokehouse (elev 4); last to believe it is happening — does not move until fire reaches the upper terrace or a player unit reaches adjacency."
@@ -263,7 +1208,10 @@
     {
       "id": "n5",
       "type": "livestock",
-      "pos": [3, 8],
+      "pos": [
+        3,
+        8
+      ],
       "ai": "flee",
       "escape_edge": "S",
       "grid_notes": "Byre cattle (one unit) behind the byre door at [3,8]. Loosing the door before the fire-line reaches it lets them stampede S down the road — a small mercy no ledger records; designer-note beat, C-TONE-04's 'weight' rendered small."
@@ -294,7 +1242,10 @@
       }
     }
   },
-  "escape_edges": ["N", "S"],
+  "escape_edges": [
+    "N",
+    "S"
+  ],
   "witness_rule": "sung_if_any_witness_or_router_escapes",
   "triggers": [
     {
