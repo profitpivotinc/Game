@@ -248,66 +248,84 @@
   ],
   "elevation": [
     [
-      6,
-      6,
-      6,
-      6,
-      6,
-      5,
-      5,
-      5,
-      5,
-      5,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6
+      8,
+      8,
+      8,
+      8,
+      8,
+      7,
+      8,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
     ],
     [
+      8,
+      8,
       6,
       6,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
       6,
-      6
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      8,
+      8
     ],
     [
+      8,
+      8,
       6,
       6,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
       6,
-      6
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      8,
+      8
     ],
     [
+      8,
+      8,
       6,
       6,
+      6,
+      6,
+      6,
+      5,
+      5,
+      6,
+      6,
+      6,
+      6,
+      6,
+      8,
+      8
+    ],
+    [
+      8,
+      6,
       4,
       4,
       4,
-      4,
+      5,
       4,
       4,
       4,
@@ -317,64 +335,46 @@
       4,
       4,
       6,
-      6
+      8
     ],
     [
+      8,
       6,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
       5,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      5,
-      6
-    ],
-    [
+      4,
+      4,
+      4,
+      4,
+      4,
       6,
-      5,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      4,
-      3,
-      3,
-      3,
-      3,
-      3,
-      5,
-      6
+      8
     ],
     [
+      8,
       6,
-      5,
+      4,
+      4,
+      4,
       3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      5,
-      6
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      6,
+      8
     ],
     [
-      5,
+      8,
       4,
       2,
       2,
@@ -389,10 +389,10 @@
       2,
       2,
       4,
-      5
+      8
     ],
     [
-      5,
+      8,
       4,
       2,
       2,
@@ -407,10 +407,10 @@
       2,
       2,
       4,
-      5
+      8
     ],
     [
-      5,
+      8,
       4,
       3,
       2,
@@ -425,7 +425,7 @@
       2,
       3,
       4,
-      5
+      8
     ],
     [
       2,
@@ -846,6 +846,22 @@
     },
     {
       "pos": [
+        3,
+        6
+      ],
+      "type": "flammable",
+      "note": "fire path: fodder-straw strewn on the terrace lip between byre and west longhouse — links [3,7] to [3,5] so the west camp burns once the fire matures (without it no seed could ever reach n3's or n4's homes)"
+    },
+    {
+      "pos": [
+        4,
+        6
+      ],
+      "type": "flammable",
+      "note": "fire path: peat-stack below the longhouse gable — second link tile, byre [4,7] -> longhouse [4,5]"
+    },
+    {
+      "pos": [
         8,
         7
       ],
@@ -943,24 +959,24 @@
         3,
         9
       ],
-      "type": "fire",
-      "note": "SEED, west: torch stack against the field wall — cold glow at deploy, lit by detachment_resolves (kingsman full seed; outlaw the thrown torches catch here anyway)"
+      "type": "flammable",
+      "note": "FIRE SEED — ignited by detachment_resolves: all three on kingsman, [3,9] only on outlaw. West torch stack against the field wall — cold at deploy; on outlaw the thrown torches catch here anyway."
     },
     {
       "pos": [
         8,
         9
       ],
-      "type": "fire",
-      "note": "SEED, center: pitch-bundle at the wall gap below the cot-houses"
+      "type": "flammable",
+      "note": "FIRE SEED — ignited by detachment_resolves: all three on kingsman, [3,9] only on outlaw. Center pitch-bundle at the wall gap below the cot-houses."
     },
     {
       "pos": [
         12,
         9
       ],
-      "type": "fire",
-      "note": "SEED, east: torch stack; e11 at [12,10] stands over it — down him early (outlaw) and this seed lights a turn late"
+      "type": "flammable",
+      "note": "FIRE SEED — ignited by detachment_resolves: all three on kingsman, [3,9] only on outlaw. East torch stack; e11 at [12,10] stands over it."
     }
   ],
   "weather": "night",
@@ -1013,7 +1029,7 @@
       ],
       "ai": "script",
       "named": true,
-      "grid_notes": "GUNNHILD THE WOLF-WIDOW (Rename Table, C-CLAN-LEAD-01). Holds the hall threshold [10,3] at elev 4, fights defensively, NEVER pursues downhill. Kingsman branch: withdraws N by the goat-track (cols 7-8) at 60% HP — she must survive to carry the KINSLAYER verse into the hills (C-CLAN-04). Outlaw branch: flips to scripted ally at the order and holds the track open. Either way the player cannot fell her; her face — half Aldís's — is the map's last argument."
+      "grid_notes": "GUNNHILD THE WOLF-WIDOW (Rename Table, C-CLAN-LEAD-01). Holds the hall threshold [10,3] at elev 6, fights defensively, NEVER pursues downhill. Kingsman branch: withdraws N by the goat-track (cols 7-8) at 60% HP — she must survive to carry the KINSLAYER verse into the hills (C-CLAN-04). Outlaw branch: flips to scripted ally at the order and holds the track open. Either way the player cannot fell her; her face — half Aldís's — is the map's last argument."
     },
     {
       "id": "e2",
@@ -1025,7 +1041,7 @@
         4
       ],
       "ai": "guard",
-      "grid_notes": "Night-fighter in the east longhouse's shadow (elev 3, beside the rowan at [8,5]); strikes from house-shadow and withdraws — Ulfheim doctrine, the skirmish screen. Outlaw branch: flips scripted ally at detachment_resolves, like all Ulfheim units e2-e7."
+      "grid_notes": "Night-fighter in the east longhouse's shadow (elev 4, beside the rowan knoll at [8,5], a 1h step up); strikes from house-shadow and withdraws — Ulfheim doctrine, the skirmish screen. Outlaw branch: flips scripted ally at detachment_resolves, like all Ulfheim units e2-e7."
     },
     {
       "id": "e3",
@@ -1061,7 +1077,7 @@
         0
       ],
       "ai": "guard",
-      "grid_notes": "Ulfheim's bow on the crag ledge west of the goat-track notch [7,0]-[8,0], elev 5: covers the track the whole battle. The fire never reaches him (bare rock); the player must — via the switchback top at [5,0] or the notch itself. Ally on the outlaw flip."
+      "grid_notes": "Ulfheim's bow on the crag ledge west of the goat-track notch [7,0]-[8,0] (notch elev 7), his ledge at elev 8: covers the track the whole battle. The fire never reaches him (bare rock); the player must — via the switchback top at [5,0] (elev 7, 1h up from the road at [5,1]) or the notch itself (7 -> 8, one 1h step). Ally on the outlaw flip."
     },
     {
       "id": "e6",
@@ -1073,7 +1089,7 @@
         6
       ],
       "ai": "guard",
-      "grid_notes": "Holds the spine choke at the middle-terrace lip (road, elev 3); the road he defends is also the road the fire wants. Ally on the outlaw flip."
+      "grid_notes": "Holds the spine choke on the road ramp at the middle-terrace lip ([5,6], elev 3 — the ONLY 1h step from terrace 2 to terrace 4 west of the goat-track); the road he defends is also the road the fire wants. Ally on the outlaw flip."
     },
     {
       "id": "e7",
@@ -1085,7 +1101,7 @@
         3
       ],
       "ai": "aggressive",
-      "grid_notes": "Gunnhild's hearth-guard on the upper yard (elev 4), her dead husband's sworn man. Outlaw secondary asks that he still stands at battle's end. Ally on the outlaw flip."
+      "grid_notes": "Gunnhild's hearth-guard on the upper yard (elev 6), her dead husband's sworn man. Outlaw secondary asks that he still stands at battle's end. Ally on the outlaw flip."
     },
     {
       "id": "e8",
@@ -1170,7 +1186,7 @@
       ],
       "ai": "flee",
       "escape_edge": "N",
-      "grid_notes": "Household 1: mother and bundled children abstracted as one unit; slowest, starts in the west cot-house (elev 2), nearest the fire seeds. Longest run: three terraces up the cols 6-8 line to the goat-track notch."
+      "grid_notes": "Household 1: mother and bundled children abstracted as one unit; slowest, starts in the west cot-house (elev 2), nearest the fire seeds. Longest run on the map: west along the field walls to the road ramp [5,6], up the switchback to the middle terrace, east to the goat-track ramp [7,3]-[8,3], and out the notch [7,0]-[8,0] — every leg a 1h step (C-ELEV-02)."
     },
     {
       "id": "n2",
@@ -1181,7 +1197,7 @@
       ],
       "ai": "flee",
       "escape_edge": "N",
-      "grid_notes": "Household 2: the well-keeper and his blind father, in the well yard (elev 3). Moves at the blind man's pace; paths [6,4] -> [6,3] -> [7,2] -> [7,0]."
+      "grid_notes": "Household 2: the well-keeper and his blind father, in the well yard (elev 4). Moves at the blind man's pace; paths [6,4] -> [7,4] -> [7,3] -> [7,2] -> [7,1] -> [7,0] — the goat-track ramp, all 1h steps."
     },
     {
       "id": "n3",
@@ -1192,7 +1208,7 @@
       ],
       "ai": "flee",
       "escape_edge": "N",
-      "grid_notes": "Household 3: weaver-women of Aldís's scattered kin in the west longhouse (elev 3); one carries the loom-weights she will NOT drop — 2-move until she does (scripted at first adjacent fire tile)."
+      "grid_notes": "Household 3: weaver-women of Aldís's scattered kin in the west longhouse (elev 4); one carries the loom-weights she will NOT drop — 2-move until she does (scripted at first adjacent fire tile)."
     },
     {
       "id": "n4",
@@ -1203,7 +1219,7 @@
       ],
       "ai": "flee",
       "escape_edge": "N",
-      "grid_notes": "Household 4: the old fletcher who taught half the steading's bows, in the smokehouse (elev 4); last to believe it is happening — does not move until fire reaches the upper terrace or a player unit reaches adjacency."
+      "grid_notes": "Household 4: the old fletcher who taught half the steading's bows, in the smokehouse (elev 6); last to believe it is happening — does not move until fire reaches the upper terrace or a player unit reaches adjacency."
     },
     {
       "id": "n5",
@@ -1259,7 +1275,7 @@
       "when": "flag:route",
       "event": "detachment_resolves",
       "once": true,
-      "note": "kingsman: e8-e12 activate as scripted allies and light the row-9 fire seeds ([3,9],[8,9],[12,9]); e13 observes. outlaw: e8-e12 flip hostile-aggressive, e13 flees S, Ulfheim units e2-e7 become scripted allies, Gunnhild's withdrawal is cancelled, and only the seed nearest the thrown torches ([3,9]) lights anyway — some of it burns no matter what you chose; that is the point."
+      "note": "Until this event NO FIRE EXISTS anywhere on the map — the row-9 seeds sit cold (type flammable) through the quiet pre-order phase. kingsman: e8-e12 activate as scripted allies and IGNITE all three fire seeds ([3,9],[8,9],[12,9]); e13 observes. outlaw: e8-e12 flip hostile-aggressive, e13 flees S, Ulfheim units e2-e7 become scripted allies, Gunnhild's withdrawal is cancelled, and only the seed nearest the thrown torches ([3,9]) ignites anyway — some of it burns no matter what you chose; that is the point."
     },
     {
       "when": "flag:ulfheim_shelter",
@@ -1270,13 +1286,13 @@
     {
       "when": "turn>=4",
       "event": "fire_walks_uphill",
-      "note": "Recurring: fire spreads each tick from burning tiles, preferring the HIGHEST adjacent flammable tile — the terrace-by-terrace countdown (row 9 seeds -> lowest terrace elev 2 -> middle 3 -> upper 4 -> hall). Households re-path as tiles close; the goat-track brush at [7,2]-[7,3] can burn the exit shut."
+      "note": "Recurring, live only after detachment_resolves ignites the seeds — no fire exists before the order: fire spreads each tick from burning tiles, preferring the HIGHEST adjacent flammable tile — the terrace-by-terrace countdown (row-9 seeds -> lowest terrace elev 2 -> middle 4 -> upper 6 -> the hall). Households re-path as tiles close; the goat-track brush at [7,2]-[7,3] can burn the exit shut."
     },
     {
       "when": "hp_below:e1:60",
       "event": "gunnhild_withdraws",
       "once": true,
-      "note": "Kingsman branch only: Gunnhild goes N from [10,3] by the goat-track notch with any adjacent kin, looking back exactly once. She must survive (KINSLAYER verse carrier, C-CLAN-04); the trigger guarantees it against even a determined player."
+      "note": "Kingsman branch only: Gunnhild goes N from [10,3] by the goat-track notch with any adjacent kin, looking back exactly once. She must survive (KINSLAYER verse carrier, C-CLAN-04); the trigger guarantees it against even a determined player. Handler no-ops unless route=kingsman — the DSL has no conjunction; the gate lives in the event handler."
     },
     {
       "when": "turn>=5",
@@ -1288,7 +1304,28 @@
       "when": "hp_below:e8:1",
       "event": "laeknir_grid",
       "once": true,
-      "note": "Outlaw branch: with the captain down, e12 drops her satchel and cries grið. The night's last mercy question, asked amid your own treason (C-ALIGN-05)."
+      "note": "Outlaw branch: with the captain down, e12 drops her satchel and cries grið. The night's last mercy question, asked amid your own treason (C-ALIGN-05). Handler no-ops unless route=outlaw — the DSL has no conjunction; the gate lives in the event handler."
+    },
+    {
+      "when": "unit_at:e13:[11,12]",
+      "event": "crown_singer_escapes",
+      "set_flag": "crown_singer_escaped",
+      "once": true,
+      "note": "Outlaw branch only (handler no-ops on kingsman, where e13 never flees): the crown's memory reaches the south road — Ch2's hunt begins with facts. [11,12] is his own rear tile on the S edge, so the handler additionally requires e13 to be in post-flip flee mode before counting it — his scripted pre-order stand must not consume the once. [10,12] and [12,12] below are alternates on the same flight line (if he is shoved or bodily blocked); the three share the event and only the first to fire counts."
+    },
+    {
+      "when": "unit_at:e13:[10,12]",
+      "event": "crown_singer_escapes",
+      "set_flag": "crown_singer_escaped",
+      "once": true,
+      "note": "Alternate S-edge exit tile for crown_singer_escapes — see the [11,12] trigger; shares the event, only the first fires."
+    },
+    {
+      "when": "unit_at:e13:[12,12]",
+      "event": "crown_singer_escapes",
+      "set_flag": "crown_singer_escaped",
+      "once": true,
+      "note": "Alternate S-edge exit tile for crown_singer_escapes — see the [11,12] trigger; shares the event, only the first fires."
     },
     {
       "when": "unit_downed:any_player",
@@ -1297,8 +1334,8 @@
     }
   ],
   "designer_notes": {
-    "height_gimmick": "Fire climbs: burning tiles spread preferentially to the HIGHEST adjacent flammable tile, so the burn walks uphill terrace by terrace (row-9 seeds at elev 2 -> lowest terrace 2 -> middle 3 -> upper 4 -> the hall), converting the map's south-to-north climb into a countdown — everything below the fire-line is ash and silence, everything above is a shrinking island where defenders, civilians, and objectives compress. Elevation is not advantage here; it is TIME REMAINING. No other map makes height a clock. The single cheap ascent (switchback road, col 5) is shared by the player, the households, and the fire; the crag flanks (cols 0-1, 14-15, jumps of 2-3h) are Jump-proof, and the goat-track notch at [7,0]-[8,0] is the only way off the top.",
-    "witness_setup": "Two kinds of witness, one per route's conscience: Ulfheim's non-combatant households (n1-n4) flee for the N goat-track and can be let out, herded out, or cut off (the track brush at [7,2]-[7,3] can burn shut; e5's bow and e11's lanes both cover the runners) — and the royal detachment carries its own RECORDING SKALD (e13), the crown's official memory. On the kingsman branch the king's verse gets carved regardless (the skald cannot be silenced by his own side); the only question is whether any Ulfheim voice survives to counter-sing it. On the outlaw branch the inversion: e13 becomes the witness the player may need to stop at the S edge — kill the king's memory and the crown knows only that its detachment never came home (C-ALIGN-03/04 at full pressure).",
+    "height_gimmick": "Fire climbs FROM BELOW: burning tiles spread preferentially to the HIGHEST adjacent flammable tile, so once the order lights the seeds the burn eats the steading bottom-up, terrace by terrace (row-9 seeds -> lowest terrace elev 2 -> middle 4 -> upper 6 -> the hall), and height above the fire-line IS time remaining — the inverse of ch1-02, where smoke kills the high ground first. The terrain enforces the countdown: above the lowest terrace exactly two 1h ascents exist — the road and the goat-track — everything else is wall (C-ELEV-02). The col-5 switchback road carries ramp tiles [5,6]=3 and [5,4]=5, so only the road climbs 2 -> 4 -> 6 in 1h steps, topping out at the crag shoulder [5,0]=7; the N goat-track carries its own ramp [7,3]-[8,3]=5 up from the middle terrace and the notch [7,0]-[8,0]=7 over the elev-8 crag. Every off-ramp terrace lip is a 2h wall, and the crag flanks (cols 0-1, 14-15) are sheer. Player, households, and fire all want the same two ascents; that contention is the map.",
+    "witness_setup": "Two kinds of witness, one per route's conscience: Ulfheim's non-combatant households (n1-n4) flee for the N goat-track and can be let out, herded out, or cut off (the track brush at [7,2]-[7,3] can burn shut; e5's bow and e11's lanes both cover the runners) — and the royal detachment carries its own RECORDING SKALD (e13), the crown's official memory. On the kingsman branch the king's verse gets carved regardless (the skald cannot be silenced by his own side); the only question is whether any Ulfheim voice survives to counter-sing it. On the outlaw branch the inversion: e13 becomes the witness the player may need to stop at the S edge — kill the king's memory and the crown knows only that its detachment never came home (C-ALIGN-03/04 at full pressure). (Accounting rule: on the kingsman branch e13's survival forces the battle Sung — the crown's own record counts as witness; on outlaw the standard rule applies and e13 is the escapable witness.)",
     "intent": "THE SPLIT (Balmamusa pattern, C-ROUTE-02). One map, two objective sets via route_variants: the king's test is to raze his mother's kin with his own hand. Turn 3 the order comes and the choice locks route forever. Until then both forces advance together and the map is deliberately quiet — hearth-smoke, dogs barking, snow starting to glow orange at the south field walls. Levels 4-6, the chapter's hardest fight on either branch."
   }
 }

@@ -59,10 +59,10 @@ Executed one commit per phase, stopping for human review at each gate (KICKOFF �
 
 | Phase | Scope | Status |
 |---|---|---|
-| 0 | Scaffold: CANON, README, schemas, tools, self-test map | ✅ this commit |
-| 1 | Story bible & people (`00`, `01`, `02`) | ⬜ |
-| 2 | All seven design specs | ⬜ |
-| 3 | Chapter 1 deep build: full scripts + 8 map JSONs | ⬜ |
+| 0 | Scaffold: CANON, README, schemas, tools, self-test map | ✅ |
+| 1 | Story bible & people (`00`, `01`, `02`) | ✅ |
+| 2 | All seven design specs | ⬜ deferred — executed after Phase 3 by project-lead directive; CANON §1.7/§1.8 is the interim mechanics authority |
+| 3 | Chapter 1 deep build: full scripts + 8 map JSONs + manifest seed | ✅ |
 | 4 | Branches, showcases, endings, complete flag registry | ⬜ |
 | 5 | Battle manifest & consistency pass | ⬜ |
 

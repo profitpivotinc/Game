@@ -346,8 +346,8 @@
       1,
       4,
       0,
-      3,
       2,
+      1,
       0,
       0,
       0,
@@ -364,8 +364,8 @@
       4,
       4,
       0,
-      3,
-      3,
+      2,
+      2,
       0,
       0,
       0,
@@ -421,8 +421,8 @@
       0,
       0,
       0,
-      3,
-      3,
+      2,
+      2,
       0,
       3,
       3
@@ -439,8 +439,8 @@
       0,
       0,
       0,
+      1,
       2,
-      3,
       0,
       3,
       3
@@ -549,7 +549,7 @@
         4
       ],
       "type": "rubble",
-      "note": "stacked Yule crates at the north storehouse corner (elev 2) — the only ascent to its roof (elev 3)"
+      "note": "stacked Yule crates at the north storehouse corner (elev 1) — the only ascent to its roof (elev 2): a 0->1->2 chain of legal 1h steps (C-ELEV-02)"
     },
     {
       "pos": [
@@ -557,7 +557,7 @@
         9
       ],
       "type": "rubble",
-      "note": "stacked crates at the south storehouse corner (elev 2) — the only ascent to its roof (elev 3)"
+      "note": "stacked crates at the south storehouse corner (elev 1) — the only ascent to its roof (elev 2), 1h steps per C-ELEV-02"
     },
     {
       "pos": [
@@ -907,8 +907,8 @@
     }
   ],
   "designer_notes": {
-    "height_gimmick": "Escape spends altitude: dropping more than 1h — off the wall-walk (elev 3), off a storehouse roof (elev 3), over the palisade lip — costs fall damage (C-ELEV-01) but BREAKS PURSUIT COLD, because the hall-guards' AI will not take a drop above 1h ('a coward's leap' is beneath the hird, and beneath their Jump). The safe routes stay long: the ground-level S gate passage at [13,12]-[14,13] until it bars at turn 8, or the two slow stairs ([12,6]-[14,6] east, [5,10]-[5,12] south) up and down again. The only Ch1 map where deliberately LOSING height, and bleeding for it, is the winning move — altitude is a currency you cash out to leave.",
+    "height_gimmick": "Escape spends altitude, in two tiers: a 2h drop — off a storehouse roof (elev 2) — BREAKS PURSUIT COLD and costs nothing, because the hall-guards' AI will not take a drop above 1h ('a coward's leap' is beneath the hird, and beneath their Jump), while the 3h+ drops — off the wall-walk (elev 3), over the palisade lip — break pursuit the same way but cost blood (C-ELEV-01: only falling more than 2h damages). The safe routes stay long: the ground-level S gate passage at [13,12]-[14,13] until it bars at turn 8, or the two slow stairs ([12,6]-[14,6] east, [5,10]-[5,12] south) up and down again; the storehouse roofs are mounted only by their crate-stack corners ([9,4] and [11,9], elev 1 — 0->1->2 in legal 1h steps, C-ELEV-02). The only Ch1 map where deliberately LOSING height — and, for the tall drops, bleeding for it — is the winning move: altitude is a currency you cash out to leave.",
     "witness_setup": "None to manage and that is the point: the níð was recited before the whole Yule feast, so the verse already exists independent of any survivor — witness_rule is always_sung (the scripted-story-beat exception). Grím could kill every guest in the garth and the poem would still walk out the gate on a hundred remembered tongues. The three fleeing feast-guests are texture, not levers. The battle where the player learns that a WORD is a witness that cannot be cut down (C-THEME-01).",
-    "intent": "Escape battle under pursuit, immediately after the feast-scene unmasking (ch1-s08): reach an escape edge with Grím as pursuers reinforce on a clock (turns 3/5/7) and the S gate bars at turn 8. Pursuers are aggressive and numerically endless by design — victory is exit, not extermination. Tension knife: every turn spent fighting is a turn the gate-bar clock runs down."
+    "intent": "Escape battle under pursuit, immediately after the feast-scene unmasking (ch1-s08): reach an escape edge with Grím as pursuers reinforce on a clock (turns 3/5/7) and the S gate bars at turn 8. Pursuers are aggressive and numerically endless by design — victory is exit, not extermination. Tension knife: every turn spent fighting is a turn the gate-bar clock runs down. D-TERR-02 (rock is passable stone): the parapet beyond the walks — E edge col 15 (elev 3) and S edge row 13 (elev 3) — is walkable and sits level with the wall-walk (col 14) and the south walk (row 12), reached by the same 1h stairs; 'over the lip' is a real exit line onto the E/S escape edges, not scenery."
   }
 }

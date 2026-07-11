@@ -20,12 +20,12 @@
   "elevation": [
     [2, 2, 2, 2, 3, 3, 2, 2, 2, 2],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    [0, 0, 1, 0, 0, 0, 0, 1, 0, 0],
+    [0, 0, 4, 0, 0, 0, 0, 4, 0, 0],
     [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
     [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
     [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
     [0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
-    [0, 0, 1, 0, 0, 0, 0, 1, 0, 0],
+    [0, 0, 4, 0, 0, 0, 0, 4, 0, 0],
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
   ],
@@ -157,7 +157,13 @@
       "event": "bodvarr_yields",
       "once": true,
       "set_flag": "holmgang_grith",
-      "note": "He casts down his axe, names the wound-price paid, and offers his hand — a lawful yield before a full house. The accept/execute prompt writes the enum: 'honored' (take the hand: Sung mercy_terror +6, Bjarnholt seed planted) or 'executed' (kill a yielded man at a LAWFUL duel before witnesses: Sung mercy_terror −10, True −10, the guest-cup logic invoked — Bjarnholt enmity locked for Ch2, C-ALIGN-03/05: the game allows it and every hall will sing it). Ring-out (e1 pushed off the deck) resolves through this same yield beat — the law counts feet off lawful ground as the wound-price paid."
+      "note": "He casts down his axe, names the wound-price paid, and offers his hand — a lawful yield before a full house. The accept/execute prompt asks the question; the POST-BATTLE RESOLUTION SCRIPT owns the holmgang_grith enum write from the player's answer (set_flag here is a declaration, not a write): 'honored' (take the hand: Sung mercy_terror +6, Bjarnholt seed planted) or 'executed' (kill a yielded man at a LAWFUL duel before witnesses: Sung mercy_terror −10, True −10, the guest-cup logic invoked — Bjarnholt enmity locked for Ch2, C-ALIGN-03/05: the game allows it and every hall will sing it). Ring-out (e1 pushed off the deck) resolves through this same yield beat via the unit_off_zone trigger below — the law counts feet off lawful ground as the wound-price paid."
+    },
+    {
+      "when": "unit_off_zone:e1:law_circle",
+      "event": "bodvarr_yields",
+      "once": true,
+      "note": "Ring-out: Bǫðvarr forced off the hazel-staked deck forfeits by law — same yield beat, same accept/execute prompt; the post-battle resolution script writes holmgang_grith (honored|executed) from the player's answer. Shares once-semantics with the hp_below trigger via the event."
     },
     {
       "when": "unit_downed:any_player",
@@ -166,8 +172,8 @@
     }
   ],
   "designer_notes": {
-    "height_gimmick": "The anti-elevation map: the deck is dead flat by LAW — sixteen plank tiles all at elevation 1, not one step of height to take — and the only meaningful edge is its rim, a 1h drop to the elevation-0 ice that means forfeit, not fall damage. Knockback becomes the whole vertical game: push the opponent's feet off the lawful ground and the duel is decided without a killing wound. Every other Ch1 map rewards taking height; this one forbids it, and makes facing and footwork carry everything (C-FACE-01 mastery test). The banks at elevation 2-3 exist only so the witnesses look DOWN into the fight like a bowl — height belongs to the audience here, never to the duelists.",
+    "height_gimmick": "The anti-elevation map: the deck is dead flat by LAW — sixteen plank tiles all at elevation 1, not one step of height to take — and the only meaningful edge is its rim, a 1h drop to the elevation-0 ice that means forfeit, not fall damage. (The four hazel corner-posts at [2,2],[7,2],[2,7],[7,7] stand at elevation 4 — carved posts, not floor: since rock is passable stone under D-TERR-02, their 3h faces are what make them true movement- and LoS-blocking obstacles.) Knockback becomes the whole vertical game: push the opponent's feet off the lawful ground and the duel is decided without a killing wound. Every other Ch1 map rewards taking height; this one forbids it, and makes facing and footwork carry everything (C-FACE-01 mastery test). The banks at elevation 2-3 exist only so the witnesses look DOWN into the fight like a bowl — height belongs to the audience here, never to the duelists.",
     "witness_setup": "There is no preventing testimony here and the design says so out loud: seconds on both banks (e2/e3 north, n2 south), an officiating goði on the elevation-3 judge's slab, shore-folk (n3) ringing the holm — a lawful duel EXISTS to be witnessed. witness_rule is always_sung (the sanctioned exception for scripted story beats): whatever happens on the deck enters the saga, including exactly how Bǫðvarr's yield is answered (holmgang_grith: honored | executed).",
-    "intent": "Formal 1v1 with seconds standing off (ai script): facing mastery under holmgang law. Grím answers Bǫðvarr Bear-Sark's lawful challenge (blood-claim for a lodge kinsman fallen among the Landless at ch1-04, and half-voiced suspicion of the ford rumor). Duel is to yield, not death, per law (C-TONE-04): forcing Bǫðvarr below 30% or off the deck ends it. The grið answer afterward is the chapter's loudest mercy beat — performed for a full house."
+    "intent": "Formal 1v1 with seconds standing off (ai script): facing mastery under holmgang law. Grím answers Bǫðvarr Bear-Sark's lawful challenge (blood-claim for a lodge kinsman fallen among the Landless at ch1-04, and half-voiced suspicion of the ford rumor). Duel is to yield, not death, per law (C-TONE-04): forcing Bǫðvarr below 30% or off the deck ends it. The grið answer afterward is the chapter's loudest mercy beat — performed for a full house. (D-TERR-02: the deep pools around the deck drown; law-broken spills end in the water — the water_deep ring is intrinsically lethal, no drown_edge overlay needed or present.)"
   }
 }

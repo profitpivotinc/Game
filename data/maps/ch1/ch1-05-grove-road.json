@@ -18,11 +18,11 @@
     ["snow", "snow", "grass", "snow", "snow", "snow", "grass", "snow", "snow", "snow", "snow", "snow", "snow", "grass", "snow", "snow", "grass", "snow"]
   ],
   "elevation": [
-    [5, 5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5, 5],
-    [5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 5, 5],
-    [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-    [3, 3, 3, 3, 3, 3, 3, 3, 3, 1, 1, 1, 1, 1, 1, 3, 3, 3],
-    [2, 2, 3, 2, 2, 3, 3, 3, 3, 2, 3, 3, 2, 3, 3, 3, 2, 2],
+    [7, 7, 7, 7, 7, 7, 7, 7, 4, 4, 4, 4, 4, 4, 4, 7, 7, 7],
+    [7, 7, 7, 7, 7, 7, 7, 7, 4, 4, 4, 4, 4, 4, 4, 7, 7, 7],
+    [7, 7, 7, 7, 7, 7, 7, 7, 4, 4, 4, 4, 4, 4, 4, 7, 7, 7],
+    [3, 3, 6, 3, 3, 6, 3, 3, 3, 1, 1, 1, 1, 1, 1, 3, 3, 3],
+    [2, 2, 6, 2, 2, 3, 6, 3, 3, 2, 6, 3, 2, 3, 6, 3, 2, 2],
     [1, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1],
     [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
     [1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1],
@@ -70,7 +70,7 @@
       "pos": [10, 1],
       "ai": "script",
       "named": true,
-      "grid_notes": "GOÐI ÞORGEIR (Rename Table; C-DAG-01, Y-6 presider). Presides the rite before the pyre at [11,1], the white bull led beneath the hanging-tree at [13,1]. NEVER engages and is never targetable: the 3h scarp (row 3 ditch, elev 1, under the elev-4 terrace) and script keep him out of reach. Withdraws N with the rite-guard when three wardens fall. His presence is the battle's moral architecture, not its difficulty."
+      "grid_notes": "GOÐI ÞORGEIR (Rename Table; C-DAG-01, Y-6 presider). Presides the rite before the pyre at [11,1], the white bull led beneath the hanging-tree at [13,1]. NEVER engages and is never targetable: the 3h scarp (row 3 ditch, elev 1, under the elev-4 terrace), the elev-7 crag shoulders flanking the terrace, and script keep him out of reach. Withdraws N with the rite-guard when three wardens fall. His presence is the battle's moral architecture, not its difficulty."
     },
     {
       "id": "e2",
@@ -178,7 +178,7 @@
     ],
     "defeat": "Grím falls, or all of n1-n4 are downed."
   },
-  "escape_edges": ["E", "W"],
+  "escape_edges": ["E", "W", "N"],
   "witness_rule": "sung_if_any_witness_or_router_escapes",
   "triggers": [
     {
@@ -192,7 +192,7 @@
       "when": "hp_below:e2:25",
       "event": "wardens_break",
       "once": true,
-      "note": "Remaining wardens rout N up the goat-track ([7,5]->[8,4]->[8,3]->[8,2]); Þorgeir's withdrawal begins."
+      "note": "Remaining wardens rout N up the goat-track ([7,5]->[8,4]->[8,3]->[8,2]); Þorgeir's withdrawal begins. N is an escape edge: wardens who exit it count as routers escaping under C-ALIGN-04 — the battle can be Sung by their flight alone, which is thematically right: fleeing wardens TALK. (The secondary objective asks the player to deny them exactly that.)"
     },
     {
       "when": "unit_downed:e3",
@@ -207,7 +207,7 @@
     }
   ],
   "designer_notes": {
-    "height_gimmick": "Sightline as testimony: the blót terrace (rows 0-2, cols 8-14, elev 4, dead level) is visible ONLY from tiles of elevation 2+ with clear LoS past the tree-rocks — C-ELEV-01's LoS rule reused for witnessing, not damage. From the road (rows 6-7, elev 0-1) the rise band (rows 4-5, every terrace-facing column holding elev 2-3) sits at/above the sightline, so civilians herded along the low road see nothing and can swear to nothing; two windows in the tree-line (cols 9 and 12, where row 4 dips to elev 2) let elev-2 tiles at [9,4]/[12,4]/[9,5]/[12,5] see the altar. Physical access is separately throttled: the scarp-foot ditch (row 3, cols 9-14, elev 1) makes the terrace a Jump-proof 3h sheer everywhere except the goat-track [7,5]->[8,4]->[8,3]->[8,2], all 1h steps — the rite is architecturally out of the player's reach. The only Ch1 map where elevation decides not what you can HIT but what can be SUNG.",
+    "height_gimmick": "Sightline as testimony: the blót terrace (rows 0-2, cols 8-14, elev 4, dead level) is visible ONLY from tiles of elevation 2+ with clear LoS past the tree-rocks (free-standing rock-and-tree tiles at [2,3],[5,3],[2,4],[6,4],[10,4],[14,4], raised to elev 6 — ~3h above their neighbors — so that under D-TERR-02's passable-rock ruling they still block movement and LoS by height alone, C-ELEV-02) — C-ELEV-01's LoS rule reused for witnessing, not damage. From the road (rows 6-7, elev 0-1) the rise band (rows 4-5, every terrace-facing column holding elev 2-3) sits at/above the sightline, so civilians herded along the low road see nothing and can swear to nothing; two windows in the tree-line (cols 9 and 12, where row 4 dips to elev 2) let elev-2 tiles at [9,4]/[12,4]/[9,5]/[12,5] see the altar. Physical access is separately throttled: the scarp-foot ditch (row 3, cols 9-14, elev 1) makes the terrace front a Jump-proof 3h sheer, and the elev-7 crag shoulders (rows 0-2, cols 0-7 and 15-17) wall off both flanks — necessary because rock is passable stone under D-TERR-02, so only elevation deltas bar the way; the sole route onto the elev-4 terrace is the goat-track [7,5]->[8,4]->[8,3]->[8,2], all 1h steps (C-ELEV-02) — the rite is architecturally out of the player's reach except through its one guarded gate. The only Ch1 map where elevation decides not what you can HIT but what can be SUNG.",
     "witness_setup": "Five travelers flee while grove-wardens hunt them — the wardens' whole objective is preventing witnesses to a present-day, post-ban, ILLEGAL blót (Y0, C-WORLD-05/OQ-5). Escorts n1-n3 start on the west road (elev 0-1, blind), n4 on the south verge and prone to panic-climbing into sightline, n5 already on the rise at [7,3] (elev 3, already sighted) fleeing W away from the group. The player chooses what the survivors saw: shepherd them low and fast (escape, but unseen — they can only attest a skirmish), let or help them reach elev 2+ (escape as true blót-witnesses — they will TALK, grove_blot_witnessed='talked'), or fail/silence every sighted unit ('silenced'). Þorgeir is present, presiding, and untouchable; preventing testimony is fully possible and fully remembered (C-ALIGN-03).",
     "intent": "Escort mission and the witness-system masterclass — the Sung/Unsung lesson taught with civilians who flee and TALK. Faith-nuance carried in both hands: the travelers are freed thralls walking to the coast under manumission-cords (the new faith's genuine gift, C-LIE-04), and the rite on the terrace is the old faith's real belonging curdled into desperation (C-LIE-05/05a) — Þorgeir sacrifices a WHITE BULL, not a person, this time; the escalation is dread, not gore (C-TONE-04). Hallowed overlay on the terrace unsettles old-faith levy units who reach it via the goat-track — texture, not hazard. No fire event exists on this map: the pyre stays flammable-but-unlit so it cannot become ch1-08's rhyme too early."
   }
