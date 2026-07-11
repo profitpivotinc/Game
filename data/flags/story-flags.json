@@ -4,19 +4,180 @@
     {
       "id": "route",
       "type": "enum",
-      "values": ["kingsman", "outlaw"],
+      "values": [
+        "kingsman",
+        "outlaw"
+      ],
       "description": "The Chapter 1 macro-split (C-ROUTE-02). Set once at the Burning of Ulfheim; irreversible.",
-      "set_by": ["map:ch1-08-burn-ulfheim"],
-      "read_by": ["docs/story/04a-ch2-kingsman.md", "docs/story/04b-ch2-outlaw.md", "docs/story/08-branch-map.md"],
+      "set_by": [
+        "map:ch1-08-burn-ulfheim"
+      ],
+      "read_by": [
+        "docs/story/04a-ch2-kingsman.md",
+        "docs/story/04b-ch2-outlaw.md",
+        "docs/story/08-branch-map.md"
+      ],
       "status": "seed"
     },
     {
       "id": "ex_selftest_horn_blown",
       "type": "boolean",
       "description": "Phase 0 validator self-test flag; referenced only by the example map. Retire together with data/maps/example/.",
-      "set_by": ["map:ex0-01-selftest-strand"],
+      "set_by": [
+        "map:ex0-01-selftest-strand"
+      ],
       "read_by": [],
       "status": "test"
+    },
+    {
+      "id": "grith_first_accepted",
+      "type": "boolean",
+      "description": "The chapter's first grið: the raider boy (e6) at Longhouse Night yielded and Grím accepted. True = accepted (he lives, ransomed to the levy); false = refused/executed or the trigger never resolved. The tutorialized seed of C-ALIGN-05.",
+      "set_by": [
+        "map:ch1-02-longhouse-night"
+      ],
+      "read_by": [
+        "scene:ch1-s03",
+        "scene:ch1-s13"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "wyrd_flicker_witnessed",
+      "type": "boolean",
+      "description": "The ford peddler escaped east having seen the ambush chief's killing thrust inexplicably falter — the first Wyrd rumor is loose, as deniable luck ('the smith's boy the spears refuse'), per C-GRIM-05. False if he died or the battle went Unsung: nobody credible saw anything.",
+      "set_by": [
+        "map:ch1-03-ford-grey-ice"
+      ],
+      "read_by": [
+        "scene:ch1-s07",
+        "map:ch1-06-holmgang",
+        "scene:ch1-s08"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "brandr_met",
+      "type": "boolean",
+      "description": "Grím stood at the truce-wand parley and Brandr named himself and his cause (C-LANDLESS-01). Gates name-barks in ch1-04 and the warmth of every later Landless encounter.",
+      "set_by": [
+        "scene:ch1-s04"
+      ],
+      "read_by": [
+        "map:ch1-04-the-landless",
+        "scene:ch1-s12"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "grove_blot_witnessed",
+      "type": "enum",
+      "values": [
+        "talked",
+        "silenced",
+        "unseen"
+      ],
+      "description": "What survived Grove Road's witnesses: 'talked' = at least one neutral escaped after holding sightline (elev 2+, LoS) on the illegal blót — they WILL talk; 'unseen' = neutrals escaped but none ever saw the terrace; 'silenced' = every sighted unit died on the field. The Sung/Unsung lesson's permanent record (C-ALIGN-03/04).",
+      "set_by": [
+        "map:ch1-05-grove-road"
+      ],
+      "read_by": [
+        "scene:ch1-s06",
+        "scene:ch1-s13"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "grove_testimony",
+      "type": "enum",
+      "values": [
+        "spoke",
+        "silent"
+      ],
+      "description": "The speak/silence choice before the king's clerk (Dag): did Grím name Þorgeir's blót to the crown? 'spoke' = testimony given (the grove is marked; Man-leaning); 'silent' = a thing seen and unsaid (the old kin-web sheltered; Blood-leaning). Only meaningful when grove_blot_witnessed != 'silenced' — dead witnesses leave nothing to attest.",
+      "set_by": [
+        "scene:ch1-s06"
+      ],
+      "read_by": [
+        "scene:ch1-s10",
+        "scene:ch1-s13"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "holmgang_grith",
+      "type": "enum",
+      "values": [
+        "honored",
+        "executed"
+      ],
+      "description": "How Bǫðvarr Bear-Sark's lawful yield was answered before a full house (always_sung). 'honored' = hand taken, wound-price accepted — the Bjarnholt seed planted; 'executed' = a yielded man killed at a lawful duel — guest-cup logic invoked, Bjarnholt enmity locked, and every hall sings it (C-ALIGN-05, C-CLAN-04 texture).",
+      "set_by": [
+        "map:ch1-06-holmgang"
+      ],
+      "read_by": [
+        "scene:ch1-s08",
+        "scene:ch1-s11",
+        "scene:ch1-s13"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "mask_lifted",
+      "type": "boolean",
+      "description": "The unmasking beat: at the Yule feast the mask was torn away before the hall. What the firelight showed is deliberately NOT recorded in any flag, scene, or asset — the beat contradicts the sung burn-story without replacing it (C-GRIM-02, C-FRAME-02). The flag records only that it happened before witnesses.",
+      "set_by": [
+        "scene:ch1-s08"
+      ],
+      "read_by": [
+        "scene:ch1-s09",
+        "map:ch1-07-second-nid",
+        "scene:ch1-s13"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "blood_exposed",
+      "type": "boolean",
+      "description": "The second níð has been recited: Grím is publicly named vargdropi, Aldís's whelp, before the Yule feast. The rumor the crown paid twenty years to close is a poem again (C-GRIM-03, C-KING-02). Always true after ch1-s08 — recorded as a flag because half the remaining game reads it.",
+      "set_by": [
+        "scene:ch1-s08"
+      ],
+      "read_by": [
+        "map:ch1-07-second-nid",
+        "scene:ch1-s09",
+        "scene:ch1-s10"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "ulfheim_shelter",
+      "type": "boolean",
+      "description": "While fugitive, Grím accepted Gunnhild's shelter (a fire, a meal, a banner half-offered) before the king's men took him. True changes every register of ch1-08 — the burning becomes guest-cup betrayal on top of kin-blood — and warms/chills Ch2 openings by route.",
+      "set_by": [
+        "scene:ch1-s09"
+      ],
+      "read_by": [
+        "scene:ch1-s10",
+        "map:ch1-08-burn-ulfheim",
+        "scene:ch1-s11",
+        "scene:ch1-s12"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "ulfheim_civilians_saved",
+      "type": "counter",
+      "description": "How many of the four Ulfheim households (n1-n4) exited the goat-track alive at the Burning, either route. 0-4. The number Ch2 keeps returning to: it is the count of voices that can counter-sing the crown's verse — or mourn yours.",
+      "set_by": [
+        "map:ch1-08-burn-ulfheim"
+      ],
+      "read_by": [
+        "scene:ch1-s11",
+        "scene:ch1-s12",
+        "scene:ch1-s13"
+      ],
+      "status": "seed"
     }
   ]
 }
