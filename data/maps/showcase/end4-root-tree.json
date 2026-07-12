@@ -1,0 +1,91 @@
+{
+  "id": "end4-root-tree",
+  "name": "The Root of the Tree",
+  "chapter": 5,
+  "order": 1,
+  "route_tags": ["secret"],
+  "grid": { "cols": 16, "rows": 16 },
+  "terrain": [
+    ["root","root","root","root","root","root","root","root","root","root","root","root","root","root","root","root"],
+    ["root","root","root","root","root","root","root","root","root","root","root","root","root","root","root","root"],
+    ["root","root","root","marsh","marsh","root","root","root","root","root","root","root","root","root","root","root"],
+    ["root","root","root","marsh","root","root","root","root","root","root","root","root","root","root","root","root"],
+    ["root","root","root","root","root","root","root","root","root","root","root","root","root","marsh","root","root"],
+    ["root","root","root","root","root","root","root","root","root","root","root","root","root","marsh","root","root"],
+    ["root","root","root","root","root","root","marsh","marsh","marsh","marsh","root","root","root","root","root","root"],
+    ["root","root","root","root","root","root","marsh","marsh","marsh","marsh","root","root","root","root","root","root"],
+    ["root","root","root","root","root","root","marsh","marsh","marsh","marsh","root","root","root","root","root","root"],
+    ["root","root","root","root","root","root","marsh","marsh","marsh","marsh","root","root","root","root","root","root"],
+    ["root","root","marsh","root","root","root","root","root","root","root","root","root","root","root","root","root"],
+    ["root","root","marsh","root","root","root","root","root","root","root","root","root","root","root","root","root"],
+    ["root","root","root","root","root","root","root","root","root","root","root","marsh","marsh","root","root","root"],
+    ["root","root","root","root","root","root","root","root","root","root","root","root","marsh","root","root","root"],
+    ["root","root","root","root","root","root","root","root","root","root","root","root","root","root","root","root"],
+    ["root","root","root","root","root","root","root","root","root","root","root","root","root","root","root","root"]
+  ],
+  "elevation": [
+    [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],
+    [2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2],
+    [2,3,4,4,4,4,4,4,4,4,4,4,4,4,3,2],
+    [2,3,4,5,5,5,5,5,5,5,5,5,5,4,3,2],
+    [2,3,4,5,6,6,6,6,6,6,6,6,5,4,3,2],
+    [2,3,4,5,6,4,4,4,4,4,4,6,5,4,3,2],
+    [2,3,4,5,6,4,2,2,2,2,4,6,5,4,3,2],
+    [2,3,4,5,6,4,2,0,0,2,4,6,5,4,3,2],
+    [2,3,4,5,6,4,2,0,0,2,4,6,5,4,3,2],
+    [2,3,4,5,6,4,2,2,2,2,4,6,5,4,3,2],
+    [2,3,4,5,6,4,4,4,4,4,4,6,5,4,3,2],
+    [2,3,4,5,6,6,6,6,6,6,6,6,5,4,3,2],
+    [2,3,4,5,5,5,5,5,5,5,5,5,5,4,3,2],
+    [2,3,4,4,4,4,4,4,4,4,4,4,4,4,3,2],
+    [2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2],
+    [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
+  ],
+  "overlays": [
+    { "pos": [8, 12], "type": "corpse_road", "note": "the harvest's road spiralling down to the maw — south approach" },
+    { "pos": [8, 11], "type": "corpse_road", "note": "spiral, second coil" },
+    { "pos": [9, 10], "type": "corpse_road", "note": "spiral tightening rootward" },
+    { "pos": [9, 9], "type": "corpse_road", "note": "the last coil at the gullet's edge" },
+    { "pos": [7, 9], "type": "corpse_road", "note": "west lip of the maw" },
+    { "pos": [4, 4], "type": "grave_goods", "note": "leavings on the NW terrace crest — a fallen einheri's gear" },
+    { "pos": [11, 11], "type": "grave_goods", "note": "leavings on the SE terrace crest" },
+    { "pos": [3, 12], "type": "grave_goods", "note": "harvest's scatter on the digesting SW tract" }
+  ],
+  "weather": "night",
+  "deployment": {
+    "player_zones": [[6, 14], [7, 14], [8, 14], [9, 14], [7, 15], [8, 15]],
+    "max_units": 6
+  },
+  "enemies": [
+    { "id": "e1", "job": "godi", "level": 22, "facing": "S", "pos": [8, 8], "ai": "leader", "named": true, "grid_notes": "The Corpse-Eater at the maw's lip — not a foe to kill but a seat to take; script-driven, it does not die, it is climbed into (the become_successor act). No one kills the hunger." },
+    { "id": "e2", "job": "wyrmslayer", "level": 21, "facing": "S", "pos": [4, 5], "ai": "aggressive", "einherjar": true, "grid_notes": "Full-strength einheri; leaps the shifting drops the living cannot (C-DEATH-02). Consumable toward einherjar_consumed>=5 if the count is short." },
+    { "id": "e3", "job": "varangian", "level": 21, "facing": "S", "pos": [12, 5], "ai": "aggressive", "einherjar": true, "grid_notes": "Second full einheri; the dead do not fall to the map's collapses — every rearranged cliff is a door they walk through." },
+    { "id": "e4", "job": "seidmadr", "level": 20, "facing": "S", "pos": [8, 3], "ai": "support", "einherjar": true, "grid_notes": "Rune-lit dead caster feeding the tree's rearrangement; downing it slows the digest for a turn (see digest_slows trigger)." }
+  ],
+  "neutrals": [
+    { "id": "n1", "type": "witness", "pos": [8, 13], "ai": "script", "grid_notes": "SALGERD at the last door — she cannot leave and cannot be answered; the first hope Grim betrays here. Present as the petition being perverted, not a removable unit. No escape_edge: even Hel starves; there is no exit under the roots." }
+  ],
+  "objectives": {
+    "primary": "Reach the maw at [8,8] and take the seat — climb into the hunger (the become_successor act).",
+    "secondary": ["Consume any remaining einherjar needed to reach einherjar_consumed>=5, if that count is not already met before this map."],
+    "defeat": "Grim falls into the maw as food rather than heir — the tree wins; no successor."
+  },
+  "escape_edges": [],
+  "witness_rule": "always_unsung",
+  "triggers": [
+    { "when": "turn>=1", "event": "digest_begins", "note": "The rearrange engine wakes: each turn a scripted tile-set migrates — terrain type and elevation shift, the corpse_road/grave_goods overlays travel with them, and the funnel toward the maw redraws. Downed units slide one tile rootward (downhill toward [8,8]) per tick." },
+    { "when": "turn>=2", "event": "rearrange_ring_1", "note": "Redraw #1: the crest ring (elev 6 at Chebyshev-3 from center) drops to 4 along the west arc (col 4, rows 4-11) while marsh climbs cols 5-6; the western vantage the player just claimed becomes gullet. No lane held from turn 1 survives." },
+    { "when": "turn>=4", "event": "rearrange_funnel", "note": "Redraw #2: the whole funnel steps inward one tile — every elevation ring migrates one cell toward center, the 0h maw grows from the 2x2 core to the 4x4 (cols 6-9, rows 6-9), and rows that were 2h terrace become 0h gullet. The map is eating the standing room." },
+    { "when": "turn>=6", "event": "maw_widens_final", "note": "Redraw #3: the maw opens to 6x6 (cols 5-10, rows 5-10) at 0h; only the outermost two rings remain as footing, and they are shrinking. The geometry is now almost all mouth." },
+    { "when": "unit_downed:e4", "event": "digest_slows", "note": "Felling the rune-lit caster (e4) freezes the rearrange engine for one turn — the single window to cross ground that will still be there next tick." },
+    { "when": "unit_downed:any_player", "event": "slide_rootward", "note": "A downed player unit slides one tile downhill toward the maw each tick and is consumed if it reaches a 0h gullet tile — the map finishes what the enemy started." },
+    { "when": "unit_downed:e2", "event": "consume_or_unhook", "set_flag": "einherjar_consumed", "set_flag_value": 1, "note": "If consume_rite_known (narrative gate, set upstream), striking down this einheri may be a CONSUME (einherjar_consumed += 1) rather than an unhook — the last place to reach >=5 if short. The alignment-ledger resolution script owns the actual write; set_flag_value is the counter delta on a consume." },
+    { "when": "flag:corpse_road_door_found", "event": "gate_confirm", "once": true, "note": "This map is reachable ONLY with corpse_road_door_found=true and the Successor gate otherwise met (True mercy<=-40, man_blood<=-40, >=5 consumed); it replaces ch4-06 on the secret path." },
+    { "when": "unit_at:any_player:[8,8]", "event": "take_the_seat", "set_flag": "final_choice", "set_flag_value": "become_successor", "once": true, "note": "Reaching the maw's lip offers the become_successor choice; sets final_choice=become_successor and tears the frame fully open — the recitation is happening on the last night of the world (C-FRAME-03)." }
+  ],
+  "designer_notes": {
+    "height_gimmick": "The GEOMETRY REARRANGES between turns: terrain type and elevation migrate every round as the map is digested around the player — a tile is ground only until the tree decides it is a mouthful, so there is no holdable high ground, no stable lane, and the funnel toward the maw redraws itself each turn. Elevation is a live crater (0h maw core, 6h crest ring, sloping to a 2h rim) whose every ring steps inward on the turn>=2/4/6 redraw triggers; the only map whose grid is not fixed, distinct in kind from every prior map, whose terrain is static.",
+    "witness_setup": "No witness, no hall, no ledger left to write: this battle CANNOT be Sung and there is no True account that survives either, because there is no after (C-FRAME-03/04) — hence witness_rule always_unsung, not the standard C-ALIGN-04 rule. Salgerd (n1) stands at the last door with no escape_edge: she cannot leave and cannot be answered, the petition perverted rather than a preventable witness. The only 'witness' is the frame's own reveal — the skald is the harvest given a mouth, reciting on the last night of the world; what is chosen here ends the telling.",
+    "intent": "SHOWCASE and the hidden Successor ending's battle (C-END-01): the seat taken from inside the thing eating the world; replaces ch4-06 on the secret path. Full-strength einherjar formations; the >=5 consumed are seated as the frame's audience. Reaching [8,8] sets final_choice=become_successor and the frame tears fully open."
+  }
+}

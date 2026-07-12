@@ -1,0 +1,186 @@
+{
+  "id": "ch2o-fell-ambush",
+  "name": "The Fell Ambush",
+  "chapter": 2,
+  "order": 2,
+  "route_tags": ["outlaw"],
+  "grid": { "cols": 14, "rows": 16 },
+  "terrain": [
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"],
+    ["rock", "rock", "rock", "rock", "rock", "shingle", "road", "road", "shingle", "rock", "rock", "rock", "rock", "rock"]
+  ],
+  "elevation": [
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 9, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6],
+    [9, 8, 8, 7, 6, 2, 1, 0, 2, 3, 4, 5, 5, 6]
+  ],
+  "overlays": [
+    { "pos": [2, 2], "type": "rockslide_zone", "note": "west upper cliff face — loose crown" },
+    { "pos": [3, 2], "type": "rockslide_zone" },
+    { "pos": [4, 2], "type": "rockslide_zone" },
+    { "pos": [2, 3], "type": "rockslide_zone" },
+    { "pos": [3, 3], "type": "rockslide_zone" },
+    { "pos": [4, 3], "type": "rockslide_zone" },
+    { "pos": [2, 4], "type": "rockslide_zone" },
+    { "pos": [3, 4], "type": "rockslide_zone", "note": "west upper crown tile — a unit acting here looses the slide onto the north pass" },
+    { "pos": [4, 4], "type": "rockslide_zone" },
+    { "pos": [2, 5], "type": "rockslide_zone" },
+    { "pos": [3, 5], "type": "rockslide_zone" },
+    { "pos": [4, 5], "type": "rockslide_zone" },
+    { "pos": [2, 9], "type": "rockslide_zone", "note": "west lower cliff face" },
+    { "pos": [3, 9], "type": "rockslide_zone" },
+    { "pos": [4, 9], "type": "rockslide_zone" },
+    { "pos": [2, 10], "type": "rockslide_zone" },
+    { "pos": [3, 10], "type": "rockslide_zone" },
+    { "pos": [4, 10], "type": "rockslide_zone" },
+    { "pos": [2, 11], "type": "rockslide_zone" },
+    { "pos": [3, 11], "type": "rockslide_zone", "note": "west lower crown tile — a unit acting here buries the south-central road" },
+    { "pos": [4, 11], "type": "rockslide_zone" },
+    { "pos": [2, 12], "type": "rockslide_zone" },
+    { "pos": [3, 12], "type": "rockslide_zone" },
+    { "pos": [4, 12], "type": "rockslide_zone" },
+    { "pos": [9, 6], "type": "rockslide_zone", "note": "east scree brow — shakeable by a bow shot into the marked face" },
+    { "pos": [10, 6], "type": "rockslide_zone" },
+    { "pos": [11, 6], "type": "rockslide_zone" },
+    { "pos": [9, 7], "type": "rockslide_zone" },
+    { "pos": [10, 7], "type": "rockslide_zone" },
+    { "pos": [11, 7], "type": "rockslide_zone" },
+    { "pos": [9, 8], "type": "rockslide_zone" },
+    { "pos": [10, 8], "type": "rockslide_zone" },
+    { "pos": [11, 8], "type": "rockslide_zone" },
+    { "pos": [6, 13], "type": "flammable", "note": "king's column supply-sledge, lashed on the road" },
+    { "pos": [6, 14], "type": "flammable", "note": "king's column supply-sledge, rear" }
+  ],
+  "weather": "snow",
+  "deployment": {
+    "player_zones": [[1, 3], [2, 4], [3, 4], [2, 11], [10, 6], [11, 7]],
+    "max_units": 6
+  },
+  "enemies": [
+    {
+      "id": "e1",
+      "job": "huscarl",
+      "level": 9,
+      "facing": "N",
+      "pos": [6, 12],
+      "ai": "leader",
+      "named": true,
+      "grid_notes": "The king's column-captain, mid-road; the hunt's face. If he escapes south the crown gets facts; his survival vs death is the witness fulcrum."
+    },
+    {
+      "id": "e2",
+      "job": "riddari",
+      "level": 8,
+      "facing": "N",
+      "pos": [7, 13],
+      "ai": "guard",
+      "grid_notes": "Mounted knight — mobility crippled on the narrow road and useless on the scarps; teaches that the crown's strength is the wrong tool in the fells."
+    },
+    {
+      "id": "e3",
+      "job": "veidimadr",
+      "level": 8,
+      "facing": "N",
+      "pos": [6, 9],
+      "ai": "aggressive",
+      "grid_notes": "Column archer trying to answer the heights; the one enemy who can contest the ledges at range — and whose duel on the east brow can shake the scree loose."
+    },
+    {
+      "id": "e4",
+      "job": "laeknir",
+      "level": 7,
+      "facing": "N",
+      "pos": [7, 14],
+      "ai": "support",
+      "grid_notes": "Column healer at the rear; downing or sealing him off with a slide breaks the column's staying power."
+    },
+    {
+      "id": "e5",
+      "job": "drengr",
+      "level": 7,
+      "facing": "N",
+      "pos": [6, 6],
+      "ai": "guard",
+      "grid_notes": "Vanguard spear, furthest south — the unit most likely to escape the S edge if the road stays open."
+    }
+  ],
+  "objectives": {
+    "primary": "Shatter the king's column: down or rout the column-captain (e1).",
+    "secondary": [
+      "Let NO column unit escape the S edge (stay a total rumor) — OR deliberately let exactly one flee to carry terror south.",
+      "Trigger no slide that buries a player unit."
+    ],
+    "defeat": "Grím falls, or the ambush party is wiped."
+  },
+  "escape_edges": ["S"],
+  "witness_rule": "sung_if_any_witness_or_router_escapes",
+  "triggers": [
+    {
+      "when": "unit_at:any_player:[3,4]",
+      "event": "west_upper_slide_release",
+      "once": true,
+      "note": "A player acting on the west upper crown tile [3,4] looses the upper slide: the rockslide_zone (cols 2-4, rows 2-5) collapses and BURIES road tiles [6,2],[7,2],[6,3],[7,3],[6,4],[7,4] — 0-1h road converted to impassable high rubble, sealing the pass's north mouth."
+    },
+    {
+      "when": "unit_at:any_player:[3,11]",
+      "event": "west_lower_slide_release",
+      "once": true,
+      "note": "A player on the west lower crown tile [3,11] drops the lower slide: rockslide_zone (cols 2-4, rows 9-12) buries road tiles [6,10],[7,10],[6,11],[7,11], walling off the column's rear and any healer behind it."
+    },
+    {
+      "when": "hp_below:e3:50",
+      "event": "east_brow_slide_release",
+      "once": true,
+      "note": "A bow-duel on the east scree brow — modeled as the column archer e3 driven below half — shakes the marked rockslide_zone (cols 9-11, rows 6-8) loose onto road tiles [6,7],[7,7],[6,8],[7,8], severing the column's southern flight line mid-battle."
+    },
+    {
+      "when": "turn>=3",
+      "event": "column_breaks_south",
+      "note": "The column begins routing toward the S edge; from here every escaped unit hardens the crown's hunt into facts."
+    },
+    {
+      "when": "flag:consume_rite_known",
+      "event": "none",
+      "note": "No effect here — listed to confirm this Ch2 pre-corpse-road map does NOT touch the consume mechanic."
+    },
+    {
+      "when": "unit_downed:e1",
+      "event": "captain_falls",
+      "set_flag": "sung_mercy_terror",
+      "once": true,
+      "note": "The captain's fall is the field's turning point; whether it is witnessed south sets the Sung read of the ambush. Scalar magnitude owned by engine:alignment-ledger; this trigger only marks the witnessed deed."
+    }
+  ],
+  "designer_notes": {
+    "height_gimmick": "Height is AMMUNITION that reshapes the ground: rockslide_zone tiles on the scarps can be triggered (by a unit acting on the crown tile, or a bow shot into the marked face) to drop a slide that BURIES road tiles at 0-1h, closing the pass and converting road into impassable high rubble mid-battle — elevation spent as terrain-destruction that permanently redraws the walkable map (distinct from ch1-03's shove-onto-ice and every other map).",
+    "witness_setup": "A pass with no third eyes: only the king's column can carry what happens here. Whether ANY of the column escapes south decides if the crown's hunt runs on FACTS (survivors with names and numbers) or on FEAR (a column that simply never came home). Bury the road behind them and the last witnesses are sealed on the wrong side of a slide.",
+    "intent": "The outlaw showcase and the route's thesis in terrain: staying a rumor by controlling who lives to tell. Extreme verticality as a consumable weapon; the player decides whether to close the pass on the column's memory."
+  }
+}

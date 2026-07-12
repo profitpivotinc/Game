@@ -1,0 +1,97 @@
+{
+  "id": "ch4-thing-trial",
+  "name": "The Thing-Plain Trial",
+  "chapter": 4,
+  "order": 2,
+  "route_tags": ["shared"],
+  "grid": { "cols": 18, "rows": 12 },
+  "terrain": [
+    ["wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor"],
+    ["wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor"],
+    ["grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass"],
+    ["grass", "grass", "grass", "dirt", "dirt", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "grass", "dirt", "dirt", "grass", "grass", "grass"],
+    ["grass", "grass", "grass", "grass", "grass", "grass", "grass", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "grass", "grass", "grass", "grass", "grass", "grass", "grass"],
+    ["grass", "grass", "grass", "grass", "grass", "grass", "grass", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "grass", "grass", "grass", "grass", "grass", "grass", "grass"],
+    ["grass", "grass", "grass", "grass", "grass", "grass", "grass", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "grass", "grass", "grass", "grass", "grass", "grass", "grass"],
+    ["grass", "grass", "grass", "grass", "grass", "grass", "grass", "stone_floor", "stone_floor", "stone_floor", "stone_floor", "grass", "grass", "grass", "grass", "grass", "grass", "grass"],
+    ["road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road", "road"],
+    ["grass", "grass", "grass", "grass", "grass", "dirt", "dirt", "grass", "grass", "grass", "grass", "grass", "grass", "dirt", "dirt", "grass", "grass", "grass"],
+    ["wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor"],
+    ["wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor", "wood_floor"]
+  ],
+  "elevation": [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  ],
+  "overlays": [
+    { "pos": [7, 4], "type": "law_circle", "note": "no-kill ring, NW corner" },
+    { "pos": [8, 4], "type": "law_circle", "note": "no-kill ring, north" },
+    { "pos": [9, 4], "type": "law_circle", "note": "no-kill ring, north" },
+    { "pos": [10, 4], "type": "law_circle", "note": "no-kill ring, NE corner" },
+    { "pos": [7, 5], "type": "law_circle", "note": "no-kill ring, west" },
+    { "pos": [10, 5], "type": "law_circle", "note": "no-kill ring, east" },
+    { "pos": [7, 6], "type": "law_circle", "note": "no-kill ring, west" },
+    { "pos": [10, 6], "type": "law_circle", "note": "no-kill ring, east" },
+    { "pos": [7, 7], "type": "law_circle", "note": "no-kill ring, SW corner" },
+    { "pos": [8, 7], "type": "law_circle", "note": "no-kill ring, south" },
+    { "pos": [9, 7], "type": "law_circle", "note": "no-kill ring, south" },
+    { "pos": [10, 7], "type": "law_circle", "note": "no-kill ring, SE corner" },
+    { "pos": [8, 5], "type": "hallowed", "note": "the law-rock: old-faith-entangled Thing ground where Skapti stands (C-LIE-05a)" },
+    { "pos": [9, 5], "type": "hallowed", "note": "the law-rock" },
+    { "pos": [8, 6], "type": "hallowed", "note": "the law-rock" },
+    { "pos": [9, 6], "type": "hallowed", "note": "the law-rock" }
+  ],
+  "weather": "clear",
+  "deployment": {
+    "player_zones": [[6, 8], [7, 8], [8, 8], [9, 8], [10, 8], [11, 8], [8, 9], [9, 9]],
+    "max_units": 6
+  },
+  "enemies": [
+    { "id": "e1", "job": "seidmadr", "level": 19, "facing": "S", "pos": [14, 3], "ai": "leader", "named": true, "grid_notes": "Named faction agitator (crown-or-church hardliner) working to DISRUPT the verdict; wants a killing inside the ring to brand Grím LAW-BREAKER and foreclose the pardon. The trial's true adversary is procedural, not martial." },
+    { "id": "e2", "job": "huscarl", "level": 17, "facing": "S", "pos": [12, 6], "ai": "aggressive", "grid_notes": "Tries to drag the melee INTO the law-circle so a stray blow damns Grím; punishes careless AoE near the ring (cols 7-10, rows 4-7)." },
+    { "id": "e3", "job": "varangian", "level": 17, "facing": "W", "pos": [5, 6], "ai": "aggressive", "grid_notes": "West-side blade pressing from the far booth-row; the pincer that makes holding the ring without a kill genuinely hard." },
+    { "id": "e4", "job": "veidimadr", "level": 16, "facing": "S", "pos": [3, 3], "ai": "guard", "grid_notes": "Archer targeting the trial's witnesses in the booth-rows — down the witnesses and trial_arc_complete slips away." }
+  ],
+  "neutrals": [
+    { "id": "n1", "type": "witness", "pos": [8, 5], "ai": "script", "escape_edge": "N", "grid_notes": "SKAPTI THE LAWSPEAKER on the law-rock (named; script) — speaks the case across the battle; protected, never targetable. If the ring is kept inviolate and the witnesses live, he completes the pardon, correcting his own Y-20 ruling (C-THING-01)." },
+    { "id": "n2", "type": "witness", "pos": [2, 10], "ai": "flee", "escape_edge": "S", "grid_notes": "Trial witness from the ch4-01 wagons (deposition-bearer); must survive to enter the case. One of several the archer hunts." },
+    { "id": "n3", "type": "witness", "pos": [15, 10], "ai": "flee", "escape_edge": "S", "grid_notes": "Second trial witness; redundancy so one loss does not auto-fail trial_arc_complete." }
+  ],
+  "objectives": {
+    "primary": "Hold the law-circle inviolate and protect Skapti and the witnesses until the case is spoken.",
+    "secondary": [
+      "Land no killing blow inside the law_circle (preserve King of Men; avoid the LAW-BREAKER brand).",
+      "Keep both trial witnesses (n2/n3) alive (secures trial_arc_complete)."
+    ],
+    "defeat": "Grím falls, Skapti is reached, or all trial witnesses die.",
+    "route_variants": {
+      "kingsman": { "primary": "Grím arrives with the crown's standing; the agitators are church-hardliners who fear a lawful vargdropi — hold the ring clean and let Skapti speak." },
+      "outlaw": { "primary": "Grím stands in the ring still an outlaw in law; the trial IS the thing that could lift the sentence — same map, higher stakes: one killing inside the ring damns him twice over." }
+    }
+  },
+  "escape_edges": ["N", "S"],
+  "witness_rule": "always_sung",
+  "triggers": [
+    { "when": "turn>=1", "event": "case_opens", "note": "Skapti begins speaking; if nid_proof=held it is entered as the framed-proof lever (C-NID-EVIDENCE-01)." },
+    { "when": "unit_downed:any_enemy", "event": "law_circle_kill_brand", "set_flag": "fire_stigma_count", "set_flag_value": 1, "once": true, "note": "LAW-BREAKER brand (C-CLAN-03/04). The kill verb is disabled on law_circle tiles (cols 7-10 × rows 4-7 minus the rock), so this fires ONLY if the resolution script confirms the downing blow landed on a law_circle tile. Counter delta +1 to fire_stigma_count; the same resolution script sets hjortdal_fate=thing_broken, foreclosing King of Men on the spot." },
+    { "when": "unit_downed:any_player", "event": "kill_check_ring", "note": "A player unit felled on a law_circle tile is blood spilled on no-kill ground before the whole Thing — sung the same way; the resolution script routes it through the LAW-BREAKER brand path (fire_stigma_count +1, hjortdal_fate=thing_broken)." },
+    { "when": "unit_downed:e1", "event": "agitator_broken", "note": "With the chief agitator down OUTSIDE the ring and the circle kept clean, the disruption fails. Downing him INSIDE the ring would itself trigger the LAW-BREAKER brand." },
+    { "when": "flag:nid_proof", "event": "proof_entered", "once": true, "note": "If nid_proof=held, the commission-tally naming the throne is read into the case — the strongest push toward the pardon." },
+    { "when": "unit_at:n1:[8,5]", "event": "verdict_spoken", "set_flag": "trial_arc_complete", "once": true, "note": "If Skapti survives on the law-rock with the ring inviolate and the witnesses alive, the case completes: trial_arc_complete=true; the resolution script also sets hjortdal_fate=law_upheld and boosts hjortdal_trust." }
+  ],
+  "designer_notes": {
+    "height_gimmick": "The decisive geometry here is LEGAL, not elevational — the map is dead flat (elevation 0 everywhere, even the law-rock), so nothing is a wall and nothing is high ground. The only tiles that change combat are the law_circle ring, where the KILL verb is disabled: inside it you may down, shove, or hold but never slay, and a single killing blow there is sung as LAW-BREAKER by every clan at once (C-CLAN-03/04), foreclosing King of Men. Where every other map makes elevation the puzzle, this one makes a rule the terrain — the flat law-rock is ground the fight must protect, not take.",
+    "witness_setup": "Maximum witnesses in the game: the assembled Thing lines every booth-row (rows 0-1 and 10-11) and cannot be silenced, so witness_rule is always_sung — there is no killing your way to an Unsung account here. A killing inside the ring is witnessed by the whole realm at once and the plain outside is wall-to-wall eyes; the player cannot prevent it, only choose what the trial's evidence records. The one thing worth guarding is the witnesses' lives (n2/n3), whom the archer e4 hunts.",
+    "intent": "SHOWCASE and the King of Men hinge (C-THING-01, C-END-01): fighting erupts around the law-ring while Skapti speaks the case that could lift vargdropi status. nid_proof=held is the strongest lever; trial_arc_complete and hjortdal_fate turn on whether the ring is kept inviolate and the ch4-01 witnesses survive."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": "ch3-corpse-barrow",
+  "name": "The Corpse-Road Barrow",
+  "chapter": 3,
+  "order": 1,
+  "route_tags": ["shared"],
+  "grid": { "cols": 16, "rows": 14 },
+  "terrain": [
+    ["snow", "snow", "snow", "dirt", "dirt", "snow", "root", "root", "root", "root", "dirt", "dirt", "snow", "snow", "snow", "snow"],
+    ["snow", "snow", "dirt", "stone_floor", "stone_floor", "dirt", "root", "root", "root", "dirt", "dirt", "snow", "snow", "snow", "snow", "snow"],
+    ["snow", "snow", "dirt", "stone_floor", "stone_floor", "dirt", "snow", "root", "root", "dirt", "snow", "snow", "snow", "snow", "snow", "snow"],
+    ["snow", "dirt", "dirt", "dirt", "dirt", "snow", "snow", "root", "root", "snow", "snow", "dirt", "dirt", "snow", "snow", "snow"],
+    ["snow", "dirt", "dirt", "dirt", "dirt", "snow", "marsh", "root", "root", "snow", "dirt", "dirt", "dirt", "snow", "snow", "snow"],
+    ["snow", "snow", "dirt", "dirt", "snow", "marsh", "marsh", "root", "root", "root", "dirt", "dirt", "dirt", "dirt", "snow", "snow"],
+    ["snow", "snow", "snow", "marsh", "marsh", "snow", "snow", "snow", "root", "root", "dirt", "dirt", "dirt", "dirt", "snow", "snow"],
+    ["snow", "marsh", "marsh", "snow", "snow", "dirt", "snow", "root", "root", "snow", "marsh", "dirt", "dirt", "snow", "snow", "snow"],
+    ["snow", "snow", "marsh", "snow", "snow", "dirt", "root", "root", "snow", "snow", "marsh", "marsh", "snow", "snow", "snow", "snow"],
+    ["snow", "snow", "snow", "snow", "dirt", "dirt", "root", "root", "dirt", "dirt", "snow", "snow", "marsh", "snow", "snow", "snow"],
+    ["snow", "snow", "marsh", "snow", "dirt", "stone_floor", "stone_floor", "root", "root", "root", "dirt", "snow", "snow", "snow", "snow", "snow"],
+    ["snow", "snow", "marsh", "marsh", "snow", "dirt", "stone_floor", "dirt", "root", "dirt", "snow", "snow", "marsh", "snow", "snow", "snow"],
+    ["snow", "snow", "snow", "marsh", "snow", "snow", "dirt", "dirt", "root", "dirt", "snow", "snow", "marsh", "marsh", "snow", "snow"],
+    ["snow", "snow", "snow", "snow", "snow", "dirt", "dirt", "root", "root", "dirt", "dirt", "snow", "snow", "snow", "snow", "snow"]
+  ],
+  "elevation": [
+    [1, 1, 1, 2, 2, 1, 0, 0, 0, 0, 2, 2, 1, 1, 1, 1],
+    [1, 1, 2, 1, 1, 2, 0, 0, 0, 2, 2, 1, 1, 1, 1, 1],
+    [1, 1, 2, 1, 1, 2, 1, 0, 0, 2, 1, 1, 1, 1, 1, 1],
+    [1, 2, 2, 2, 2, 1, 1, 0, 0, 1, 1, 2, 2, 1, 1, 1],
+    [1, 2, 2, 3, 2, 1, 0, 0, 0, 1, 2, 2, 2, 1, 1, 1],
+    [1, 1, 2, 2, 1, 0, 0, 0, 0, 0, 2, 3, 2, 2, 1, 1],
+    [1, 1, 1, 0, 0, 1, 1, 1, 0, 0, 2, 2, 2, 2, 1, 1],
+    [1, 0, 0, 1, 1, 2, 1, 0, 0, 1, 0, 2, 2, 1, 1, 1],
+    [1, 1, 0, 1, 1, 2, 0, 0, 1, 1, 0, 0, 1, 1, 1, 1],
+    [1, 1, 1, 1, 2, 2, 0, 0, 3, 2, 1, 1, 0, 1, 1, 1],
+    [1, 1, 0, 1, 2, 1, 1, 0, 0, 0, 2, 1, 1, 1, 1, 1],
+    [1, 1, 0, 0, 1, 2, 1, 2, 0, 2, 1, 1, 0, 1, 1, 1],
+    [1, 1, 1, 0, 1, 1, 2, 2, 0, 2, 1, 1, 0, 0, 1, 1],
+    [1, 1, 1, 1, 1, 2, 2, 0, 0, 2, 2, 1, 1, 1, 1, 1]
+  ],
+  "overlays": [
+    { "pos": [6, 0], "type": "corpse_road" },
+    { "pos": [7, 0], "type": "corpse_road", "note": "north throat — the road's clear mouth" },
+    { "pos": [8, 0], "type": "corpse_road" },
+    { "pos": [9, 0], "type": "corpse_road" },
+    { "pos": [6, 1], "type": "corpse_road" },
+    { "pos": [7, 1], "type": "corpse_road" },
+    { "pos": [8, 1], "type": "corpse_road" },
+    { "pos": [7, 2], "type": "corpse_road" },
+    { "pos": [8, 2], "type": "corpse_road" },
+    { "pos": [7, 3], "type": "corpse_road" },
+    { "pos": [8, 3], "type": "corpse_road", "note": "the einherji stands astride the lane here" },
+    { "pos": [7, 4], "type": "corpse_road" },
+    { "pos": [8, 4], "type": "corpse_road" },
+    { "pos": [7, 5], "type": "corpse_road" },
+    { "pos": [8, 5], "type": "corpse_road" },
+    { "pos": [9, 5], "type": "corpse_road" },
+    { "pos": [8, 6], "type": "corpse_road" },
+    { "pos": [9, 6], "type": "corpse_road" },
+    { "pos": [7, 7], "type": "corpse_road" },
+    { "pos": [8, 7], "type": "corpse_road" },
+    { "pos": [6, 8], "type": "corpse_road" },
+    { "pos": [7, 8], "type": "corpse_road" },
+    { "pos": [6, 9], "type": "corpse_road" },
+    { "pos": [7, 9], "type": "corpse_road" },
+    { "pos": [7, 10], "type": "corpse_road" },
+    { "pos": [8, 10], "type": "corpse_road" },
+    { "pos": [9, 10], "type": "corpse_road", "note": "the road-cut the berserker rises from" },
+    { "pos": [8, 11], "type": "corpse_road" },
+    { "pos": [8, 12], "type": "corpse_road", "note": "Salgerd's starting stone — the lane's south head" },
+    { "pos": [7, 13], "type": "corpse_road" },
+    { "pos": [8, 13], "type": "corpse_road" },
+    { "pos": [3, 4], "type": "grave_goods", "note": "NW barrow crown" },
+    { "pos": [11, 5], "type": "grave_goods", "note": "E barrow crown — the archer's mound" },
+    { "pos": [8, 9], "type": "grave_goods", "note": "central barrow crown over the road-cut" }
+  ],
+  "weather": "fog",
+  "deployment": {
+    "player_zones": [[5, 13], [6, 13], [7, 13], [8, 13], [9, 13], [10, 13]],
+    "max_units": 6
+  },
+  "enemies": [
+    { "id": "e1", "job": "wyrmslayer", "level": 13, "facing": "S", "pos": [8, 3], "ai": "script", "named": true, "einherjar": true, "grid_notes": "THE EINHERJAR DEBUT (C-DEATH-02) — a unit from the player's own fallen roster, returned rune-lit at its final job (Wyrmslayer here), final abilities, gear tier +1; if the roster has no fallen unit a scripted stand-in fills the slot. Striking it down UNHOOKS it from the harvest: +1 Wyrd Point, a unique saga line, einherjar_unhooked++. CONSUME is unavailable here (consume_rite_known not yet set) — the design guard. It is rune-lit, so it is one of the few things that sees in the dark." },
+    { "id": "e2", "job": "skogarmadr", "level": 11, "facing": "S", "pos": [5, 7], "ai": "aggressive", "grid_notes": "Barrow-dead skirmisher moving unlit through the fog; hunts the player's torch-bearers to blind the light-radius LoS." },
+    { "id": "e3", "job": "veidimadr", "level": 11, "facing": "S", "pos": [12, 6], "ai": "guard", "grid_notes": "Dead archer holding the E crowned barrow ([11,5] grave_goods) — dangerous only while a fire lights its crown; unlit it is nearly blind too." },
+    { "id": "e4", "job": "berserker", "level": 12, "facing": "S", "pos": [9, 10], "ai": "aggressive", "grid_notes": "Grave-cold berserker rising from the road-cut at [9,10]; drives the player off the corpse_road lane." }
+  ],
+  "neutrals": [
+    { "id": "n1", "type": "witness", "pos": [8, 12], "ai": "script", "escape_edge": "N", "grid_notes": "SALGERD 'the Grey-Guest' (C-EMISSARY-01) — a DEAD witness who walks the corpse_road north and cannot be targeted or removed; her presence forces the True ledger (C-ALIGN-02). Following her lane (unit_off_zone:n1:corpse_road) advances hel_arc_stage toward corpse_road_walked, marking the overlays that lead to the concealed door." }
+  ],
+  "objectives": {
+    "primary": "Survive the barrow-rising and clear the corpse-road's north throat.",
+    "secondary": [
+      "Unhook the returned einherji (e1) rather than fleeing it (einherjar_unhooked +1).",
+      "Walk the full corpse_road lane Salgerd marks (advances hel_arc_stage toward corpse_road_walked)."
+    ],
+    "defeat": "Grím falls."
+  },
+  "escape_edges": ["N"],
+  "witness_rule": "always_sung",
+  "triggers": [
+    { "when": "turn>=1", "event": "barrow_rising", "set_flag": "harvest_lie_stage", "set_flag_value": "undeniable", "once": true, "note": "The dead stand up rune-lit; the valkyrie VFX that played straight in Ch1 is now visibly the DESCENT it always was. Advances harvest_lie_stage -> undeniable (resolution script owns the monotonic write)." },
+    { "when": "unit_downed:e1", "event": "einherji_unhooked", "set_flag": "einherjar_unhooked", "set_flag_value": 1, "once": true, "note": "The returned face is unhooked from the harvest: +1 Wyrd, a unique saga line, einherjar_unhooked += 1 (C-DEATH-02)." },
+    { "when": "unit_off_zone:n1:corpse_road", "event": "salgerd_marks_the_road", "set_flag": "hel_arc_stage", "set_flag_value": "corpse_road_walked", "note": "Walking Salgerd's corpse_road lane advances hel_arc_stage toward corpse_road_walked — the prerequisite for finding ch3-07 (resolution script owns the monotonic write)." }
+  ],
+  "designer_notes": {
+    "height_gimmick": "Sight is LIGHT-RADIUS, not elevation, and the fog eats the rest: standing on a 3h barrow crown buys zero vision while it is unlit, so torch-bearers become the map's true 'towers' and a crown matters only while a fire burns on it. The whole vertical logic of every prior map is switched off and replaced by a darkness-LoS economy where illumination — not height — is the terrain advantage, wholly distinct from ch1-05's sightline-as-testimony and every other map's climb math.",
+    "witness_setup": "Salgerd 'the Grey-Guest' walks the corpse-road: a DEAD witness no blade can remove, so whatever happens here is written True, in full, forever (C-ALIGN-02, always_sung). There are no living neutrals to silence; the account cannot be edited by killing, only by what Grím actually does in the dark.",
+    "intent": "SHOWCASE and the einherjar debut (C-DEATH-02): the first returned face from the player's own roster; teaches unhook (default, +Wyrd + saga line) and PLANTS the corpse_road overlays that lead to the concealed door — walking them advances hel_arc_stage toward corpse_road_walked. The chapter's 'the blood wakes' made playable."
+  }
+}
