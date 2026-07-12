@@ -25,10 +25,10 @@
 ### File epigraph
 *Composed, fornyrðislag flavor (C-TONE-01/02); spoken by the SKALD as the fire burns low, before the one closing the player earned.*
 
-> Four deaths waited    in one man's marrow;
-> the ledger keeps    what the lip lets fall.
+> Four deaths dwelt    in one doomed body;
+> the ledger keeps    what the living let fall.
 > One knife carves    the king remembered —
-> and whose hand holds it    holds the hall.
+> and whose hand holds it    holds the harvest.
 
 *[ASIDE: restates the epigraph of `00-frame §0` ("the hand at the haft") as the endings open. The knife is the carver's, not the killer's. Which of the four deaths gets cut into Grím is the whole of what the player chose.]*
 
@@ -66,7 +66,7 @@ The law that lifts Grím's *vargdropi* status is the same instrument that un-san
 >
 > **GRÍM:** Your saint kept her collar under the gold. Read the ring.
 >
-> **SKAPTI:** *(reading — the freedom-debt, the season she was due manumission, the season she was hanged)* ... A thrall-girl. Hanged at a king's blót, six winters gone. And carried off to be a church's first miracle. *(a long pause; the weary, self-indicting cadence of a man who once carved a queen out of the world)* The fire never touched her. She was **hanged**. The miracle was the lie built to bury the rope.
+> **SKAPTI:** *(reading — the freedom-debt, the season she was due manumission, the season she was hanged)* ... A thrall-girl. Hanged at a king's blót, eight winters gone. And carried off to be a church's first miracle. *(a long pause; the weary, self-indicting cadence of a man who once carved a queen out of the world)* The fire never touched her. She was **hanged**. The miracle was the lie built to bury the rope.
 
 *[ASIDE: "Unburnt" reading three ways at once, paid off in law — miracle-lie, un-consumed vessel, and literally true (C-SAINT-01). Proclaiming Yrsa is the new faith's founding miracle *unmade in the record*, the exact instrument the King of Men trial exists to be: law correcting a poem. Faith nuance (C-LIE-04/05): the church still genuinely freed the thralls in the yard — Bótólfr's work was real — which is why proclaiming this **costs**, and is not a triumph over a cartoon. If `botolfr_turned==horrified_ally`, he is the one who reads the ring aloud to his own flock; the sincere cleric becomes the witness that unmakes the shrine he tended (C-CLERIC-01).]*
 
