@@ -196,6 +196,480 @@
         "docs/story/04b-ch2-outlaw.md (planned, Phase 4)"
       ],
       "status": "seed"
+    },
+    {
+      "id": "sung_mercy_terror",
+      "type": "counter",
+      "description": "Running Sung-ledger mercy_terror scalar (-100 Terror .. +100 Mercy, C-ALIGN-01). Snapshot the ending gates read for the PUBLIC record — only witnessed deeds move it (C-ALIGN-02/04). Distinct from true_mercy_terror; the gap IS the theme. The running axis lives in spec-alignment.md; this flag is the gate-readable projection.",
+      "set_by": [
+        "engine:alignment-ledger",
+        "map:ch2k-nav-boarding",
+        "map:ch2o-fell-ambush",
+        "map:ch3-corpse-barrow",
+        "map:ch4-thing-trial",
+        "scene:ch2k-s03",
+        "scene:ch3-s03",
+        "scene:ch4-s03"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:king_of_men",
+        "route_graph.ending_gates:merciless_ruler",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "true_mercy_terror",
+      "type": "counter",
+      "description": "Running True-ledger mercy_terror scalar (-100..+100). Everything, witnessed or not (C-ALIGN-02). Hel and the straw-dead read this whole (OQ-3). Gates Benevolent God (>=+40), Merciless Ruler (<=-40), Successor (<=-40).",
+      "set_by": [
+        "engine:alignment-ledger",
+        "map:ch3-corpse-barrow",
+        "map:ch3-marsh-straw-dead",
+        "map:ch3-mouth-of-roads",
+        "map:end4-root-tree",
+        "scene:ch2o-s02",
+        "scene:ch3-s04"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:benevolent_god",
+        "route_graph.ending_gates:merciless_ruler",
+        "route_graph.ending_gates:successor",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "sung_man_blood",
+      "type": "counter",
+      "description": "Running Sung-ledger man_blood scalar (-100 Blood .. +100 Man, C-ALIGN-01). Public projection. Any Wyrd use in a SUNG battle pushes toward Blood (C-WYRD-02). Gates King of Men (>=+30, public/law framing) and Merciless Ruler's man axis (>=+30).",
+      "set_by": [
+        "engine:alignment-ledger",
+        "map:ch4-thing-trial",
+        "scene:ch2k-s01",
+        "scene:ch2k-s03",
+        "scene:ch4-s02"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:king_of_men",
+        "route_graph.ending_gates:merciless_ruler",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "true_man_blood",
+      "type": "counter",
+      "description": "Running True-ledger man_blood scalar (-100 Blood .. +100 Man). Gates Benevolent God (<=-30, blood side) and Successor (<=-40, deepest blood). Every consumed einherji drives it hard toward Blood.",
+      "set_by": [
+        "engine:alignment-ledger",
+        "map:ch3-mouth-of-roads",
+        "map:ch4-under-the-tree",
+        "map:end4-root-tree",
+        "scene:ch3-s04"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:benevolent_god",
+        "route_graph.ending_gates:successor",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "hjortdal_trust",
+      "type": "counter",
+      "description": "Hjortdal (Stag) clan trust scalar -100..+100 (C-CLAN-02; per-clan scalar detail in spec-clans-trust.md). The King of Men gate reads >=60. Built by upholding law in play: accepting grid publicly, sparing witnesses, a clean Sung ledger (01 sec3.5). Accrues on kingsman law-courtship and in the merged Ch3/Ch4 for either route; an outlaw must court it via the trial that would lift his own status.",
+      "set_by": [
+        "scene:ch2k-s01",
+        "scene:ch2k-s03",
+        "scene:ch3-s02",
+        "map:ch4-thing-trial",
+        "scene:ch4-s02"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:king_of_men",
+        "scene:ch4-s02",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "hjortdal_fate",
+      "type": "enum",
+      "values": [
+        "neutral",
+        "law_upheld",
+        "thing_broken"
+      ],
+      "description": "How Hjortdal's arc resolves. 'law_upheld' = faith path, Lawspeaker tier + trial arc available (King of Men reachable). 'thing_broken' = fire path (rode down the lawspeakers) which FORECLOSES King of Men forever and stamps LAW-BREAKER / Thing-slayer (C-CLAN-03 FIXED, C-CLAN-04). 'neutral' = uncommitted.",
+      "set_by": [
+        "map:ch4-thing-trial",
+        "scene:ch4-s02"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:king_of_men",
+        "docs/story/06-ch4-convergence.md",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "trial_arc_complete",
+      "type": "boolean",
+      "description": "The King of Men trial arc has run to completion at the Thing: Skapti spoke the case that can lift vargdropi status, correcting his own Y-20 ruling (C-THING-01). Requires hjortdal_fate=law_upheld and the case surviving (its witnesses/proofs delivered, ch4-01). Hard requirement of the King of Men gate (C-END-01).",
+      "set_by": [
+        "map:ch4-thing-trial",
+        "scene:ch4-s02"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:king_of_men",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "hrafnmark_fate",
+      "type": "enum",
+      "values": [
+        "neutral",
+        "allied",
+        "burned"
+      ],
+      "description": "How the ugliest alliance resolves (01 sec3.2). 'allied' = faith path: courted the carvers of Aldis's nid; yields the nid-stave + commission-tally (see nid_proof). 'burned' = fire path: torched the raven-wood, looted ash-tongued diminished seidr, DESTROYED the proof forever, stamped LOREBURNER (C-NID-EVIDENCE-01, C-CLAN-04). 'neutral' = untouched.",
+      "set_by": [
+        "map:ch3-raven-wood-rites",
+        "scene:ch3-s02"
+      ],
+      "read_by": [
+        "scene:ch4-s02",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "nid_proof",
+      "type": "enum",
+      "values": [
+        "unobtained",
+        "held",
+        "destroyed"
+      ],
+      "description": "The original nid-stave + commission-tally naming Ragnvald as payer (C-NID-EVIDENCE-01): proof Aldis was FRAMED (the verse was bought), not that its content was false (framed != innocent, load-bearing). 'held' = won at high Hrafnmark trust (hrafnmark_fate=allied); the strongest lever the trial arc presents. 'destroyed' = raven-wood burned (hrafnmark_fate=burned); the proof is gone forever. 'unobtained' = never pursued. Strengthens trial_arc_complete but is not strictly required if hjortdal_trust is high enough.",
+      "set_by": [
+        "map:ch3-raven-wood-rites",
+        "scene:ch3-s02"
+      ],
+      "read_by": [
+        "scene:ch4-s02",
+        "map:ch4-thing-trial",
+        "route_graph.ending_gates:king_of_men",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "bjarnholt_fate",
+      "type": "enum",
+      "values": [
+        "neutral",
+        "sworn",
+        "broken"
+      ],
+      "description": "Bjarnholt (Bear) lodge outcome (01 sec3.3). 'sworn' = faith path: shared oath + raid-target won the lodge, full Berserker/Wyrmslayer lines (trust band >=75). 'broken' = fire path: broke the lodge, diminished arts, stamped OATHBREAKER ('he broke the guest-cup', deepest Norse stigma, poisons all cross-clan trust, C-CLAN-04). 'neutral' = uncommitted (trust band under 25). Temper set primarily by holmgang_grith at the ch2 lodge-rising.",
+      "set_by": [
+        "map:ch2k-bear-lodge-rising",
+        "scene:ch2k-s03",
+        "scene:ch3-s05"
+      ],
+      "read_by": [
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "hvalfjord_fate",
+      "type": "enum",
+      "values": [
+        "neutral",
+        "bought",
+        "burned"
+      ],
+      "description": "Hvalfjord (Whale) merchant outcome (01 sec3.4). 'bought' = faith path (a running account paid in grain/ships/intelligence; high trust closes the standing Crown offer for Grim's location = logistics spine kept). 'burned' = fire path: seized the harbor, one-time plunder, SEVERED the intelligence/shop net, stamped MARKET-BURNER / 'no port will deal' (C-CLAN-04). 'neutral' = mid-account. On outlaw route the low-trust branch is where Hvalfjord SELLS Grim's berth (ch2o sold-harbor).",
+      "set_by": [
+        "map:ch2o-sold-harbor",
+        "scene:ch2o-s03",
+        "scene:ch2k-s02"
+      ],
+      "read_by": [
+        "docs/story/04b-ch2-outlaw.md",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "ulfheim_fate",
+      "type": "enum",
+      "values": [
+        "restored",
+        "terms",
+        "scattered"
+      ],
+      "description": "The Ulfheim (Wolf) reckoning at the Ch3 one-map variant (ch3-05-wolves-in-winter, C-DAG/route pattern). 'restored' = the remnant survives with a future (outlaw: held the pass for their flight, banner carried on). 'terms' = kingsman brings the remnant to crown terms (survival at the cost of the cause). 'scattered' = the remnant is broken/decimated. Gunnhild survives by script either way and is the KINSLAYER-verse witness (C-CLAN-04). NOTE: the KINSLAYER stigma itself is already fixed by route=kingsman + the Ch1 burn; this tracks the remnant's Ch3 outcome.",
+      "set_by": [
+        "map:ch3-wolves-in-winter",
+        "scene:ch3-s05"
+      ],
+      "read_by": [
+        "docs/story/06-ch4-convergence.md",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "fire_stigma_count",
+      "type": "counter",
+      "description": "Count of cumulative fire-path stigma tags earned (0-5): KINSLAYER (route=kingsman burn of Ulfheim), LOREBURNER (hrafnmark_fate=burned), OATHBREAKER (bjarnholt_fate=broken), MARKET-BURNER (hvalfjord_fate=burned), LAW-BREAKER (hjortdal_fate=thing_broken) (C-CLAN-04). Tags are cumulative and permanent; poisons starting trust elsewhere. Read by the branch map and the Merciless/Successor colorings — a high count is the terror-shaped playthrough's fingerprint.",
+      "set_by": [
+        "map:ch3-raven-wood-rites",
+        "map:ch2k-bear-lodge-rising",
+        "map:ch2o-sold-harbor",
+        "map:ch4-thing-trial",
+        "scene:ch1-s11"
+      ],
+      "read_by": [
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "harvest_lie_stage",
+      "type": "enum",
+      "values": [
+        "believed",
+        "suspected",
+        "undeniable",
+        "rehomed"
+      ],
+      "description": "The Lie's reveal cadence made trackable (C-LIE-02/03, 01 sec4.3). 'believed' (Ch1 exit state). 'suspected' = Ch2 corpse-roads/Salgerd dreams/einherjar rumor accumulate; the downward pull is suspectable, not provable. 'undeniable' = Ch3: the harvest goes DOWN to the Corpse-Eater; einherjar debut + concealed corpse-road make it impossible to deny. 'rehomed' = the hunger is found cocooned in Ingunn's relics inside the NEW church (the better engine). Advances monotonically.",
+      "set_by": [
+        "scene:ch2o-s02",
+        "scene:ch2k-s02",
+        "map:ch3-corpse-barrow",
+        "scene:ch3-s03",
+        "scene:ch4-s03"
+      ],
+      "read_by": [
+        "docs/story/05-ch3-the-blood-wakes.md",
+        "docs/story/06-ch4-convergence.md",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "hel_arc_stage",
+      "type": "enum",
+      "values": [
+        "dormant",
+        "contact",
+        "petition_heard",
+        "corpse_road_walked",
+        "complete"
+      ],
+      "description": "Salgerd 'the Grey-Guest' / Hel's petition arc (C-EMISSARY-01, C-LIE-06). 'contact' = first dream-walk (Ch2, outlaw-forward but reachable both routes). 'petition_heard' = Hel's claim stated in owed-debts/lawful-shares grammar. 'corpse_road_walked' = Grim has walked the corpse_road overlays Salgerd shows (Ch3; prerequisite for finding the concealed door). 'complete' = the petition is resolved at the roots. Benevolent God gate requires 'complete' with the petition GRANTED (harvest returned to Hel's lawful course); the Successor perverts it (even Hel starves). Gates the True-ledger content (C-ALIGN-02).",
+      "set_by": [
+        "scene:ch2o-s02",
+        "scene:ch2k-s02b",
+        "map:ch3-corpse-barrow",
+        "map:ch3-marsh-straw-dead",
+        "scene:ch4-s05"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:benevolent_god",
+        "route_graph.ending_gates:successor",
+        "map:ch3-mouth-of-roads",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "consume_rite_known",
+      "type": "boolean",
+      "description": "HIDDEN INVERSE CHOICE unlocked. Normally striking down an einherji UNHOOKS it from the harvest (+1 Wyrd, unique saga line, einherjar_unhooked++, C-DEATH-02). The concealed inverse is CONSUMING it — taking the harvest into oneself. This flag flips true only when the corpse-road door teaches the method (Salgerd will show, not tell: she cannot lie but withholds), i.e. after walking the corpse_road and/or finding ch3-07. False keeps consume unavailable, making the Successor unreachable by accident (design guard).",
+      "set_by": [
+        "map:ch3-mouth-of-roads",
+        "scene:ch3-s04"
+      ],
+      "read_by": [
+        "map:ch3-einherjar-vanguard",
+        "map:ch4-under-the-tree",
+        "map:end4-root-tree",
+        "route_graph.ending_gates:successor",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "einherjar_consumed",
+      "type": "counter",
+      "description": "Count of the player's permanently-fallen units (einherjar returned in enemy formations, C-DEATH-02) that Grim CONSUMED rather than unhooked (requires consume_rite_known). Successor gate needs >=5 (C-END-01). Each consume drives true_man_blood and true_mercy_terror hard toward Blood/Terror. The permadeath payoff turned to appetite.",
+      "set_by": [
+        "map:ch3-corpse-barrow",
+        "map:ch3-einherjar-vanguard",
+        "map:ch4-under-the-tree",
+        "map:end4-root-tree"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:successor",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "einherjar_unhooked",
+      "type": "counter",
+      "description": "Count of returned einherjar STRUCK DOWN and thereby unhooked from the harvest: the default virtuous choice, +1 Wyrd Point and a unique saga line each (C-DEATH-02 FIXED). Read by the Benevolent God / King of Men colorings (the fed dead remember who freed them) and the frame's einherjar-bench count. The inverse of einherjar_consumed.",
+      "set_by": [
+        "map:ch3-corpse-barrow",
+        "map:ch3-einherjar-vanguard",
+        "map:ch4-under-the-tree"
+      ],
+      "read_by": [
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md",
+        "map:ch4-under-the-tree"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "corpse_road_door_found",
+      "type": "boolean",
+      "description": "The concealed Ch3 corpse-road scene has been found (ch3-07-mouth-of-the-roads): a door under the barrows where the harvest goes DOWN, reachable ONLY by walking the corpse_road overlays Salgerd shows (requires hel_arc_stage>=corpse_road_walked). Hard requirement of the Successor gate (C-END-01). Finding it also teaches consume_rite_known and pushes harvest_lie_stage to undeniable at its deepest.",
+      "set_by": [
+        "map:ch3-mouth-of-roads",
+        "scene:ch3-s04"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:successor",
+        "route_graph.edges",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "final_choice",
+      "type": "enum",
+      "values": [
+        "unresolved",
+        "sever_blood",
+        "take_hel_seat",
+        "keep_power_man",
+        "become_successor"
+      ],
+      "description": "The Ch4 terminal macro-decision at the roots (C-ROUTE-01, C-END-01). 'sever_blood' = give up all Wyrd for the last act, be judged as only a man (King of Men). 'take_hel_seat' = take the empty seat as god of the straw-dead (Benevolent God). 'keep_power_man' = keep the Wyrd, rule by terror over a bought-quiet realm (Merciless Ruler). 'become_successor' = climb into the hunger and wear it (Successor; secret; only offered if the Successor gate is otherwise met). Each ending gate requires its matching value.",
+      "set_by": [
+        "map:ch4-the-corpse-eater",
+        "map:end4-root-tree",
+        "scene:ch4-s06"
+      ],
+      "read_by": [
+        "route_graph.ending_gates:king_of_men",
+        "route_graph.ending_gates:benevolent_god",
+        "route_graph.ending_gates:merciless_ruler",
+        "route_graph.ending_gates:successor",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "ingunn_yrsa_revealed",
+      "type": "boolean",
+      "description": "THE INGUNN=YRSA CHARACTER REVEAL (C-SAINT-01/02/03). True once the incorrupt body is OPENED and the characters learn the founding saint 'Ingunn the Unburnt' is Yrsa, Dag's hanged sister (Dag first, then Botolfr). The player has known since early Ch2 (dramatic irony); this flag is the CHARACTER-side discovery. Set at the reveal beat (ch4-03 crown-and-cocoon, the opening of the body) — the game's biggest shock. Do NOT let any character connect it casually before this beat (C-SAINT-03).",
+      "set_by": [
+        "scene:ch4-s03",
+        "map:ch4-crown-and-cocoon"
+      ],
+      "read_by": [
+        "scene:ch4-s04",
+        "docs/story/06-ch4-convergence.md",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "ingunn_handling",
+      "type": "enum",
+      "values": [
+        "not_revealed",
+        "buried_again",
+        "proclaimed",
+        "weaponized"
+      ],
+      "description": "How the Ingunn=Yrsa truth is HANDLED after the reveal. 'not_revealed' = the body was never opened (ingunn_yrsa_revealed=false). 'buried_again' = Dag re-seals it and crowns himself anyway, church intact on his sister's stolen body (C-DAG-03 default). 'proclaimed' = the truth is spoken to the realm, unmaking the founding miracle (feeds King of Men / Benevolent God tellings). 'weaponized' = Grim uses the harvest nested in her body toward the Successor (dislodge to consume, not to free).",
+      "set_by": [
+        "scene:ch4-s04",
+        "map:ch4-crown-and-cocoon"
+      ],
+      "read_by": [
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "dag_knows_cocoon",
+      "type": "boolean",
+      "description": "Dag has learned what feeds under the church he built (C-DAG-03 FIXED): the re-homed hunger cocooned in Ingunn's relics (C-LIE-03) — and, with ingunn_yrsa_revealed, that the relic is his own murdered sister. He crowns himself ANYWAY, a cold knowing Delita-analog. Dag is crowned in every route (C-DAG-02); this flag records that he crowns knowing. Set at the coronation/reveal.",
+      "set_by": [
+        "scene:ch4-s03",
+        "map:ch4-crown-and-cocoon"
+      ],
+      "read_by": [
+        "scene:ch4-s04",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
+    },
+    {
+      "id": "botolfr_turned",
+      "type": "enum",
+      "values": [
+        "faithful",
+        "horrified_ally",
+        "silenced"
+      ],
+      "description": "The sincere cleric's fate at the shrine (C-CLERIC-01, C-LIE-03). 'faithful' = Botolfr never sees the truth; keeps tending the slaughterhouse he believes a shrine. 'horrified_ally' = he glimpses that the radiance is the feeding, breaks, and helps prove the Lie (the unwitting chaplain becomes a witness). 'silenced' = the player killed/suppressed him at the shrine (possible, catastrophic, remembered on both ledgers). Set at ch3-03; can advance to horrified_ally at the ch4-03 reveal.",
+      "set_by": [
+        "map:ch3-shrine-of-the-unburnt",
+        "scene:ch3-s03",
+        "scene:ch4-s03"
+      ],
+      "read_by": [
+        "docs/story/06-ch4-convergence.md",
+        "docs/story/07-endings.md",
+        "docs/story/08-branch-map.md"
+      ],
+      "status": "seed"
     }
   ]
 }
