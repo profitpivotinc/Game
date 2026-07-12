@@ -2,7 +2,7 @@
 
 > **~34–40 battles total (C-END-02); Chapter 1 fully built in `data/maps/ch1/`; later chapters are planned rows completed in Phase 4/5.**
 >
-> Route tags per C-ROUTE-03: `shared | kingsman | outlaw | secret`. The five showcase maps (KICKOFF §5.6) — one per later chapter/route — are built in `data/maps/showcase/` during Phase 4 and are marked **[SHOWCASE — Phase 4]** below; every other non-Chapter-1 row is **[PLANNED — Phase 4/5]** and subject to revision when its chapter is authored. Chapter 1 rows are sourced from the Phase-3 spine and mirror the `designer_notes` of the built map JSONs. Planned ids follow the ch1 naming convention (`chN-NN-kebab-name`, route-tagged); the endings row uses the `end4-` prefix after KICKOFF's "ending-4." **Id convention:** rows for *built* maps carry the actual map-file `id` (e.g. `ch2k-nav-boarding`), so manifest↔map resolves by id; not-yet-built planned rows carry a descriptive `chN-NN-` working id subject to revision. A task-id↔row crosswalk for the planned battles is maintained with the branch map (`08-branch-map.md`).
+> Route tags per C-ROUTE-03: `shared | kingsman | outlaw | secret`. The five showcase maps (KICKOFF §5.6) — one per later chapter/route — are built in `data/maps/showcase/` during Phase 4 and are marked **[SHOWCASE — Phase 4]** below; every other non-Chapter-1 row is **[PLANNED — Phase 4/5]** and subject to revision when its chapter is authored. Chapter 1 rows are sourced from the Phase-3 spine and mirror the `designer_notes` of the built map JSONs. Planned ids follow the ch1 naming convention (`chN-NN-kebab-name`, route-tagged); the endings row uses the `end4-` prefix after KICKOFF's "ending-4." **Id convention:** rows for *built* maps carry the actual map-file `id` (e.g. `ch2k-nav-boarding`), so manifest↔map resolves by id; not-yet-built planned rows carry a descriptive `chN-NN-` working id subject to revision. A task-id↔row crosswalk for the planned battles is maintained with the branch map (`08-branch-map.md`); the **Id crosswalk** section below maps every variant id the story files use back to its one canonical row, and **Open items** logs the residual inconsistencies for the rename/build pass.
 
 ---
 
@@ -89,6 +89,28 @@ Routes merge; the mythic layer becomes undeniable (C-WORLD-02). Einherjar return
 
 ---
 
+## Id crosswalk (canonical ↔ story variant ids)
+
+> **Purpose.** The story files (`04a`, `04b`, `05`, `06`, `07`) cite several battles by an id that differs from this manifest's canonical row id — a built showcase carries its map-file id while the beat-sheet reaches for the ordered `chN-NN-` form, or vice versa, and the endings file drifts on the ending map's name. This table maps **every** such variant back to its one canonical row so that **every `battle_ref` / `[BATTLE TRIGGER → …]` / beat-sheet `Battle` cell in the story files resolves to exactly one manifest row.** Canonical = the row id used in the tables above (built maps keep their actual map-file `id`; planned battles use the ordered `chN-NN-kebab-name` form). Rows not listed here are cited in the story by their canonical id already and need no alias. This is the honest reconciliation the id inconsistencies require — it renames nothing on disk; see **Open items** below for what a future build pass should normalize.
+
+| Canonical manifest id | Built? | Story variant id(s) (aliases) | Where the variant is used |
+|---|---|---|---|
+| `ch2k-nav-boarding` | BUILT (showcase) | `ch2-03-whale-road-boarding` | 04a beat 4 (`battle_ref`, "manifest ch2-03-whale-road-boarding") |
+| `ch2-05-bear-lodge-rising` | planned | `ch2k-bear-lodge-rising` | 04a beat 5 (map id), scene ch2k-s03 |
+| `ch2o-fell-ambush` | BUILT (showcase) | `ch2-02-fell-ambush` | 04b beat 2 (`battle_ref`, "manifest ch2-02-fell-ambush") |
+| `ch2-05-sold-harbor` | planned | `ch2o-sold-harbor` | 04b beat 5 (map id), scene ch2o-s03 flag index |
+| `ch3-corpse-barrow` | BUILT (showcase) | `ch3-01-corpse-road-barrow` | 05 beat 1 (`battle_ref`; "showcase: ch3-corpse-barrow") |
+| `ch3-04-einherjar-vanguard` | planned | `ch3-einherjar-vanguard` | 05 flag index (map ch3-04 cite) |
+| `ch3-06-marsh-of-the-straw-dead` | planned | `ch3-06-marsh-straw-dead` | 05 beat 6 (`battle_ref`) |
+| `ch4-thing-trial` | BUILT (showcase) | `ch4-02-thing-plain-trial` | 06 beat 2 & 07 §1 (manifest cite) |
+| `ch4-03-crown-and-cocoon` | planned | `ch4-crown-and-cocoon`, `ch4-03` | 06 beat 3 (map id / short cite) |
+| `ch4-06-the-corpse-eater` | planned | `ch4-the-corpse-eater`, `ch4-06` | 06 beat 6 & 07 (map id / short cite) |
+| `end4-root-tree` | BUILT (showcase) | `end4-root-of-the-tree`, `end4` | 07 (endings scripts) |
+
+*All other story battle-refs — `ch2-01-levy-of-spears`, `ch2-02-unlawful-fires`, `ch2-06-last-wall-of-the-landless`, `ch2-01-hunted-thaw`, `ch2-03-grain-for-the-hungry`, `ch2-04-wolf-den-relief`, `ch2-06-hunters-hunted`, `ch3-02-raven-wood-rites`, `ch3-03-shrine-of-the-unburnt`, `ch3-05-wolves-in-winter`, `ch3-07-mouth-of-the-roads`, `ch3-08-high-grove-reckoning`, `ch4-01-roads-to-the-law`, `ch4-04-kings-last-field`, `ch4-05-under-the-tree`, and the Ch1 rows `ch1-01`…`ch1-08` — already match their canonical manifest id verbatim.* **Result: every battle id referenced in the five story files resolves to exactly one row above (canonical or alias).**
+
+---
+
 ## Counts
 
 | Group | Rows | Route tag |
@@ -101,6 +123,20 @@ Routes merge; the mythic layer becomes undeniable (C-WORLD-02). Einherjar return
 | Endings (planned) | 1 | secret (1 showcase) |
 | **Total** | **35** | — |
 
-Per route tag: **shared 21** (Ch1 8 + Ch3 7 + Ch4 6) · **kingsman 6** · **outlaw 6** · **secret 2** → **35 rows**, inside C-END-02's ~34–40 target.
+Per route tag: **shared 21** (Ch1 8 + Ch3 7 + Ch4 6) · **kingsman 6** · **outlaw 6** · **secret 2** (Ch3 `ch3-07` + `end4-root-tree`) → **21 + 6 + 6 + 2 = 35 rows**, inside C-END-02's ~34–40 target. ✔
 
 One playthrough fights **27** battles (21 shared + 6 route), **28** if the concealed corpse-road battle (ch3-07) is found; on the hidden ending, end4-root-tree replaces ch4-06 (still 28). All planned rows, ids, and gimmicks are Phase 4/5 working material — CANON.md wins on any conflict.
+
+**Story-resolution check.** Distinct real battles referenced across the five story files = **26** (5 kingsman + 6 outlaw + 8 Ch3 + 6 Ch4 + 1 endings map, `end4-root-tree`), every one resolving to a canonical row or a crosswalk alias above; scene ids (`chN-sNN`, `ch2k-sNN`, `ch4-s04b`), doc-name fragments (`ch3-the-blood-wakes`, `ch2-outlaw`, `ch4-convergence`), and Ch1 back-references were excluded per the extraction rule. The manifest's 35 rows are a **superset**: the one row with no current story beat-ref is `ch2-04-toll-bridge` (see Open items).
+
+---
+
+## Open items (for the rename/build pass)
+
+*The honest residue log Phase 5 requires. None of these are errors in the manifest as an index — every story battle resolves (Id crosswalk above) — but each is an id inconsistency a future rename/build pass should normalize. **When a planned battle is BUILT, its map-file `id` and every story beat-ref/`[BATTLE TRIGGER → …]` should be normalized to the canonical manifest id below, and the alias row retired.***
+
+1. **Built showcases carry a short map-file id; the story reaches for the ordered form.** `ch2k-nav-boarding` (04a says `ch2-03-whale-road-boarding`), `ch2o-fell-ambush` (04b says `ch2-02-fell-ambush`), `ch3-corpse-barrow` (05 says `ch3-01-corpse-road-barrow`), `ch4-thing-trial` (06/07 say `ch4-02-thing-plain-trial`). Canon rule (intro) keeps the **built map-file id** authoritative; the ordered forms are aliases only. Build pass: fix the story cites, or (project-lead call) rename the five showcase JSONs to the ordered form and update the manifest + maps together.
+2. **Planned rows whose future map/story ids drift by a route-prefix or word.** `ch2-05-bear-lodge-rising` ↔ map/scene `ch2k-bear-lodge-rising`; `ch2-05-sold-harbor` ↔ map/scene `ch2o-sold-harbor`; `ch3-04-einherjar-vanguard` ↔ `ch3-einherjar-vanguard`; `ch3-06-marsh-of-the-straw-dead` ↔ `ch3-06-marsh-straw-dead`; `ch4-03-crown-and-cocoon` ↔ `ch4-crown-and-cocoon`/`ch4-03`; `ch4-06-the-corpse-eater` ↔ `ch4-the-corpse-eater`/`ch4-06`. When these maps are built, name each JSON with the **canonical ordered id** and normalize the beat-refs to match.
+3. **Endings map id drifts in `07-endings.md`.** The built map is `end4-root-tree`; the endings scripts write `end4-root-of-the-tree` (and short `end4`). Normalize the story cites to `end4-root-tree` (the built id) on the next pass.
+4. **Two `ch2-05-` ids across the split routes.** `ch2-05-bear-lodge-rising` (kingsman) and `ch2-05-sold-harbor` (outlaw) legitimately share order 5 on parallel route files — intended, not a collision, but flagged so a validator keying on order alone does not trip.
+5. **`ch2-04-toll-bridge` has no story beat-ref.** It is a planned kingsman row (order 4) the current Ch2 spine does not use — the kingsman route runs five battles across six beats (beat 2 "Two Vellums" is battle-less). Kept per "preserve existing rows"; a build/authoring pass should either give it a beat in `04a` or drop it (dropping it takes the total to 34, still inside C-END-02).

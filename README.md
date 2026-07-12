@@ -41,10 +41,16 @@ Requires Node 18+. No dependencies, no install step.
 node tools/validate.mjs            # exits non-zero on any error
 
 # ASCII-preview any map JSON: elevation digits, terrain letters, E/P/W markers.
-node tools/render-map.mjs data/maps/example/ex0-00-selftest.json
+node tools/render-map.mjs data/maps/ch1/ch1-01-strandhogg.json
+
+# Proper-noun gate: flag any name in the story docs not registered in CANON's
+# Rename Table (§2) / allowlist (§2.1) / glossary. Exits non-zero on residue.
+node tools/nouncheck.mjs            # scan docs/story + manifest (the Phase-5 gate)
+node tools/nouncheck.mjs --all      # also scan CANON.md, README.md
+node tools/nouncheck.mjs --list     # print the registered-name set
 ```
 
-Run `validate.mjs` before every commit; it is the gate for every phase.
+Run `validate.mjs` and `nouncheck.mjs` before every commit; together they are the gate for every phase.
 
 ## Data conventions (summary — CANON §5 is authoritative)
 
@@ -64,7 +70,7 @@ Executed one commit per phase, stopping for human review at each gate (KICKOFF �
 | 2 | All seven design specs | ⬜ deferred — executed after Phase 3 by project-lead directive; CANON §1.7/§1.8 is the interim mechanics authority |
 | 3 | Chapter 1 deep build: full scripts + 8 map JSONs + manifest seed | ✅ |
 | 4 | Branches (04a/04b/05/06), endings (07), branch map (08), 5 showcase maps, 37-flag registry | ✅ |
-| 5 | Battle manifest & consistency pass | ⬜ |
+| 5 | Full battle manifest + `nouncheck.mjs` proper-noun gate & consistency pass | ✅ |
 
 ## House rules
 

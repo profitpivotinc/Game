@@ -74,7 +74,7 @@ const EXTRA = ('Benevolent Merciless Ruler Men KoM Kingsman Outlaw Shared Secret
   + 'JSONs Just Keeps Logic Longhouse Merged Mine Mouth Move Neat Night OQs Other Post Priest '
   + 'Question Relationship Return Rising Seal Seat Seems Sheet Sold Starving Strike Struck Tell '
   + 'Test Theme Thumb Wall Way Wear Worse Wrong Id Night Berth Vellums Wakes Levy '
-  + 'Conventions Schemas').split(/\s+/);
+  + 'Conventions Schemas Open Items').split(/\s+/);
 
 // Build the KNOWN proper-noun set from CANON: Rename Table names, §2.1
 // allowlist, glossary terms, and job-name gloss. Split multiword names into
