@@ -17,9 +17,9 @@
         "scene:ch1-s11",
         "scene:ch1-s12",
         "scene:ch1-s13",
-        "docs/story/04a-ch2-kingsman.md (planned, Phase 4)",
-        "docs/story/04b-ch2-outlaw.md (planned, Phase 4)",
-        "docs/story/08-branch-map.md (planned, Phase 4)"
+        "docs/story/04a-ch2-kingsman.md",
+        "docs/story/04b-ch2-outlaw.md",
+        "docs/story/08-branch-map.md"
       ],
       "status": "seed"
     },
@@ -193,7 +193,7 @@
       ],
       "read_by": [
         "scene:ch1-s12",
-        "docs/story/04b-ch2-outlaw.md (planned, Phase 4)"
+        "docs/story/04b-ch2-outlaw.md"
       ],
       "status": "seed"
     },
@@ -492,7 +492,7 @@
       "description": "Salgerd 'the Grey-Guest' / Hel's petition arc (C-EMISSARY-01, C-LIE-06). 'contact' = first dream-walk (Ch2, outlaw-forward but reachable both routes). 'petition_heard' = Hel's claim stated in owed-debts/lawful-shares grammar. 'corpse_road_walked' = Grim has walked the corpse_road overlays Salgerd shows (Ch3; prerequisite for finding the concealed door). 'complete' = the petition is resolved at the roots. Benevolent God gate requires 'complete' with the petition GRANTED (harvest returned to Hel's lawful course); the Successor perverts it (even Hel starves). Gates the True-ledger content (C-ALIGN-02).",
       "set_by": [
         "scene:ch2o-s02",
-        "scene:ch2k-s02b",
+        "scene:ch2k-s02",
         "map:ch3-corpse-barrow",
         "map:ch3-marsh-straw-dead",
         "scene:ch4-s05"
@@ -529,7 +529,6 @@
       "type": "counter",
       "description": "Count of the player's permanently-fallen units (einherjar returned in enemy formations, C-DEATH-02) that Grim CONSUMED rather than unhooked (requires consume_rite_known). Successor gate needs >=5 (C-END-01). Each consume drives true_man_blood and true_mercy_terror hard toward Blood/Terror. The permadeath payoff turned to appetite.",
       "set_by": [
-        "map:ch3-corpse-barrow",
         "map:ch3-einherjar-vanguard",
         "map:ch4-under-the-tree",
         "map:end4-root-tree"
