@@ -1,0 +1,1261 @@
+{
+  "id": "ch2k-nav-boarding",
+  "name": "The Whale-Road Boarding",
+  "chapter": 2,
+  "order": 3,
+  "route_tags": [
+    "kingsman"
+  ],
+  "grid": {
+    "cols": 16,
+    "rows": 12
+  },
+  "terrain": [
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "water_deep",
+      "water_deep",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "water_deep",
+      "water_deep",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "water_deep",
+      "water_deep",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "plank",
+      "plank",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "water_deep",
+      "water_deep",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "water_deep",
+      "water_deep",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "plank",
+      "plank",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "water_deep",
+      "water_deep",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "water_deep",
+      "water_deep",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "plank",
+      "plank",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "water_deep",
+      "water_deep",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ],
+    [
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank",
+      "water_deep",
+      "water_deep",
+      "plank",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "wood_floor",
+      "plank"
+    ]
+  ],
+  "elevation": [
+    [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  ],
+  "overlays": [
+    {
+      "pos": [
+        7,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        8,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        7,
+        1
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        8,
+        1
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        7,
+        2
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        8,
+        2
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        7,
+        4
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        8,
+        4
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        7,
+        5
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        8,
+        5
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        7,
+        7
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        8,
+        7
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        7,
+        8
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        8,
+        8
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        7,
+        10
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        8,
+        10
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        7,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        8,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        1
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        1
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        1
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        1
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        2
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        2
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        2
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        2
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        3
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        3
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        3
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        3
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        4
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        4
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        4
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        4
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        5
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        5
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        5
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        5
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        6
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        6
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        6
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        6
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        7
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        7
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        7
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        7
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        8
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        8
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        8
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        8
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        9
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        9
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        9
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        9
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        10
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        10
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        10
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        10
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        0,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        6,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        9,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        15,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        1,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        2,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        3,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        4,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        5,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        10,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        11,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        12,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        13,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        14,
+        0
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        1,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        2,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        3,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        4,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        5,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        10,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        11,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        12,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        13,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        14,
+        11
+      ],
+      "type": "drown_edge"
+    },
+    {
+      "pos": [
+        13,
+        5
+      ],
+      "type": "flammable",
+      "note": "tarred rigging of the Landless keel"
+    },
+    {
+      "pos": [
+        14,
+        5
+      ],
+      "type": "flammable",
+      "note": "tarred rigging of the Landless keel"
+    },
+    {
+      "pos": [
+        15,
+        5
+      ],
+      "type": "flammable",
+      "note": "tarred rigging of the Landless keel"
+    },
+    {
+      "pos": [
+        13,
+        6
+      ],
+      "type": "flammable",
+      "note": "tarred rigging of the Landless keel"
+    },
+    {
+      "pos": [
+        14,
+        6
+      ],
+      "type": "flammable",
+      "note": "tarred rigging of the Landless keel"
+    },
+    {
+      "pos": [
+        15,
+        6
+      ],
+      "type": "flammable",
+      "note": "tarred rigging of the Landless keel"
+    }
+  ],
+  "weather": "clear",
+  "deployment": {
+    "player_zones": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        3,
+        6
+      ]
+    ],
+    "max_units": 6
+  },
+  "enemies": [
+    {
+      "id": "e1",
+      "job": "raider",
+      "level": 8,
+      "facing": "W",
+      "pos": [
+        13,
+        6
+      ],
+      "ai": "leader",
+      "named": true,
+      "grid_notes": "Landless boarding-captain amidships on the far keel; holds while the tar-rigging stands, fighting from the gunwale to bait shoves that cost the shover the sea."
+    },
+    {
+      "id": "e2",
+      "job": "skogarmadr",
+      "level": 7,
+      "facing": "W",
+      "pos": [
+        10,
+        3
+      ],
+      "ai": "aggressive",
+      "grid_notes": "Bridge-runner; rushes the fore plank to knock kingsmen into the gap before they cross."
+    },
+    {
+      "id": "e3",
+      "job": "veidimadr",
+      "level": 7,
+      "facing": "W",
+      "pos": [
+        14,
+        10
+      ],
+      "ai": "guard",
+      "grid_notes": "Bow on the aft stem-castle (2h): +1 range across the flat decks; the map’s one real height, covering both aft bridges."
+    },
+    {
+      "id": "e4",
+      "job": "berserker",
+      "level": 8,
+      "facing": "W",
+      "pos": [
+        11,
+        9
+      ],
+      "ai": "aggressive",
+      "grid_notes": "Berserk boarder whose leap crosses the gap without a bridge — the one enemy the water does not stop; punishes a player who trusts the moat."
+    },
+    {
+      "id": "e5",
+      "job": "drengr",
+      "level": 6,
+      "facing": "W",
+      "pos": [
+        12,
+        6
+      ],
+      "ai": "guard",
+      "grid_notes": "Amidships shield beside the captain; steps to block the center plank."
+    }
+  ],
+  "neutrals": [
+    {
+      "id": "n1",
+      "type": "witness",
+      "pos": [
+        15,
+        8
+      ],
+      "ai": "flee",
+      "escape_edge": "E",
+      "grid_notes": "Hvalfjord oarsman on the far keel’s rowing bench; flees along the hull to the E edge to reach the next port. Survives = every port hears it."
+    },
+    {
+      "id": "n2",
+      "type": "witness",
+      "pos": [
+        1,
+        8
+      ],
+      "ai": "flee",
+      "escape_edge": "W",
+      "grid_notes": "King’s-side oarsman; flees W. Present so a Sung account exists on both keels unless both are silenced."
+    }
+  ],
+  "objectives": {
+    "primary": "Take the Landless captain (e1): down him or force his yield.",
+    "secondary": [
+      "No player unit lost to the sea.",
+      "At least one oarsman (n1/n2) escapes — keep the boarding Sung as mercy or terror by choice, not by accident."
+    ],
+    "defeat": "Grím falls, or every player unit is pitched into the sea."
+  },
+  "escape_edges": [
+    "E",
+    "W"
+  ],
+  "witness_rule": "sung_if_any_witness_or_router_escapes",
+  "triggers": [
+    {
+      "when": "turn>=1",
+      "event": "grapples_set",
+      "note": "The hulls are lashed; the three planks drop. The gap is crossable only on plank tiles from here."
+    },
+    {
+      "when": "unit_off_zone:e2:plank",
+      "event": "bridge_runner_committed",
+      "once": true,
+      "note": "Once the bridge-runner is on a plank, felling him there drops him to the sea (removal), not the deck."
+    },
+    {
+      "when": "hp_below:e1:25",
+      "event": "captain_yield_offer",
+      "set_flag": "hvalfjord_fate",
+      "once": true,
+      "note": "The captain may cry grið at the gunwale; how it is answered before the oarsmen sets the market’s read and nudges hvalfjord_fate (bought if mercy keeps the account; burned only if the wharf-arc is later taken by fire). Enum write owned by scene:ch2k-s02."
+    },
+    {
+      "when": "unit_downed:any_player",
+      "event": "sea_takes_the_fallen",
+      "note": "A player unit downed on a drown_edge tile is taken by the sea outright — grave-goods lost to the deep, no raven-count (a harsher C-DEATH-01 variant flagged for spec-combat-core)."
+    }
+  ],
+  "designer_notes": {
+    "height_gimmick": "The vertical axis is the GAP between two hulls, not a summit: the sea (cols 7-8, elevation 0) between the decks is the only low ground and it is instant removal, so the three plank bridges (rows 3/6/9) are the sole crossings and knockback over any gunwale into the drown_edge water_deep deletes a unit outright rather than damaging it — cut a bridge and you strand half a boarding party. Distinct from every ch1 summit map and the other showcases.",
+    "witness_setup": "Hvalfjord oarsmen crouch beneath the fighting lines on both keels and survive to carry the tale to every port on the whale-road; the recording skald watches from the king’s stem-castle. Cut the planks and pitch a whole crew to the sea and the action can vanish Unsung — but a drowned man does not surface where doctrine promised, and the oarsmen who live (n1 flees E, n2 flees W) will say so (harvest-lie suspicion).",
+    "intent": "Naval set-piece and the Hvalfjord faith/fire fork made physical (bought vs burned); the first fight with no elevation crutch, where removal-by-sea replaces the kill verb and the player chooses how much the market sees."
+  }
+}
