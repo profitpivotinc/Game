@@ -181,6 +181,7 @@ Status legend: **[P]** placeholder (subject to Rename Table) · **[T]** TUNABLE 
 | Auðr ("the Deep-Counseled") | Hvalfjorð leader; prime-signed merchant; sells to both altars | ON *auðr* "wealth" (cf. Auðr the Deep-Minded, a real wealthy Christian-leaning ship-owner); by-name *djúp* "deep" + *-úðigr* "minded," shrewd | — |
 | Skapti ("the Lawspeaker") | Hjortdal leader; Lawspeaker of the Thing | ON *skap* "shape, fate"; *skapa* "to shape/ordain fate" (a documented lawspeaker's name) — law as fate-carving, the man who can re-shape Grím's *vargdropi* fate | — |
 | Ingunn ("the Unburnt") | **cult-name for Yrsa's sainted corpse** (C-SAINT-01/02); the new church's founding saint | ON *Ing* (Yngvi-Freyr, harvest-god) + *unn* "love": "beloved of Ing" — a harvest-name on the harvest's vessel. Epithet *úbrunninn* "unburnt": miracle-lie / un-consumed cocoon / literally, hanged-not-burned. The name is the church's relabel of Yrsa | — |
+| Bótólfr | representative sincere new-faith cleric (C-CLERIC-01); tends Ingunn's shrine unaware of the cocoon | ON *Bótólfr* — *bót* "remedy, betterment" + *ulfr* "wolf": "remedy-wolf." The kind man whose genuine goodness is the hunger's camouflage | — |
 
 **Rule:** grep for any proper noun not in this table during every phase gate; unregistered nouns fail the Phase 5 gate.
 
@@ -190,6 +191,7 @@ These are **not in-world names** — they are design/lineage references and real
 
 - **Design lineage:** Final Fantasy Tactics (FFT), Tactics Ogre, Delita, Wiegraf, Orlandeau, Balmamusa.
 - **Real historical / philological:** Hákon the Good, Auðr djúpúðga ("the Deep-Minded"), Hávamál, fornyrðislag, primsigning, Hvítakristr, Níðhöggr, Yggdrasill (the last two used only as "-analog" glosses; canon prose uses the common nouns Corpse-Eater / World-Tree).
+- **Etymological source-forms** (appear only in this table's own etymology notes, never in player text): Hvalfjörður, Þingvellir, Rǫgnvaldr, Rúnólfr, Bǫðvarr Bjarki, Yngvi-Freyr, Christ, úbrunninn, urðr.
 
 ---
 
