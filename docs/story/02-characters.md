@@ -86,7 +86,7 @@ Roster below, in six groups: **The Two Threads** (Grím, Dag) · **The Erased Wo
 
 # II. The Erased Women
 
-> Three thrall-born-or-unmade women, none of whom the player ever hears speak *living*. They survive only in others' carvings — the exact horror the game is about (C-THEME-01). They are grouped because they are one argument made three times: **word-fame overwrites the powerless, and both altars have blood** (C-LIE-05, C-SAINT-02).
+> Three dossiers, **two women** — none of whom the player ever hears speak *living*. They survive only in others' carvings — the exact horror the game is about (C-THEME-01). Aldís is one erasure; **Yrsa and Ingunn are one woman erased twice** — hanged by the old faith, then sainted under a false name by the new (C-SAINT-01/02, **committed**). Ingunn keeps her own dossier because she is how the *cult* is presented and how the reveal is staged, but the body is Yrsa's. They make one argument: **word-fame overwrites the powerless, and both altars have blood** (C-LIE-05).
 
 ## Aldís [P]
 *Rename-Table label: Aldís — Grím's mother, the unmade queen.*
@@ -120,7 +120,7 @@ Roster below, in six groups: **The Two Threads** (Grím, Dag) · **The Erased Wo
 
 **Appearance.** Remembered, not shown. The world carries the **fact of her rope** and little else — a young thrall-woman led uphill in a column, ravens on the hanging-tree. Dag carries a fuller image no one else can verify. Any depiction is secondhand: blót-witness testimony, or a brother's memory polished by grief.
 
-**Personality & Voice.** Quoted, never living. Dag carries her words; the world carries only the fact of her death. When her "voice" appears it is Dag's memory of it — and by C-SAINT-02's optional escalation, it may not even reliably be *hers*.
+**Personality & Voice.** Quoted, never living. Dag carries her words; the world carries only the fact of her death. When her "voice" appears it is Dag's memory of it — and in committed canon (C-SAINT-02) even her death was re-storied: the church sings her as the fire-martyr "Ingunn," burying the rope.
 
 **Backstory.** Hanged at the **Blót of Yrsa** (Y−6, Timeline §4) — the last royally-sanctioned great blót, sanctioned by King **Ragnvald** and presided by **Goði Þorgeir**. She was chosen because she was **thrall-born and disposable**: a jarl's daughter would not do (C-DAG-01). The old faith did not hang her in savage frenzy; it hanged her in orderly, lawful piety, which is worse.
 
@@ -130,31 +130,31 @@ Roster below, in six groups: **The Two Threads** (Grím, Dag) · **The Erased Wo
 
 **Secrets & reveals.**
 - *She was owed her freedom.* Records may show her name was chosen the very season she was due manumission — a debt the rope erased. A quiet, brutal reveal available in Ch2–3 archive/dialogue.
-- *Ingunn may have absorbed her.* The optional C-SAINT-02 escalation (flagged for human lead, `01` OQ-BIBLE-01): the new church's hagiography of Ingunn the Unburnt swallowed Yrsa's details, and the two are the **same erased woman relabeled** — the ultimate word-fame horror. Held as an optional Ch3 gut-punch.
+- *She is Ingunn.* **Committed canon** (C-SAINT-01/02, OQ-BIBLE-01 resolved): the new church's founding saint "Ingunn the Unburnt" is Yrsa — her body, spirited from the Y−6 grove, renamed, and re-storied as an ancient martyr. The old faith hanged her; the new faith sainted her corpse. The **player knows from early on**; the **characters** (Dag first) do not, until the Ch3–4 reveal (C-SAINT-03) — the game's biggest shock.
 
 ---
 
 ## Ingunn "the Unburnt" [P]
 *Rename-Table label: Ingunn ("the Unburnt") — martyred saint, relics cocoon the re-homed hunger.*
 
-- **Role:** The martyred saint — founding relic of the new church; the hunger's most beautiful door (C-SAINT-01, C-LIE-03).
-- **Age:** Died young, **~Y−25** (Timeline §4).
-- **Faction / Allegiance:** New church (its founding vessel). Consumed, then venerated.
+- **Role:** The new church's founding saint — **a cult-name for Yrsa's re-storied corpse** (C-SAINT-01/02); the hunger's most beautiful door (C-LIE-03).
+- **Age:** The cult *claims* an ancient martyr (~Y−25); the truth is Yrsa, **hanged Y−6** (C-SAINT-01). "Ingunn" has no separate life — she is a story laid over a dead girl.
+- **Faction / Allegiance:** New church (its founding vessel). A murdered thrall-girl of the *old* faith, consumed and then re-consecrated by the new.
 
 **Appearance.** Liturgical legend only — a hagiographer's carving, not a person. The church shows her as an incorrupt relic: a girl the grave will not spoil, laid in reliquary at the shrine Bótólfr tends, a "radiance" reported at her tomb. That radiance is the **feeding mistaken for grace** (C-LIE-03). Like Aldís and Yrsa, her real face is overwritten — here, overwritten *and then gilded.*
 
 **Personality & Voice.** Spoken about, never speaking. Her "life" is a hagiography other men wrote and the false comfort of relic-visions. **Word-fame made flesh, then made relic.** If she ever "speaks," it is scripture quoting her — a mouth moved by the institution that consumed her.
 
-**Backstory.** A **freed thrall-girl** — the new faith's genuine liberation (C-LIE-04) — martyred at the high grove ~Y−25, when the blót-fire "would not take her" (C-SAINT-01): the miracle the church tells. Her incorrupt relics founded the new church's cult and **predate and enable Ragnvald's Y−2 conversion** (Timeline §4). By Ch3 the re-homed hunger is **cocooned in those relics** (C-LIE-03), because a faith that venerates dying-for-god is a cleaner harvest engine than a grove.
+**Backstory.** The church tells of a **freed thrall-girl** martyred at the high grove ~Y−25, the blót-fire "would not take her" — the miracle. **It is a fabrication.** The incorrupt body enshrined as Ingunn is **Yrsa** (C-SAINT-01/02): hanged at the Blót of Yrsa (Y−6), her corpse spirited from the grove, renamed, relocated, and dated ancient to found the relic-cult that crystallized Y−6→Y−2 and **enabled Ragnvald's conversion**. "Unburnt" is triply true — miracle-lie, un-consumed cocoon, and *she was hanged, not burned.* By Ch3 the re-homed hunger is **cocooned in her body** (C-LIE-03): a faith that venerates dying-for-god is a cleaner harvest engine than a grove — and it was founded on a girl the grove already killed.
 
-**Arc / narrative function.** The sincere martyr whose glorified death is the perfect harvest vessel; her Chapter 3 reveal **recontextualizes the entire new faith** (C-LIE-03). She is the structural mirror of Yrsa (C-SAINT-02): each altar has its consumed thrall-girl — the "both altars have blood" pillar rendered as paired characters (C-LIE-05).
+**Arc / narrative function.** The "saint" whose glorified death is the perfect harvest vessel — and who is secretly **Yrsa** (C-SAINT-02). Two reveals land on this body: that the relic feeds (C-LIE-03), and that the relic is Dag's murdered sister (C-SAINT-03). The player carries the second from early on; the characters get it in Ch3–4. She is not a mirror of Yrsa — she **is** Yrsa: one thrall-girl both altars killed, "both altars have blood" (C-LIE-05) collapsed into one body.
 
-**Key relationships.** Founding saint of the church **Dag** perfects and **Bótólfr** serves · object of **Bótólfr's** sincere veneration · mirror-twin of **Yrsa** across the two faiths · unwitting host of the hunger **Salgerð** wants dislodged.
+**Key relationships.** Founding saint of the church **Dag** perfects and **Bótólfr** serves · **Dag's own hanged sister**, unrecognized under the cult-name (C-SAINT-03) · object of **Bótólfr's** sincere veneration · unwitting host of the hunger **Salgerð** wants dislodged.
 
 **Secrets & reveals.**
-- *"Unburnt" reads twice.* Holy miracle (the fire refused her) **and** un-consumed vessel (the incorrupt cocoon) — the tightest double meaning in the game (C-SAINT-01), paid off in Ch3.
-- *Holy or merely useful-dead?* Whether she was truly touched by something or merely convenient is the Chapter 3 gut-punch on which the whole new faith rests. Canon leaves the *radiance*'s origin ambiguous but its *function* certain: it feeds.
-- *Ingunn = Yrsa?* Optional escalation (C-SAINT-02; see Yrsa). Flagged for human lead.
+- *"Unburnt" reads three ways.* Holy miracle (the lie), un-consumed cocoon (C-LIE-03) — and the buried truth, **she was hanged, not burned** (C-SAINT-01). The fire-miracle exists to explain away a body with no burns.
+- *The relic is Yrsa.* **Committed** (C-SAINT-02): the founding saint is Dag's murdered sister, renamed and dated ancient. The player is shown it early; the reveal to the characters (Ch3–4, the opening of the body) is the game's biggest shock (C-SAINT-03).
+- *Holy or merely useful-dead?* Whether the girl was ever touched by anything is unrecoverable; the *radiance* at her tomb is the feeding mistaken for grace — its origin ambiguous, its function certain: it feeds.
 
 ---
 
@@ -402,8 +402,8 @@ Roster below, in six groups: **The Two Threads** (Grím, Dag) · **The Erased Wo
 ## Cross-file & consistency notes
 
 - **Placeholders.** Every proper noun above is a placeholder registered in the CANON Rename Table (C-CLAN-LEAD-01, C-KING-01, C-EMISSARY-01, C-CLERIC-01, C-SAINT-01, C-LANDLESS-01). Coined names keep their final-name column blank; a Phase 5 grep sweep must catch any noun not in the table.
-- **The three erased women** (Aldís, Yrsa, Ingunn) share one rule: **no living voice, only carvings** (C-THEME-01, C-SAINT-02). Any downstream file that "quotes" them must frame the quote as someone's telling.
-- **Grím's paternity** and the **Ingunn = Yrsa** escalation are the two dossier-level items flagged for the human lead (C-GRIM-04 / C-KING-02; C-SAINT-02 — see `01` OQ-BIBLE-01/02). Neither is resolved here.
+- **The erased women** (Aldís; and Yrsa, who is also Ingunn) share one rule: **no living voice, only carvings** (C-THEME-01, C-SAINT-02). Any downstream file that "quotes" them must frame the quote as someone's telling.
+- **Ingunn = Yrsa is COMMITTED canon** (C-SAINT-01/02/03, OQ-BIBLE-01 resolved): deliver as dramatic irony (player early, characters late); keep Dag's non-recognition credible per C-SAINT-03. **Grím's paternity** remains deliberately unresolved (C-GRIM-04 / C-KING-02).
 - **Grím's power is meta, never stats** (C-GRIM-06). Any combat-facing file that touches him defers to `spec-wyrd.md`; he is never written as a damage monster.
 - **The faith/fire forks and clan custodianships** in the leader dossiers match `01-story-bible.md §3` and CANON §1.6; the *institution* lives there, the *person* lives here.
 
